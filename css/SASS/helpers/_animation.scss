@@ -92,3 +92,23 @@
   }
 }
 //animation fadeout end 
+
+//animation zoom start 
+@-webkit-keyframes zoom {  
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+@-moz-keyframes zoom {  
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes zoom {  
+  100% {
+    transform: scale(1.1);
+  }
+}
+//animation zoom start 

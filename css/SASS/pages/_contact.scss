@@ -1,0 +1,113 @@
+.contact { 
+  .container { 
+    .cardd { 
+      padding: 56px 78px 64px;
+      border-radius: 20px;
+      border: 1px solid $border_color;
+      max-width: 810px;
+      box-shadow: 0 20px 34px 0 rgb(11 11 44 / 4%), 0 4px 8px 0 rgb(11 11 44 / 2%), 0 10px 34px 0 rgb(52 52 255 / 5%);
+      transition: $main_transition;
+      @media (max-width: 767px) {
+        padding: 40px 20px;
+      }
+      &:hover { 
+        transform: translateY(-6px);
+      }
+      .txt { 
+        h3 {
+          color: $dark_blue;
+          font-size: 40px;
+          margin: 0 0 20px;
+        }
+        p { 
+          font-size: 18px;
+          color: $gray;
+        }
+      }
+      .img { 
+        .img-background { 
+          width: 82px;
+          height: 83px;
+          background-color: #fff;
+          border-radius: 50%;
+          box-shadow: 0 3px 12px 0 rgb(52 52 255 / 12%);
+          img {
+            transition: $main_transition;
+          }
+          // &:hover img { 
+          //   transform: scale(1.1);
+          // }
+          img { 
+            animation: zoom 0.9s linear infinite;
+          }
+        }
+      }
+    }
+  }
+}
+
+.faq {
+  .container { 
+    .questions { 
+      .question { 
+        padding: 55px 42px 40px;
+        border-bottom: 1px solid $border_separator;
+        @media (max-width: 767px) {
+          padding: 40px 20px;
+        }
+        button { 
+          border: none;
+          h3 { 
+            font-size: 23px;
+            color: $black;
+            flex-basis: 80%;
+            text-align: start;
+            transition: $main_transition;
+            @media (max-width: 767px) {
+              font-size: 18px;
+            }
+          }
+          svg { 
+            color: $gray-2;
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            border: 1px solid rgb(236, 236, 244);
+            padding: 10px;
+            transition: $main_transition;
+            @media (max-width: 767px) {
+              width: 19px;
+              height: 19px;
+              padding: 6px;
+            }
+          }
+          &[aria-expanded="true"] {
+            h3 {
+              color: $id_color;
+            }
+            svg { 
+              border-color: $id_color;
+              transform: rotate(90deg);
+            }
+          }
+        }
+        .card { 
+          border: none;
+          max-width: 900px;
+          @media (max-width: 767px) {
+            padding: 0 16px;
+          }
+          p { 
+            // padding: 0 42px;
+            font-size: 18px;
+            color: $gray;
+            margin: 0 0 10px;
+            @media (max-width: 767px) {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
