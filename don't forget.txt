@@ -1,0 +1,5 @@
+1-courses button in the mobile 
+2-drop down menu full width in the mobile 
+3-compatebility with all moblie devices not only yours 
+4- expand the footer , add contact info for suggestions
+5- add links in easy place to be prissed (photo)

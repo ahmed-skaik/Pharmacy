@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="name" content="Faculty of Pharmacy">
+    <meta name="description" content="This website was made to help Pharmacy students at Alazhar University of Gaza, it includes all the E-Learning lectures, summaries, previous exams & more !">
+    <meta name="author" content="Ahmed-Skaik">
+    <title>Faculty of Pharmacy</title>
+    <!-- tap icon -->
+		<link rel="icon" href="Images/logo.png">
+    <!-- bootstrap toolkit -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- font awesome library -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- main css file -->
+    <link rel="stylesheet" href="css/home-page.css">
+    <!-- don't forget the google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;700&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <!-- <script>
+      document.addEventListener("click", x=>0)
+    </script> -->
+  </head>
+  <body>
+    <!-- loading screen start  -->
+    <div class="loading d-flex justify-content-center align-items-center flex-column position-fixed w-100 h-100">
+      <p>Loading...</p>
+      <i class="fa-solid fa-circle-notch fa-spin fa-xl" style="color: #3434ff;"></i>
+    </div>
+
+    <!-- loading screen end  -->
+
+    <!-- scroll up start  -->
+    <div class="up" id="up">
+      <button aria-label="scroll up"><i class="fa-solid fa-circle-chevron-up"></i></button>
+    </div>
+    <!-- scroll up end  -->
+
+    <!-- nav  start  -->
+    <nav class="navbar navbar-expand-lg pt-lg-2 pb-lg-2">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="Images/logo.png" alt="Logo">
+        </a>
+        <!-- d-block d-lg-none -->
+        <div class=" d-none">
+          <i class="fa-solid fa-graduation-cap"></i>
+          <a href="#courses" class="btn main-btn">Courses</a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main" aria-controls="main" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#">Courses</a>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="#plans">Plans</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Levels
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="Pages/level-1.html" target="_blank">Level 1</a></li>
+                <li><a class="dropdown-item" href="Pages/level-2.html" target="_blank">Level 2</a></li>
+                <li><a class="dropdown-item" href="Pages/level-3.html" target="_blank">Level 3</a></li>
+                <li><a class="dropdown-item" href="Pages/level-4.html" target="_blank">Level 4</a></li>
+                <li><a class="dropdown-item" href="Pages/level-5.html" target="_blank">Level 5</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="Pages/univ-needs.html" target="_blank">UNIV Needs</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Pages/error.html" target="_blank">Contact</a>
+            </li>
+          </ul>
+          <!-- <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form> -->
+          <div class="d-none d-lg-block">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <a href="#courses" class="btn main-btn">Courses</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- nav  end -->
+
+    <!-- landing start  -->
+    <div class="landing d-flex d-md-bloc align-items-center mt-md-5 mt-lg-0">
+      <div class="container">
+        <div class="row align-items-center justify-content-between gap-5 gap-lg-0">
+          <div class="col-lg-8">
+            <div class="txt">
+              <h1>
+                Alazhar University,
+                <br>
+                <span>Faculty of Pharmacy</span>.
+              </h1>
+              <p>
+                This website was made to help Pharmacy students at Alazhar University of Gaza,
+                <br>it includes all the E-Learning lectures, summaries, previous exams & more !
+              </p>
+              <div class="links d-flex gap-3 flex-column flex-sm-row justify-content-center justify-content-lg-start">
+                <a href="#courses" class="btn main-btn">Our Courses</a>
+                <a href="http://www.alazhar.edu.ps/arabic/pha/home.asp" target="_blank" class="btn main-btn revers">Official website</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="img d-none d-md-block text-center">
+              <img src="Images/Temp-425x566.jpg" alt="drug" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#courses"><i class="fa-solid fa-angles-down fa-2x"></i></a>
+    </div>
+    <!-- landing end  -->
+
+    <!-- plans start  -->
+    <div class="plans pt-5 pb-5 text-center" id="plans">
+      <div class="container">
+        <div class="main-title mt-5 mb-5">
+          <h2 class="mb-3">Studying Plan</h2>
+          <p class="mb-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto, quam.</p>
+        </div>
+        <div class="row mt-5 mb-5">
+          <div class="col-md-6 col-lg-4 p-3">
+            <div class="box">
+              <i class="fa-solid fa-folder fa-4x"></i>
+              <h3>Detailed Plan</h3>
+              <div class="info">
+                <a href="Files/plan-detailed.pdf" target="_blank">Download</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 p-3">
+            <div class="box">
+              <i class="fa-solid fa-file fa-4x"></i>
+              <h3>&le; 2019 Plan</h3>
+              <div class="info">
+                <a href="Files/plan-2012.pdf" target="_blank">Download</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 p-3">
+            <div class="box">
+              <i class="fa-solid fa-file-pen fa-4x"></i>
+              <h3>2020 Plan</h3>
+              <div class="info">
+                <a href="Files/plan-2020.pdf" target="_blank">Download</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- plans end  -->
+
+    <!-- courses start  -->
+    <div class="courses pt-5 pb-5" id="courses">
+      <div class="container">
+        <div class="main-title mt-5 mb-5">
+          <h2 class="mb-3">Courses</h2>
+          <p class="mb-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto, quam.</p>
+        </div>
+        <div class="row mt-5 mb-5">
+          <div class="col-lg-3 col-md-4 col-sm-6 p-3">
+            <div class="article-box">
+              <div class="img">
+                <img src="Images/22983660-stethoscope-pills-and-syringe-toned-in-blue-shades-useful-to-illustrate-any-medical-subject.webp" alt="level-img">
+                <div class="text">
+                  <h3>Level 1</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, perferendis.</p>
+                </div>
+                <div class="more">
+                  <a href="Pages/level-1.html" target="_blank">Visit</a>
+                  <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 p-3">
+            <div class="article-box">
+              <div class="img">
+                <img src="Images/22983660-stethoscope-pills-and-syringe-toned-in-blue-shades-useful-to-illustrate-any-medical-subject.webp" alt="level-img">
+                <div class="text">
+                  <h3>Level 2</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, perferendis.</p>
+                </div>
+                <div class="more">
+                  <a href="Pages/level-2.html" target="_blank">Visit</a>
+                  <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 p-3">
+            <div class="article-box">
+              <div class="img">
+                <img src="Images/22983660-stethoscope-pills-and-syringe-toned-in-blue-shades-useful-to-illustrate-any-medical-subject.webp" alt="level-img">
+                <div class="text">
+                  <h3>Level 3</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, perferendis.</p>
+                </div>
+                <div class="more">
+                  <a href="Pages/level-3.html" target="_blank">Visit</a>
+                  <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 p-3">
+            <div class="article-box">
+              <div class="img">
+                <img src="Images/22983660-stethoscope-pills-and-syringe-toned-in-blue-shades-useful-to-illustrate-any-medical-subject.webp" alt="level-img">
+                <div class="text">
+                  <h3>Level 4</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, perferendis.</p>
+                </div>
+                <div class="more">
+                  <a href="Pages/level-4.html" target="_blank">Visit</a>
+                  <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 p-3">
+            <div class="article-box">
+              <div class="img">
+                <img src="Images/22983660-stethoscope-pills-and-syringe-toned-in-blue-shades-useful-to-illustrate-any-medical-subject.webp" alt="level-img">
+                <div class="text">
+                  <h3>Level 5</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, perferendis.</p>
+                </div>
+                <div class="more">
+                  <a href="Pages/level-5.html" target="_blank">Visit</a>
+                  <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 p-3">
+            <div class="article-box">
+              <div class="img">
+                <img src="Images/22983660-stethoscope-pills-and-syringe-toned-in-blue-shades-useful-to-illustrate-any-medical-subject.webp" alt="level-img">
+                <div class="text">
+                  <h3>UNIV Needs</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, perferendis.</p>
+                </div>
+                <div class="more">
+                  <a href="Pages/univ-needs.html" target="_blank">Visit</a>
+                  <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- courses end  -->
+
+    <!-- events start -->
+    <div class="events pt-5 pb-5">
+      <div class="container">
+        <div class="main-title mt-5 mb-5">
+          <h2 class="mb-3">Upcoming <span>Events</span> !</h2>
+          <p class="mb-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto, quam.</p>
+        </div>
+        <div class="card mb-3 mt-3">
+          <div class="row align-items-center justify-content-between">
+            <div class="col-md-4">
+              <img src="Images/event.jpg" class="img-fluid rounded-start" alt="event">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">The Second International Conference on Pharmaceutical Sciences &lpar;ICPS II&#41;</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <hr>
+                <ul class="list-unstyled d-flex justify-content-evenl align-items-center flex-wrap">
+                  <li><i class="fa-solid fa-calendar"></i> September 4, 2022</li>
+                  <li><i class="fa-solid fa-clock"></i> 09:00 pm</li>
+                  <li><i class="fa-solid fa-location-dot"></i> Alazhar University of Gaza</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3 mt-3">
+          <div class="row align-items-center justify-content-between">
+            <div class="col-md-4">
+              <img src="Images/istockphoto-806841908-612x612.jpg" class="img-fluid rounded-start" alt="event">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Midterm Examsof the first semester 2022/2023</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <hr>
+                <ul class="list-unstyled d-flex justify-content-evenl align-items-center flex-wrap">
+                  <li><i class="fa-solid fa-calendar"></i> January, 2023</li>
+                  <li><i class="fa-solid fa-clock"></i> Check out student gate</li>
+                  <li><i class="fa-solid fa-location-dot"></i> Alazhar University of Gaza</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-5 mt-3">
+          <div class="row align-items-center justify-content-between">
+            <div class="col-md-4">
+              <img src="Images/Temp-415x311.jpg" class="img-fluid rounded-start" alt="event">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Final Exams of the first semester 2022/2023</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <hr>
+                <ul class="list-unstyled d-flex justify-content-evenl align-items-center flex-wrap">
+                  <li><i class="fa-solid fa-calendar"></i> June, 2023</li>
+                  <li><i class="fa-solid fa-clock"></i> Check out student gate</li>
+                  <li><i class="fa-solid fa-location-dot"></i> Alazhar University of Gaza</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- events end -->
+
+    <!-- footer start -->
+    <footer class="p-3">
+      <div class="container  d-flex justify-content-center align-items-center">
+          <p class="" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-delay="100" title="This Project was made by me Ahmed-Skaîk a 4th year Pharmacy studetn using HTML, CSS, SASS, BOOTSTRAP & JS. ///////// Big thanks to Mr. Ahmed-Younis for providing all the necessary files & links for the project." >Made with ❤️, by <span><a href="">Ahmed-Skaîk</a></span> &copy; 2022</p>
+      </div>
+    </footer>
+    <!-- footer end -->
+
+    <!-- JS files -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <!-- to allow tooltip  -->
+    <script>
+      var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+      })
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/pharmacy.js"></script>
+  </body>
+</html>

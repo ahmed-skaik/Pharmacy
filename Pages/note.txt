@@ -1,0 +1,27 @@
+    <!-- landing start  -->
+    <!-- maybe later you can do it the right way  -->
+
+    <!-- <div class="landing d-flex d-md-block align-items-center">
+      <div class="container d-flex justify-content-between align-items-center flex-column flex-lg-row gap-5">
+        <div class="txt">
+          <h1>
+            Alazhar University,
+            <br>
+            <span>Faculty of Pharmacy</span>.
+          </h1>
+          <p>
+            This website was made to help Pharmacy students at Alazhar University of Gaza,
+            <br>it includes all the E-Learning lectures, summaries, previous exams & more !
+          </p>
+          <div class="links d-flex gap-3 flex-column flex-sm-row justify-content-center justify-content-lg-start">
+            <a href="#courses" class="btn main-btn">Our Courses</a>
+            <a href="http://www.alazhar.edu.ps/arabic/pha/home.asp" target="_blank" class="btn main-btn revers">Official website</a>
+          </div>
+        </div>
+        <div class="img d-none d-md-block">
+          <img src="images/Temp-425x566.jpg" alt="drug" class="img-fluid">
+        </div>
+      </div>
+      <a href="#courses"><i class="fa-solid fa-angles-down fa-2x"></i></a>
+    </div> -->
+    <!-- landing end  -->

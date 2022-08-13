@@ -1,0 +1,15 @@
+.content { 
+  .container { 
+    .year { 
+      .semester { 
+        p { 
+          button { 
+            @media (max-width: 576px) {
+              font-size: 17px;
+            }
+          }
+        }
+      }
+    }
+  }
+} 

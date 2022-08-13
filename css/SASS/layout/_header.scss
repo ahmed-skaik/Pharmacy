@@ -1,0 +1,117 @@
+.navbar { 
+  // background-color: $id_color;
+  box-shadow: 0 0 10px #ddd;
+  @media (max-width: 991px) {
+    min-height: 101px;
+  }
+  .container { 
+    .navbar-brand { 
+      img {
+        width: 75px;
+        transition: 0.3s;
+        &:hover {
+          transform: scale(1.2);
+        }
+        @media (max-width: 767px) {
+          width: 65px;
+        }
+      }
+    }
+    .navbar-toggler {
+      border-color: $id_color;
+      &:focus {
+        box-shadow: none;
+      }
+      &[aria-expanded="true"] {
+        border-color: $hover_blue;
+      }
+    }
+    .navbar-collapse {
+      @media (max-width: 991px) {
+        background-color: $black;
+        min-height: calc(100vh - 101px + 18px);
+        box-shadow: 0 4px 10px 0 rgb(74 58 255 / 18%);
+      }
+      // a.arrow { 
+      //   position: relative;
+      //   svg { 
+      //     position: absolute;
+      //     right: 0;
+      //     top: 50%;
+      //     transform: translateY(-50%);
+      //   }
+      //   &[aria-expanded="true"] svg{
+      //     transform: rotate(90deg);
+      //   }
+      // }
+      .dropdown-menu {
+        @media (max-width: 991px) {
+          background-color: $black;
+        }
+        a {
+          @media (max-width: 991px) {
+            width: fit-content;
+          }
+          &:hover {
+            @media (max-width: 991px) {
+              width: fit-content;
+            }
+          }
+        }
+      }
+    }
+    svg {
+      font-size: 30px;
+      margin-right: 10px;
+      color: $icon_dark_blue;
+      transform: translateY(9px);
+    }
+    .main-btn { 
+      background-color: $id_color;
+      color: #fff;
+      padding: 18px 24px;
+      font-size: 16px;
+      text-transform: uppercase;
+      border-radius: 6px;
+      font-weight: 500;
+      transition: 0.3s;
+      border: none;
+      &:hover {
+        background-color: $hover_blue;
+        transform: translateY(-2px);
+      }
+    }
+    ul {
+      margin-left: 40px;
+      li { 
+        a {
+          color: $black;
+          font-size: 18px;
+          margin: 10px;
+          width: auto;
+          transition: $main_transition;
+          @media (max-width: 991px) {
+            color: hsla(0, 0%, 100%, 0.52);
+            font-size: 32px;
+          }
+          &.active , &:hover , &:focus { 
+            color: $id_color;
+            @media (max-width: 991px) {
+              color: #fff;
+              background-color: transparent;
+            }
+          }
+          @media (max-width: 567px) {
+            font-size: 28px;
+          }
+        }
+        .dropdown-divider {
+          background-color: $id_color;
+          @media (max-width: 992px) {
+            background-color: hsla(0deg, 0%, 100%, 0.52);
+          }
+        }
+      }
+    }
+  }
+}

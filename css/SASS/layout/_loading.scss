@@ -1,0 +1,20 @@
+.loading { 
+  background-color: white;
+  z-index: 999;
+  user-select: none;
+  p { 
+    color: $id_color;
+    font-size: 35px;
+    font-weight: bold;
+    animation-name: loader;
+    animation-duration: 1.5s;
+    animation-play-state: running;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  &.hidden { 
+    animation-name: fadeout;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+}

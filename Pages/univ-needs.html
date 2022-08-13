@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="name" content="Faculty of Pharmacy">
+    <meta name="author" content="Ahmed-Skaik">
+    <title>Univ-needs \ Faculty of Pharmacy</title>
+    <!-- tap icon -->
+		<link rel="icon" href="../Images/logo.png">
+    <!-- bootstrap toolkit -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- font awesome library -->
+    <link rel="stylesheet" href="../css/all.min.css">
+    <!-- main css file -->
+    <link rel="stylesheet" href="../css/levels-page.css">
+    <!-- don't forget the google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;700&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- loading screen start  -->
+    <div class="loading d-flex justify-content-center align-items-center flex-column position-fixed w-100 h-100">
+      <p>Loading...</p>
+      <i class="fa-solid fa-circle-notch fa-spin fa-xl" style="color: #3434ff;"></i>
+    </div>
+    <!-- loading screen end  -->
+
+    <!-- scroll up start  -->
+    <div class="up" id="up">
+      <button aria-label="scroll up"><i class="fa-solid fa-circle-chevron-up"></i></button>
+    </div>
+    <!-- scroll up end  -->
+
+    <!-- nav  start  -->
+    <nav class="navbar navbar-expand-lg pt-lg-2 pb-lg-2">
+      <div class="container">
+        <a class="navbar-brand" href="../index.html">
+          <img src="../Images/logo.png" alt="Logo">
+        </a>
+        <!-- d-block d-lg-none -->
+        <div class=" d-none">
+          <i class="fa-solid fa-graduation-cap"></i>
+          <a href="#courses" class="btn main-btn">Courses</a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main" aria-controls="main" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#">Courses</a>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="#plans">Plans</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Levels
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../Pages/level-1.html" target="_blank">Level 1</a></li>
+                <li><a class="dropdown-item" href="../Pages/level-2.html" target="_blank">Level 2</a></li>
+                <li><a class="dropdown-item" href="../Pages/level-3.html" target="_blank">Level 3</a></li>
+                <li><a class="dropdown-item" href="../Pages/level-4.html" target="_blank">Level 4</a></li>
+                <li><a class="dropdown-item" href="../Pages/level-5.html" target="_blank">Level 5</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="../Pages/univ-needs.html" target="_blank">UNIV Needs</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+          <!-- <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form> -->
+          <div class="d-none d-lg-block">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <a href="#courses" class="btn main-btn">Courses</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- nav  end -->
+
+    <!-- content start  -->
+    <div class="content">
+      <div class="container">
+        <div class="main-title-2">
+          <h1 class="mb-3">University <span>Needs</span>.</h1>
+          <p class="mb-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque ad repellendus perferendis deserunt repudiandae.</p>
+        </div>
+        <div class="year mt-5 mb-5">
+          <div class="semester">
+            <p>
+              <button class="btn  pt-3 pb-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample-2" aria-expanded="false" aria-controls="collapseExample-2" aria-label="subject">
+                <i class="fa-solid fa-angle-right"></i> Arabic Language &lpar;1&#41;
+              </button>
+            </p>
+            <div class="collapse" id="collapseExample-2">
+              <div class="card card-body mb-3">
+                <h2>Biopharmaceutics & Pharmacokinetics I</h2>
+                <p>PHPT3207 2CH</p>
+                <a href="#">Go !</a>
+              </div>
+            </div>
+          </div>
+          <div class="semester">
+            <p>
+              <button class="btn  pt-3 pb-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample-2" aria-expanded="false" aria-controls="collapseExample-2" aria-label="subject">
+                <i class="fa-solid fa-angle-right"></i> English Language &lpar;1&#41;
+              </button>
+            </p>
+            <div class="collapse" id="collapseExample-2">
+              <div class="card card-body mb-3">
+                <h2>Biopharmaceutics & Pharmacokinetics I</h2>
+                <p>PHPT3207 2CH</p>
+                <a href="#">Go !</a>
+              </div>
+            </div>
+          </div>
+          <div class="semester">
+            <p>
+              <button class="btn  pt-3 pb-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample-3" aria-expanded="false" aria-controls="collapseExample-3" aria-label="subject">
+                <i class="fa-solid fa-angle-right"></i> Holy Quran &lpar;1&#41;
+              </button>
+            </p>
+            <div class="collapse" id="collapseExample-3">
+              <div class="card card-body mb-3">
+                <h2>Biochemistry Lab</h2>
+                <p>PHCH3107 1CH</p>
+                <a href="#">Go !</a>
+              </div>
+            </div>
+          </div>
+          <div class="semester">
+            <p>
+              <button class="btn  pt-3 pb-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample-4" aria-expanded="false" aria-controls="collapseExample-4" aria-label="subject">
+                <i class="fa-solid fa-angle-right"></i> Holy Quran &lpar;2&#41;
+              </button>
+            </p>
+            <div class="collapse" id="collapseExample-4">
+              <div class="card card-body mb-3">
+                <h2>Biochemistry Lab</h2>
+                <p>PHCH3107 1CH</p>
+                <a href="#">Go !</a>
+              </div>
+            </div>
+          </div>
+          <div class="semester">
+            <p>
+              <button class="btn  pt-3 pb-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample-5" aria-expanded="false" aria-controls="collapseExample-5" aria-label="subject">
+                <i class="fa-solid fa-angle-right"></i> Holy Quran &lpar;3&#41;
+              </button>
+            </p>
+            <div class="collapse" id="collapseExample-5">
+              <div class="card card-body mb-3">
+                <h2>Biochemistry Lab</h2>
+                <p>PHCH3107 1CH</p>
+                <a href="#">Go !</a>
+              </div>
+            </div>
+          </div>
+          <div class="semester">
+            <p>
+              <button class="btn  pt-3 pb-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample-6" aria-expanded="false" aria-controls="collapseExample-6" aria-label="subject">
+                <i class="fa-solid fa-angle-right"></i> Holy Quran &lpar;4&#41;
+              </button>
+            </p>
+            <div class="collapse" id="collapseExample-6">
+              <div class="card card-body mb-3">
+                <h2>Biochemistry Lab</h2>
+                <p>PHCH3107 1CH</p>
+                <a href="#">Go !</a>
+              </div>
+            </div>
+          </div>
+          <div class="semester">
+            <p>
+              <button class="btn  pt-3 pb-3 d-flex justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample-7" aria-expanded="false" aria-controls="collapseExample-7" aria-label="subject">
+                <span><i class="fa-solid fa-angle-right"></i> Jurisprudence</span> <span class="d-none d-md-inline">دراسات في الفقه الإسلامي</span>  
+              </button>
+            </p>
+            <div class="collapse" id="collapseExample-7">
+              <div class="card card-body mb-3">
+                <h2>Biochemistry Lab</h2>
+                <p>PHCH3107 1CH</p>
+                <a href="#">Go !</a>
+              </div>
+            </div>
+          </div>
+          <div class="semester">
+            <p>
+              <button class="btn  pt-3 pb-3 d-flex justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample-8" aria-expanded="false" aria-controls="collapseExample-8" aria-label="subject">
+                <span><i class="fa-solid fa-angle-right"></i> Studies in Islamic Faith</span> <span class="d-none d-md-inline">دراسات في العقيدة الإسلامية </span>
+              </button>
+            </p>
+            <div class="collapse" id="collapseExample-8">
+              <div class="card card-body mb-3">
+                <h2>Biochemistry Lab</h2>
+                <p>PHCH3107 1CH</p>
+                <a href="#">Go !</a>
+              </div>
+            </div>
+          </div>
+          <div class="semester">
+            <p>
+              <button class="btn  pt-3 pb-3 d-flex justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample-9" aria-expanded="false" aria-controls="collapseExample-9" aria-label="subject">
+                <span><i class="fa-solid fa-angle-right"></i> Studies in Prophetic Tradition</span> <span class="d-none d-md-inline">دراسات في الحديث وعلومه</span>
+              </button>
+            </p>
+            <div class="collapse" id="collapseExample-9">
+              <div class="card card-body mb-3">
+                <h2>Biochemistry Lab</h2>
+                <p>PHCH3107 1CH</p>
+                <a href="#">Go !</a>
+              </div>
+            </div>
+          </div>
+          <div class="semester">
+            <p>
+              <button class="btn  pt-3 pb-3 d-flex justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample-10" aria-expanded="false" aria-controls="collapseExample-10" aria-label="subject">
+                <span><i class="fa-solid fa-angle-right"></i> Interpretation of Quran</span> <span class="d-none d-md-inline">دراسات في التفسير وعلوم القرآن</span>
+              </button>
+            </p>
+            <div class="collapse" id="collapseExample-10">
+              <div class="card card-body mb-3">
+                <h2>Biochemistry Lab</h2>
+                <p>PHCH3107 1CH</p>
+                <a href="#">Go !</a>
+              </div>
+            </div>
+          </div>
+          <div class="semester optional">
+            <p data-bs-toggle="tooltip" data-bs-placement="top" data-bs-delay="100" title="This course and all the marked courses are optional , for pharmacy students you need to pass one of the three courses only ">
+              <button class="btn  pt-3 pb-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample-11" aria-expanded="false" aria-controls="collapseExample-11" aria-label="subject">
+                <i class="fa-solid fa-angle-right"></i> Enviromental Sciences
+              </button>
+            </p>
+            <div class="collapse" id="collapseExample-11">
+              <div class="card card-body mb-3">
+                <h2>Biochemistry Lab</h2>
+                <p>PHCH3107 1CH</p>
+                <a href="#">Go !</a>
+              </div>
+            </div>
+          </div>
+          <div class="semester optional">
+            <p data-bs-toggle="tooltip" data-bs-placement="top" data-bs-delay="100" title="This course and all the marked courses are optional , for pharmacy students you need to pass one of the three courses only ">
+              <button class="btn  pt-3 pb-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample-12" aria-expanded="false" aria-controls="collapseExample-12 aria-label="subject"">
+                <i class="fa-solid fa-angle-right"></i> Palestinian Studies
+              </button>
+            </p>
+            <div class="collapse" id="collapseExample-12">
+              <div class="card card-body mb-3">
+                <h2>Biochemistry Lab</h2>
+                <p>PHCH3107 1CH</p>
+                <a href="#">Go !</a>
+              </div>
+            </div>
+          </div>
+          <div class="semester optional">
+            <p data-bs-toggle="tooltip" data-bs-placement="top" data-bs-delay="100" title="This course and all the marked courses are optional , for pharmacy students you need to pass one of the three courses only ">
+              <button class="btn  pt-3 pb-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample-13" aria-expanded="false" aria-controls="collapseExample-13" aria-label="subject">
+                <i class="fa-solid fa-angle-right"></i> Human Rights
+              </button>
+            </p>
+            <div class="collapse" id="collapseExample-13">
+              <div class="card card-body mb-13">
+                <h2>Biochemistry Lab</h2>
+                <p>PHCH3107 1CH</p>
+                <a href="#">Go !</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- content end  -->
+
+    <!-- footer start  -->
+    <footer class="p-3">
+      <div class="container  d-flex justify-content-center align-items-center">
+          <p class="">Made with ❤️, by <span><a href="">Ahmed-Skaîk</a></span> &copy; 2022</p>
+      </div>
+    </footer>
+    <!-- footer end  -->
+
+    <!-- JS files -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/all.min.js"></script>
+    <script>
+      var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+      })
+    </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="../js/pharmacy.js"></script>
+  </body>
+</html>

@@ -1,0 +1,119 @@
+// content section start
+.content { 
+  min-height: calc(100vh - 100px);
+  .container { 
+    .about { 
+      padding: 40px 20px;
+      border: 1px solid $border_color;
+      border-radius: 30px;
+      max-width: 963px;
+      margin-right: auto;
+      margin-left: auto;
+      margin-top: 65px;
+      box-shadow: 0 11px 15px 0 rgb(52 52 255 / 5%);
+      @media (max-width: 767px) {
+        padding: 30px 20px;
+      }
+      ul { 
+        li { 
+          font-size: 22px;
+          font-weight: 400;
+          color: $gray;
+          @media (max-width: 576px) {
+            font-size: 16px;
+          }
+          @media (max-width: 767px) {
+            padding: 3px 0;
+          }
+          svg { 
+            color: $id_color;
+            margin-right: 11px;
+          }
+          span { 
+            color: $dark_blue;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+    .year { 
+      .semester { 
+        p { 
+          button { 
+            color: $black;
+            font-size: 22px;
+            background-color: none;
+            border: none;
+            font-weight: 700;
+            transition: 0.3s;
+            border-bottom: 2px solid $id_color;
+            width: 100%;
+            text-align: start;
+            &:hover { 
+              color: $id_color;
+            }
+            &[aria-expanded="true"] {
+              color: $id_color;
+            }
+            &[aria-expanded="true"] svg{
+              transform: rotate(90deg);
+            }
+            svg { 
+              margin-right: 12px;
+            }
+            @media (max-width: 350px) {
+              font-size: 18px;
+            }
+          }
+        }
+        .collapse { 
+          .card { 
+            box-shadow: 0 20px 34px 0 rgb(11 11 44 / 4%), 0 4px 8px 0 rgb(11 11 44 / 2%), 0 10px 34px 0 rgb(52 52 255 / 5%);
+            h2 { 
+              color: $black;
+            }
+            p { 
+              color: $gray;
+              span { 
+                color: $id_color;
+                font-weight: bold;
+              }
+            }
+            a {
+              color: #fafafa;
+              text-decoration: none;
+              text-align: end;
+              background: $id_color;
+              width: fit-content;
+              margin-left: auto;
+              font-size: 20px;
+              font-weight: 500;
+              padding: 6px;
+              border-radius: 8px;
+            }
+          }
+        }
+        &.optional { 
+          p {
+            button { 
+              position: relative;
+              &::after { 
+                font-family: "Font Awesome 5 Free"; 
+                content: "\f059";
+                position: absolute;
+                width: 20px;
+                margin-left: 10px;
+              }
+            }
+          }
+        }
+      }
+      .separate {
+        background-color:$dark_blue;
+        width: 25%;
+        height: 3px;
+      }
+    }
+  }
+} 
+// content section end  

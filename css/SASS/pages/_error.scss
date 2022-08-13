@@ -1,0 +1,37 @@
+.error { 
+  background-color: $id_color;
+  .container { 
+    .title { 
+      font-size: 180px;
+      line-height: 160px;
+      font-weight: 700;
+      @media (max-width: 767px) {
+        font-size: 150px;
+      }
+    }
+    h2 { 
+      font-size: 59px;
+      font-weight: 500;
+      @media (max-width: 767px) {
+        font-size: 40px;
+      }
+    }
+    p { 
+      font-size: 18px;
+    }
+    .home {
+      a { 
+        color: $id_color;
+        padding: 16px 24px;
+        font-weight: 500;
+        &:hover {
+          background-color: $id_color;
+          color: #fff;
+        }
+        @media (max-width: 767px) {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

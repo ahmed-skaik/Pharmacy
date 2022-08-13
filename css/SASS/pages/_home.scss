@@ -1,0 +1,309 @@
+//landing start
+.landing { 
+  min-height: calc(100vh - 101px);
+  position: relative;
+  .container { 
+    .main-btn { 
+      background-color: $id_color;
+      color: #fff;
+      padding: 22px 32px;
+      font-size: 16px;
+      text-transform: uppercase;
+      border-radius: 6px;
+      font-weight: 500;
+      transition: $main_transition;
+      border: none;
+      border: 1px solid;
+      &:hover {
+        background-color: $hover_blue;
+        transform: translateY(-2px);
+      }
+      &.revers {
+        background-color: #fff;
+        color: $id_color;
+        border-color: $id_color;
+      }
+    }
+    .txt { 
+      @media (max-width: 991px) {
+        text-align: center;
+      }
+      h1 { 
+        color: $dark_blue;
+        font-size: 73px;
+        font-weight: 600;
+        margin: 0 0 24px;
+        span { 
+          color: $id_color;
+        }
+        @media (max-width: 767px) {
+          font-size: 46px;
+        }
+        @media (max-width: 576px) {
+          font-size: 37px;
+        }
+        @media (max-width: 350px) {
+          font-size: 31px;
+        }
+      }
+      p { 
+        color: $gray;
+        font-size: 18px;
+        margin: 24px 0 48px;
+        @media (max-width: 350px) {
+          font-size: 14px;
+        }
+      }
+    }
+    .img { 
+      img {
+        border-radius: 30px;
+        box-shadow: 0 14px 94px 0 rgb(15 15 182 / 9%);
+        max-width: 100%;
+        overflow: hidden;
+        transition: $main_transition;
+      }
+      &:hover { 
+        img { 
+          transform: scale(0.98);
+        }
+      }
+    }
+  }
+  > a { 
+    color: $id_color;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: $main_transition;
+    // @media (max-width: 767px) {
+    //     bottom: 65px;
+    // }
+    &:hover { 
+      color: $hover_blue;
+    }
+    svg { 
+      animation: bouncing 1.5s linear infinite;
+      font-weight: 700;
+    }
+  }
+} 
+//landing end  
+
+//plans start
+.plans { 
+  background-color: $section_background;
+  .container { 
+    // .main-title { 
+    //   position: relative;
+    //   &::after {
+    //     content: "";
+    //     position: absolute;
+    //     width: 120px;
+    //     height: 2px;
+    //     background-color: $id_color;
+    //     left: 50%;
+    //     transform: translateX(-50%);
+    //   }
+    //   h2 { 
+    //     font-size: 40px;
+    //     color: $black;
+    //   }
+    //   p { 
+    //     font-size: 18px;
+    //     color: $gray;
+    //   }
+    // }
+    .col-md-6 {
+      counter-increment: services;
+      .box { 
+        background-color: white;
+        box-shadow: 0 12px 20px 0 rgb(0 0 0 / 13%), 0 2px 4px 0 rgb(0 0 0 / 12%);
+        transition: $main_transition;
+        position: relative;
+        &::before {
+          content: "";
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          top: -3px;
+          background-color: $id_color;
+          width: 0;
+          height: 4px;
+          transition: $main_transition;
+        }
+        &:hover { 
+          transform: translateY(-10px);
+          &::before { 
+            width: 100%;
+          }
+        }
+        > svg { 
+          margin: 35px auto;
+          color: #d5d5d5;
+          text-align: center;
+        }
+        > h3 { 
+          margin: 15px 0 20px;
+          text-align: center;
+          font-size: 25px;
+          color: $id_color;
+        }
+        > .info { 
+          background-color: #f9f9f9;
+          padding: 15px;
+          text-align: right;
+          position: relative;
+          a {
+            color: $id_color;
+            text-decoration: none;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+          &::before { 
+            content: "0" counter(services);
+            position: absolute;
+            background-color: $id_color;
+            color: white;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 80px;
+            font-size: 30px;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-right: 15px;
+          }
+          &::after { 
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 65px;
+            width: 50px;
+            height: 100%;
+            background-color: #d5d5d5;
+            transform: skewx(-30deg)
+          }
+        }
+      }
+    }
+  }
+}
+//plans end
+
+//courses start
+.courses { 
+  background-color: #fff;
+  .container {
+    .row { 
+      .article-box { 
+        box-shadow: 0 2px 15px rgb(0 0 0 / 10%);
+        background-color: white;
+        border-radius: 6px;
+        overflow: hidden;
+        transition: transform $main_transition, box-shadow $main_transition;
+        &:hover { 
+          transform: translateY(-10px);
+          box-shadow: 0 2px 15px rgb(0 0 0 / 20%);
+        }
+        .img { 
+          img { 
+            max-width: 100%;
+          }
+        }
+        .text { 
+          padding: 20px;
+          h3 { 
+            margin: 0;
+            color: $black;
+            svg {
+              color: red;
+            }
+          }
+          p { 
+            margin: 10px 0 0;
+            color: $gray;
+            line-height: 1.6;
+          }
+        }
+        .more { 
+          padding: 20px;
+          border-top: 1px solid #e6e6e7;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          a { 
+            color: $id_color;
+            font-weight: bold;
+            text-decoration: none;
+            &:hover { 
+              text-decoration: underline;
+            }
+          }
+          svg { 
+            color: $icon_dark_blue;
+          }
+        }
+        &:hover .more svg { 
+          animation: arrow-right 0.6s linear infinite;
+        }
+      }
+    }
+  }
+}
+//courses end
+
+// event start 
+.events { 
+  background-color: $section_background;
+  .container { 
+    .card { 
+      transition: $main_transition;
+      &:hover { 
+        transform: scale(0.98);
+      }
+      border-radius: 20px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 20px 34px 0 rgb(11 11 44 / 4%), 0 4px 8px 0 rgb(11 11 44 / 2%), 0 10px 34px 0 rgb(52 52 255 / 5%);
+    .card-body { 
+      padding: 46px 47px 46px 48px;
+      h5 { 
+        color: $black;
+        font-size: 25px;
+      }
+      > p { 
+        color: $gray;
+        font-size: 17px;
+        margin-bottom: 10px;
+      }
+      hr { 
+        margin: 30px 0 17px;
+      }
+      ul { 
+        li { 
+          margin: 0 0 22px 15px;
+          font-size: 18px;
+          color: $black;
+          @media (max-width: 350px) {
+            font-size: 14px;
+          }
+          svg { 
+            color: $id_color;
+            margin-right: 11px;
+            font-size: 21px;
+            @media (max-width: 350px) {
+              font-size: 17px;
+            }
+          }
+        }
+      }
+    }
+    }
+  }
+}
+// event end

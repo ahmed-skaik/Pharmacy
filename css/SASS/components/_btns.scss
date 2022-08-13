@@ -1,0 +1,45 @@
+// scroll up btn start
+.up { 
+  position: fixed;
+  right: -100px;
+  bottom: 25px;
+  z-index: 10;
+  transition: $main_transition;
+  button { 
+    border: none;
+    background-color: transparent;
+    svg { 
+      font-size: 35px;
+      color: $id_color;
+      cursor: pointer;
+      transition: $main_transition;
+      &:hover { 
+        color: $hover_blue;
+      }
+    }
+  }
+}
+// scroll up btn end 
+
+//main btn start
+// .main-btn { 
+//   background-color: $id_color;
+//   color: #fff;
+//   padding: 18px 24px;
+//   font-size: 16px;
+//   text-transform: uppercase;
+//   border-radius: 6px;
+//   font-weight: 500;
+//   transition: 0.3s;
+//   border: none;
+//   &:hover {
+//     background-color: $hover_blue;
+//     transform: translateY(-2px);
+//     color: #fff;
+//   }
+//   // &:focus { 
+//   //   background-color: $hover_blue;
+//   //   color: #fff;
+//   // }
+// } 
+//main btn end 
