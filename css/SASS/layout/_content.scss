@@ -89,8 +89,22 @@
               font-size: 20px;
               font-weight: 500;
               padding: 6px;
+              min-width: 47.35px;
+              text-align: center;
               border-radius: 8px;
+              transition: $main_transition;
+              &:hover { 
+                background-color: $hover_blue
+              }
+              @media (max-width: 767px) {
+                font-size: 16px;
+                padding: 4px;
+                min-width: 36.28px;
+              }
             }
+          }
+          .card.slides { 
+            background-color: $slides;
           }
         }
         &.optional { 

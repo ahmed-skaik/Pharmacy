@@ -1,4 +1,4 @@
-let welcomeMsg = `Hello from JS`
+let welcomeMsg = `Hello from JS fellow Pharmacy students !`
 console.log(welcomeMsg)
 
 // loading screen start

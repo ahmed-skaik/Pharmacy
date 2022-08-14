@@ -24,6 +24,9 @@
   text-align: center;
   position: relative;
   margin-top: 24px;
+  max-width: 900px;
+  margin-right: auto;
+  margin-left: auto;
   &::after {
     content: "";
     position: absolute;
