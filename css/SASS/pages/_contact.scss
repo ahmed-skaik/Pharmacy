@@ -87,6 +87,7 @@
             }
             svg { 
               border-color: $id_color;
+              color: $id_color;
               transform: rotate(90deg);
             }
           }
