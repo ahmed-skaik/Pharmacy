@@ -2,17 +2,21 @@ let welcomeMsg = `Hello from JS fellow Pharmacy students !`
 console.log(welcomeMsg)
 
 // loading screen start
-function loading() {
-  let loader = document.querySelector(".loading")
-  loader.className += " hidden"
-}
 
-window.addEventListener("load", loading)
+// uncommint the follownig when releasing the websitee **********************
+
+// function loading() {
+//   let loader = document.querySelector(".loading")
+//   loader.className += " hidden"
+// }
+
+// window.addEventListener("load", loading)
 
 //to prevent scrolling during loading animation is applied 
-$(window).load(function() {
-  $('body').css({'overflow':'auto', 'height':'auto', 'position':'relative'});
-});
+
+// $(window).load(function() {
+//   $('body').css({'overflow':'auto', 'height':'auto', 'position':'relative'});
+// });
 
 // loading screen end 
 
