@@ -15,30 +15,25 @@ body {
   height: 100%;
   position: fixed;
   width:100%;
-}
-
-body::-webkit-scrollbar {
-  width: 14px;
-  height: 14px;
-}
-
-body::-webkit-scrollbar-thumb {
-  background-color: $id_color;
-  border: 1px solid #eee;
-  border-radius: 100px;
-}
-
-body::-webkit-scrollbar-thumb:hover {
-  background-color: $hover_blue;
-}
-
-body::-webkit-scrollbar-track {
-  border-left: 1px solid #eee;
-  border-top: 1px solid #eee;
-}
-
-body::-webkit-scrollbar-corner {
-  background-color: #ccc;
+  &::-webkit-scrollbar { 
+    width: 14px;
+    height: 14px;
+  }
+  &::-webkit-scrollbar-thumb { 
+    background-color: $id_color;
+    border: 1px solid #eee;
+    border-radius: 100px;
+    &:hover { 
+      background-color: $hover_blue;
+    }
+  }
+  &::-webkit-scrollbar-track { 
+    border-left: 1px solid #eee;
+    border-top: 1px solid #eee;
+  }
+  &::-webkit-scrollbar-corner { 
+    background-color: #ccc;
+  }
 }
 
 ::selection {

@@ -95,30 +95,10 @@
 .plans { 
   background-color: $section_background;
   .container { 
-    // .main-title { 
-    //   position: relative;
-    //   &::after {
-    //     content: "";
-    //     position: absolute;
-    //     width: 120px;
-    //     height: 2px;
-    //     background-color: $id_color;
-    //     left: 50%;
-    //     transform: translateX(-50%);
-    //   }
-    //   h2 { 
-    //     font-size: 40px;
-    //     color: $black;
-    //   }
-    //   p { 
-    //     font-size: 18px;
-    //     color: $gray;
-    //   }
-    // }
     .col-md-6 {
       counter-increment: services;
       .box { 
-        background-color: white;
+        background-color: #fff;
         box-shadow: 0 12px 20px 0 rgb(0 0 0 / 13%), 0 2px 4px 0 rgb(0 0 0 / 12%);
         transition: $main_transition;
         position: relative;
@@ -141,7 +121,7 @@
         }
         > svg { 
           margin: 35px auto;
-          color: #d5d5d5;
+          color: $border_color;
           text-align: center;
         }
         > h3 { 
@@ -151,7 +131,7 @@
           color: $id_color;
         }
         > .info { 
-          background-color: #f9f9f9;
+          background-color: $section_background;
           padding: 15px;
           text-align: right;
           position: relative;
@@ -166,7 +146,7 @@
             content: "0" counter(services);
             position: absolute;
             background-color: $id_color;
-            color: white;
+            color: #fff;
             top: 0;
             left: 0;
             height: 100%;
@@ -185,7 +165,7 @@
             left: 65px;
             width: 50px;
             height: 100%;
-            background-color: #d5d5d5;
+            background-color: $border_color;
             transform: skewx(-30deg)
           }
         }
@@ -202,7 +182,7 @@
     .row { 
       .article-box { 
         box-shadow: 0 2px 15px rgb(0 0 0 / 10%);
-        background-color: white;
+        background-color: #fff;
         border-radius: 6px;
         overflow: hidden;
         transition: transform $main_transition, box-shadow $main_transition;

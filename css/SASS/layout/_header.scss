@@ -32,18 +32,6 @@
         min-height: calc(100vh - 101px + 18px);
         box-shadow: 0 4px 10px 0 rgb(74 58 255 / 18%);
       }
-      // a.arrow { 
-      //   position: relative;
-      //   svg { 
-      //     position: absolute;
-      //     right: 0;
-      //     top: 50%;
-      //     transform: translateY(-50%);
-      //   }
-      //   &[aria-expanded="true"] svg{
-      //     transform: rotate(90deg);
-      //   }
-      // }
       .dropdown-menu {
         @media (max-width: 991px) {
           background-color: $black;
