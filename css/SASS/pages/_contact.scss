@@ -47,6 +47,7 @@
 }
 
 .faq {
+  background-color: $section_background;
   .container { 
     .questions { 
       .question { 
@@ -94,7 +95,9 @@
         }
         .card { 
           border: none;
+          border-radius: 20px;
           max-width: 900px;
+          background-color: $section_background;
           @media (max-width: 767px) {
             padding: 0 16px;
           }

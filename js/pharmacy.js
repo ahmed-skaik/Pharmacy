@@ -1,23 +1,20 @@
+// welcome message start
 let welcomeMsg = `Hello from JS fellow Pharmacy students !`
-console.log(welcomeMsg)
+console.log(welcomeMsg) 
+// welcome message end 
 
 // loading screen start
-
-// uncommint the follownig when releasing the websitee **********************
-
 function loading() {
   let loader = document.querySelector(".loading")
   loader.className += " hidden"
 }
 
-// window.addEventListener("load", loading)
+window.addEventListener("load", loading)
 
 //to prevent scrolling during loading animation is applied 
-
-// $(window).load(function() {
-//   $('body').css({'overflow':'auto', 'height':'auto', 'position':'relative'});
-// });
-
+$(window).load(function() {
+  $('body').css({'overflow':'auto', 'height':'auto', 'position':'relative'});
+});
 // loading screen end 
 
 
@@ -41,3 +38,11 @@ function scroll() {
 
 window.addEventListener("scroll", scroll)
 // scroll up end
+
+
+// tooltip start 
+var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl)
+})
+// tooltip end 

@@ -13,16 +13,20 @@
   h2 { 
     font-size: 40px;
     color: $black;
+    font-weight: 600;
+    span { 
+      color: $id_color;
+    }
   }
   p { 
-    font-size: 18px;
     color: $gray;
+    font-size: 16px;
   }
 }
 
 .main-title-2 { 
-  text-align: center;
   position: relative;
+  text-align: center;
   margin-top: 24px;
   max-width: 865px;
   margin-right: auto;
@@ -38,12 +42,12 @@
   }
   h1 { 
     color: $dark_blue;
-    font-size: 73px;
+    font-size: 70px;
     font-weight: 600;    
     span { 
       color: $id_color;
     }
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       font-size: 46px;
     }
     @media (max-width: 576px) {
