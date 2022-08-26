@@ -1,36 +1,35 @@
 .navbar { 
-  // background-color: $id_color;
   box-shadow: 0 0 10px #ddd;
   @media (max-width: 991px) {
     min-height: 101px;
   }
   .container { 
+    min-height: 85px;
     .navbar-brand { 
       img {
         width: 75px;
-        transition: 0.3s;
+        transition: $main_transition;
         &:hover {
-          transform: scale(1.2);
+            transform: scale(1.2);
         }
-        @media (max-width: 767px) {
+        @media (max-width: 768px) {
           width: 65px;
         }
-      }
-    }
-    .navbar-toggler {
-      border-color: $id_color;
-      &:focus {
-        box-shadow: none;
-      }
-      &[aria-expanded="true"] {
-        border-color: $hover_blue;
       }
     }
     .navbar-collapse {
       @media (max-width: 991px) {
         background-color: $black;
-        min-height: calc(100vh - 101px + 18px);
+        min-height: calc(100vh - 101px);
         box-shadow: 0 4px 10px 0 rgb(74 58 255 / 18%);
+        position: absolute;
+        left: 0;
+        width: 100%;
+        z-index: 99;
+        top: 101px;
+        transition: calc($main_transition * 2);
+        transform: translateY(-725px);
+        opacity: 0.01;
       }
       .dropdown-menu {
         @media (max-width: 991px) {
@@ -48,7 +47,52 @@
         }
       }
     }
-    svg {
+    .navbar-toggler {
+      border-color: $id_color;
+      @media (max-width: 992px) {
+        padding: 4px 8px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        position: relative;
+        width: 55.5px;
+        height: 40px;
+      }
+      &:focus {
+        box-shadow: none;
+      }
+      svg { 
+        font-size: 30px;
+        color: $black;
+        position: absolute;
+        transition: $main_transition;
+        @media (max-width: 767px) {
+          font-size: 28px;
+        }
+        &:last-child { 
+          transform: translateY(35px);
+          font-size: 36px;
+        }
+      }
+      &[aria-expanded="true"] {
+        border-color: $hover_blue;
+        svg { 
+          &:first-child { 
+            transform: translateY(-35px)
+          }
+          &:last-child { 
+            transform: translateY(0);
+          }
+        }
+        + .navbar-collapse { 
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    }
+    svg:not(button > svg) {
       font-size: 30px;
       margin-right: 4px;
       color: $icon_dark_blue;
@@ -62,7 +106,7 @@
       text-transform: uppercase;
       border-radius: 6px;
       font-weight: 500;
-      transition: 0.3s;
+      transition: $main_transition;
       border: none;
       &:hover {
         background-color: $hover_blue;

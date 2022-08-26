@@ -18,6 +18,9 @@
           color: $id-color;
           font-weight: 700;
         }
+        @media (max-width: 576px) {
+          font-size: 17px;
+        }
       }
     }
   }

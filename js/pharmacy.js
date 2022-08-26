@@ -1,5 +1,5 @@
 // welcome message start
-let welcomeMsg = `Hello from JS fellow Pharmacy students !`
+let welcomeMsg = `Hello from JS my fellow Pharmacy students !`
 console.log(welcomeMsg) 
 // welcome message end 
 
@@ -9,14 +9,12 @@ function loading() {
   loader.className += " hidden"
 }
 
-// window.addEventListener("load", loading)
+window.addEventListener("load", loading)
 
 //to prevent scrolling during loading animation is applied 
-
-// $(window).load(function() {
-//   $('body').css({'overflow':'auto', 'height':'auto', 'position':'relative'});
-// });
-
+$(window).load(function() {
+  $('body').css({'overflow':'auto', 'height':'auto', 'position':'relative'});
+});
 // loading screen end 
 
 
