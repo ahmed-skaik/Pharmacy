@@ -25,7 +25,7 @@
       }
     }
     .txt { 
-      @media (max-width: 991px) {
+      @media (max-width: 992px) {
         text-align: center;
       }
       h1 { 
@@ -35,6 +35,9 @@
         margin: 0 0 24px;
         span { 
           color: $id_color;
+        }
+        @media (min-width: 992px) and (max-width: 1199px) {
+          font-size: 65px;
         }
         @media (max-width: 767px) {
           font-size: 46px;
@@ -50,6 +53,12 @@
         color: $gray;
         font-size: 18px;
         margin: 24px 0 48px;
+        @media (min-width: 992px) and (max-width: 1199px) {
+          font-size: 16px;
+        }
+        @media (max-width: 767px) {
+          font-size: 16px;
+        }
         @media (max-width: 350px) {
           font-size: 14px;
         }
@@ -251,9 +260,9 @@
     background-color: #fff;
     box-shadow: 0 20px 34px 0 rgb(11 11 44 / 4%), 0 4px 8px 0 rgb(11 11 44 / 2%), 0 10px 34px 0 rgb(52 52 255 / 5%);
     .card-body { 
-      padding: 46px 47px 46px 48px;
+      padding: 42px 47px 42px 48px;
       @media (max-width: 768px) {
-        padding: 40px 30px;
+        padding: 35px 30px;
         text-align: center;
       }
       h5 { 
@@ -276,9 +285,16 @@
           @media (max-width: 350px) {
             font-size: 14px;
           }
+          a { 
+            color: $black;
+            text-decoration: none;
+            &:hover { 
+              text-decoration: underline;
+            }
+          }
           svg { 
             color: $id_color;
-            margin-right: 11px;
+            margin-right: 3px;
             font-size: 21px;
             @media (max-width: 350px) {
               font-size: 17px;
