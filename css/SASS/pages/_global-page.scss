@@ -1,3 +1,5 @@
+@use '../helpers/variables' as *;
+
 html {
   scroll-behavior: smooth;
   -webkit-scroll-behavior: smooth;
@@ -9,8 +11,6 @@ html {
 body {
   font-family: 'Plus Jakarta Sans', sans-serif;
   font-family: 'Roboto', sans-serif;
-  // overflow-x: hidden;
-  // height: 10000px;
   overflow: hidden;
   height: 100%;
   position: fixed;
@@ -38,5 +38,5 @@ body {
 
 ::selection {
   background-color: $black;
-  color: #f9f9f9;
+  color: $section_background;
 }

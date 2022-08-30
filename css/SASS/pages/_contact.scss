@@ -1,3 +1,5 @@
+@use '../helpers/variables' as *;
+
 .contact { 
   .container { 
     .cardd { 
@@ -34,9 +36,6 @@
           img {
             transition: $main_transition;
           }
-          // &:hover img { 
-          //   transform: scale(1.1);
-          // }
           img { 
             animation: zoom 0.9s linear infinite;
           }
@@ -102,7 +101,6 @@
             padding: 0 16px;
           }
           p { 
-            // padding: 0 42px;
             font-size: 18px;
             color: $gray;
             margin: 0 0 10px;

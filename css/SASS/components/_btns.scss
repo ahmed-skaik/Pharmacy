@@ -1,4 +1,6 @@
 // scroll up btn start
+@use '../helpers/variables' as *;
+
 .up { 
   position: fixed;
   right: -100px;

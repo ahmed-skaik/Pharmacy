@@ -1,3 +1,5 @@
+@use '../helpers/variables' as *;
+
 // content section start
 .content { 
   min-height: calc(100vh - 100px);

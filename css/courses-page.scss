@@ -1,13 +1,13 @@
-@import 'SASS/helpers/variables'; //always first !
-@import 'SASS/helpers/animation';
-@import 'SASS/pages/global-page';
+@forward 'SASS/helpers/variables'; //always first !
+@forward 'SASS/helpers/animation';
+@forward 'SASS/pages/global-page';
 
-@import 'SASS/layout/header';
-@import 'SASS/layout/loading';
-@import 'SASS/layout/content';
-@import 'SASS/layout/footer';
+@forward 'SASS/layout/header';
+@forward 'SASS/layout/loading';
+@forward 'SASS/layout/content';
+@forward 'SASS/layout/footer';
 
-@import 'SASS/pages/courses';
+@forward 'SASS/pages/courses';
 
-@import 'SASS/components/btns';
-@import 'SASS/components/headings';
+@forward 'SASS/components/btns';
+@forward 'SASS/components/headings';
