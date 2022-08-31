@@ -4,17 +4,17 @@ console.log(welcomeMsg)
 // welcome message end 
 
 // loading screen start
-// function loading() {
-//   let loader = document.querySelector(".loading")
-//   loader.className += " hidden"
-// }
+function loading() {
+  let loader = document.querySelector(".loading")
+  loader.className += " hidden"
+}
 
 window.addEventListener("load", loading)
 
 //to prevent scrolling during loading animation is applied 
-// $(window).load(function() {
-//   $('body').css({'overflow':'auto', 'height':'auto', 'position':'relative'});
-// });
+$(window).load(function() {
+  $('body').css({'overflow':'auto', 'height':'auto', 'position':'relative'});
+});
 // loading screen end 
 
 

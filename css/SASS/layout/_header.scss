@@ -51,6 +51,7 @@
     }
     .navbar-toggler {
       border-color: $id_color;
+      min-height: 41px;
       @media (max-width: 992px) {
         padding: 4px 8px;
         display: flex;
@@ -67,7 +68,7 @@
       }
       svg { 
         font-size: 30px;
-        color: $black;
+        color: $icon_dark_blue;
         position: absolute;
         transition: $main_transition;
         @media (max-width: 767px) {
@@ -96,9 +97,13 @@
     }
     svg:not(button > svg) {
       font-size: 30px;
-      margin-right: 4px;
+      margin-right: 6px;
       color: $icon_dark_blue;
-      transform: translateY(9px);
+      transform: translateY(7px);
+      @media (max-width: 767px) {
+        font-size: 25px;
+        transform: translateY(2px);
+      }
     }
     .main-btn { 
       background-color: $id_color;
@@ -114,6 +119,10 @@
         background-color: $hover_blue;
         transform: translateY(-2px);
       }
+    }
+    a > img { 
+      width: 55px;
+      margin-right: 2px;
     }
     ul {
       margin-left: 40px;

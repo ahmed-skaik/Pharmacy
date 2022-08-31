@@ -41,13 +41,12 @@
     <!-- nav  start  -->
     <nav class="navbar navbar-expand-lg pt-lg-2 pb-lg-2">
       <div class="container">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="index.html">
           <img src="images/logo.png" alt="Logo">
         </a>
-        <!-- d-block d-lg-none -->
-        <div class=" d-none">
-          <i class="fa-solid fa-prescription fa-fw"></i>
-          <a href="#courses" class="btn main-btn">Courses</a>
+        <div class="d-block d-lg-none ms-auto">
+          <a href="#courses" class="btn main-btn mid d-none d-md-inline-block" style="font-size:14px; padding: 10px 20px; margin-right: 2px;">Courses</a>
+          <a href="http://gate.alazhar.edu.ps/students/" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-prescription fa-fw"></i></a>
         </div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main" aria-controls="main" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fa-solid fa-bars-staggered fa-fw"></i>
@@ -56,11 +55,8 @@
         <div class="collapse navbar-collapse" id="main">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
             </li>
-            <!-- <li class="nav-item">
-              <a class="nav-link" href="#">Courses</a>
-            </li> -->
             <li class="nav-item">
               <a class="nav-link" href="#plans">Plans</a>
             </li>
@@ -78,16 +74,22 @@
                 <li><a class="dropdown-item" href="pages/univ-needs.html" target="_blank">UNIV Needs</a></li>
               </ul>
             </li>
+            <li class="nav-item d-block d-md-none">
+              <a class="nav-link" href="#courses">Courses</a>
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="pages/contact.html" target="_blank">Contact</a>
             </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#" target="_blank">About</a>
+            </li> -->
+            <li class="nav-item d-block d-lg-none">
+              <a class="nav-link" href="https://moodle.alazhar.edu.ps/login/" target="_blank">Moodle</a>
+            </li>
           </ul>
-          <!-- <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form> -->
           <div class="d-none d-lg-block">
-            <i class="fa-solid fa-prescription fa-fw"></i>
+            <a href="https://moodle.alazhar.edu.ps/login/" target="_blank"><img src="images/moodle-logo.png" alt="moodle"></a>
+            <a href="http://gate.alazhar.edu.ps/students/" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-prescription fa-fw"></i></a>
             <a href="#courses" class="btn main-btn">Courses</a>
           </div>
         </div>
@@ -112,7 +114,7 @@
               </p>
               <div class="links d-flex gap-3 flex-column flex-sm-row justify-content-center justify-content-lg-start">
                 <a href="#courses" class="btn main-btn">Our Courses</a>
-                <a href="http://www.alazhar.edu.ps/arabic/pha/home.asp" target="_blank" class="btn main-btn revers">Official website</a>
+                <a href="http://www.alazhar.edu.ps/arabic/pha/home.asp" target="_blank" class="btn main-btn revers">Official Website</a>
               </div>
             </div>
           </div>
@@ -132,7 +134,7 @@
       <div class="container">
         <div class="main-title mt-5 mb-5">
           <h2 class="mb-3">Studying <span>Plan</span>.</h2>
-          <p class="mb-4">Studying plans for Bachelor's degree program in Pharmacy at Alazhar University of Gaza</p>
+          <p class="mb-4">Studying Plans for the Bachelor's Degree Program in Pharmacy at the Faculty of Pharmacy - Alazhar University of Gaza</p>
         </div>
         <div class="row mt-5 mb-5">
           <div class="col-md-6 col-lg-4 p-3">
@@ -172,20 +174,19 @@
       <div class="container">
         <div class="main-title mt-5 mb-5">
           <h2 class="mb-3">E-learning <span>Courses</span>.</h2>
-          <p class="mb-4">You can reach all the E-learning lectures of all levels of Faculty of Pharmacy</p>
+          <p class="mb-4">You can Reach all the E-learning Lectures for all Levels - Faculty of Pharmacy</p>
         </div>
         <div class="row mt-5 mb-5">
           <div class="col-lg-3 col-md-4 col-sm-6 p-3">
             <div class="article-box">
               <div class="img">
-                <img src="images/level-img.jpg" alt="level-img">
+                <a href="pages/level-1.html" target="_blank" ><img src="images/level-img.jpg" alt="level-img"></a>
                 <div class="text">
                   <h3>Level 1</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, perferendis.</p>
+                  <p>1st Level Courses - Faculty of Pharmacy. <span style="visibility: hidden;">Lorem ipsum dolor sit amet consectetur.</span></p>
                 </div>
                 <div class="more">
-                  <a href="pages/level-1.html" target="_blank">Visit</a>
-                  <i class="fas fa-long-arrow-alt-right"></i>
+                  <a href="pages/level-1.html" target="_blank" class="d-flex justify-content-between align-items-center"><span>Visit</span><i class="fas fa-long-arrow-alt-right"></i></a>
                 </div>
               </div>
             </div>
@@ -193,14 +194,13 @@
           <div class="col-lg-3 col-md-4 col-sm-6 p-3">
             <div class="article-box">
               <div class="img">
-                <img src="images/level-img.jpg" alt="level-img">
+                <a href="pages/level-2.html" target="_blank" ><img src="images/level-img.jpg" alt="level-img"></a>
                 <div class="text">
                   <h3>Level 2</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, perferendis.</p>
+                  <p>2nd Level Courses - Faculty of Pharmacy. <span style="visibility: hidden;">Lorem ipsum dolor sit amet consectetur.</span></p>
                 </div>
                 <div class="more">
-                  <a href="pages/level-2.html" target="_blank">Visit</a>
-                  <i class="fas fa-long-arrow-alt-right"></i>
+                  <a href="pages/level-2.html" target="_blank" class="d-flex justify-content-between align-items-center"><span>Visit</span><i class="fas fa-long-arrow-alt-right"></i></a>
                 </div>
               </div>
             </div>
@@ -208,14 +208,13 @@
           <div class="col-lg-3 col-md-4 col-sm-6 p-3">
             <div class="article-box">
               <div class="img">
-                <img src="images/level-img.jpg" alt="level-img">
+                <a href="pages/level-3.html" target="_blank" ><img src="images/level-img.jpg" alt="level-img"></a>
                 <div class="text">
                   <h3>Level 3</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, perferendis.</p>
+                  <p>3rd Level Courses - Faculty of Pharmacy. <span style="visibility: hidden;">Lorem ipsum dolor sit amet consectetur.</span></p>
                 </div>
                 <div class="more">
-                  <a href="pages/level-3.html" target="_blank">Visit</a>
-                  <i class="fas fa-long-arrow-alt-right"></i>
+                  <a href="pages/level-3.html" target="_blank" class="d-flex justify-content-between align-items-center"><span>Visit</span><i class="fas fa-long-arrow-alt-right"></i></a>
                 </div>
               </div>
             </div>
@@ -223,14 +222,13 @@
           <div class="col-lg-3 col-md-4 col-sm-6 p-3">
             <div class="article-box">
               <div class="img">
-                <img src="images/level-img.jpg" alt="level-img">
+                <a href="pages/level-4.html" target="_blank" ><img src="images/level-img.jpg" alt="level-img"></a>
                 <div class="text">
                   <h3>Level 4</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, perferendis.</p>
+                  <p>4th Level Courses - Faculty of Pharmacy. <span style="visibility: hidden;">Lorem ipsum dolor sit amet consectetur.</span></p>
                 </div>
                 <div class="more">
-                  <a href="pages/level-4.html" target="_blank">Visit</a>
-                  <i class="fas fa-long-arrow-alt-right"></i>
+                  <a href="pages/level-4.html" target="_blank" class="d-flex justify-content-between align-items-center"><span>Visit</span><i class="fas fa-long-arrow-alt-right"></i></a>
                 </div>
               </div>
             </div>
@@ -238,14 +236,13 @@
           <div class="col-lg-3 col-md-4 col-sm-6 p-3">
             <div class="article-box">
               <div class="img">
-                <img src="images/level-img.jpg" alt="level-img">
+                <a href="pages/level-5.html" target="_blank" ><img src="images/level-img.jpg" alt="level-img"></a>
                 <div class="text">
                   <h3>Level 5</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, perferendis.</p>
+                  <p>5th &#38; Final Level Courses - Faculty of Pharmacy. <span style="visibility: hidden;">Lorem ipsum dolor sit amet.</span></p>
                 </div>
                 <div class="more">
-                  <a href="pages/level-5.html" target="_blank">Visit</a>
-                  <i class="fas fa-long-arrow-alt-right"></i>
+                  <a href="pages/level-5.html" target="_blank" class="d-flex justify-content-between align-items-center"><span>Visit</span><i class="fas fa-long-arrow-alt-right"></i></a>
                 </div>
               </div>
             </div>
@@ -253,14 +250,13 @@
           <div class="col-lg-3 col-md-4 col-sm-6 p-3">
             <div class="article-box">
               <div class="img">
-                <img src="images/level-img.jpg" alt="level-img">
+                <a href="pages/univ-needs.html" target="_blank" ><img src="images/level-img.jpg" alt="level-img"></a>
                 <div class="text">
                   <h3>UNIV Needs</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, perferendis.</p>
+                  <p>University Needs for all Levels &#38; Faculties at Alazhar University of Gaza. <span style="visibility: hidden;">Lorem</span></p>
                 </div>
                 <div class="more">
-                  <a href="pages/univ-needs.html" target="_blank">Visit</a>
-                  <i class="fas fa-long-arrow-alt-right"></i>
+                  <a href="pages/univ-needs.html" target="_blank" class="d-flex justify-content-between align-items-center"><span>Visit</span><i class="fas fa-long-arrow-alt-right"></i></a>
                 </div>
               </div>
             </div>
@@ -275,12 +271,12 @@
       <div class="container">
         <div class="main-title mt-5 mb-5">
           <h2 class="mb-3">Upcoming <span>Events</span> !</h2>
-          <p class="mb-4">Upcoming events related to Faculty of Pharmacy - Alazhar University of Gaza</p>
+          <p class="mb-4">Upcoming Events Related to Faculty of Pharmacy - Alazhar University of Gaza</p>
         </div>
         <div class="card mb-3 mt-3">
           <div class="row align-items-center justify-content-between">
             <div class="col-md-4 text-center">
-              <img src="images/event-01.jpg" class="img-fluid rounded-start" alt="event">
+              <a href="http://www.alazhar.edu.ps/icps2/index.asp" target="_blank"><img src="images/event-01.jpg" class="img-fluid rounded-start" alt="event"></a>
             </div>
             <div class="col-md-8">
               <div class="card-body">
@@ -290,8 +286,8 @@
                 <ul class="list-unstyled d-flex justify-content-evenl align-items-center flex-wrap">
                   <li><i class="fa-solid fa-calendar fa-fw"></i> September 4-5, 2022</li>
                   <!-- <li><i class="fa-solid fa-clock fa-fw"></i> 09:00 am</li> -->
-                  <li><i class="fa-solid fa-location-dot fa-fw"></i> Alazhar University of Gaza</li>
                   <li><i class="fa-solid fa-link fa-fw"></i> <a href="http://www.alazhar.edu.ps/icps2/index.asp" target="_blank">Official Website</a></li>
+                  <li><i class="fa-solid fa-location-dot fa-fw"></i> Alazhar University of Gaza</li>
                 </ul>
               </div>
             </div>
@@ -300,16 +296,16 @@
         <div class="card mb-3 mt-3">
           <div class="row align-items-center justify-content-between">
             <div class="col-md-4 text-center">
-              <img src="images/event-02.jpg" class="img-fluid rounded-start" alt="event">
+              <a href="http://gate.alazhar.edu.ps/students/"  target="_blank"><img src="images/event-02.jpg" class="img-fluid rounded-start" alt="event"></a>
             </div>
             <div class="col-md-8">
               <div class="card-body">
                 <h5 class="card-title">Midterm Exams of the First Semester 2022/2023</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, autem.</p>
+                <p class="card-text">Midterm Exams of the First Semester 2022/2023</p>
                 <hr>
                 <ul class="list-unstyled d-flex justify-content-evenl align-items-center flex-wrap">
                   <li><i class="fa-solid fa-calendar fa-fw"></i> January, 2023</li>
-                  <li><i class="fa-solid fa-clock fa-fw"></i> Check out Student Gate</li>
+                  <li><i class="fa-solid fa-clock fa-fw"></i> <a href="http://gate.alazhar.edu.ps/students/"  target="_blank">Check out Student Gate</a></li>
                   <li><i class="fa-solid fa-location-dot fa-fw"></i> Alazhar University of Gaza</li>
                 </ul>
               </div>
@@ -319,16 +315,16 @@
         <div class="card mb-5 mt-3">
           <div class="row align-items-center justify-content-between">
             <div class="col-md-4 text-center">
-              <img src="images/event-02.jpg" class="img-fluid rounded-start" alt="event">
+              <a href="http://gate.alazhar.edu.ps/students/"  target="_blank"><img src="images/event-02.jpg" class="img-fluid rounded-start" alt="event"></a>
             </div>
             <div class="col-md-8">
               <div class="card-body">
                 <h5 class="card-title">Final Exams of the First Semester 2022/2023</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, autem.</p>
+                <p class="card-text">Final Exams of the First Semester 2022/2023</p>
                 <hr>
                 <ul class="list-unstyled d-flex justify-content-evenl align-items-center flex-wrap">
                   <li><i class="fa-solid fa-calendar fa-fw"></i> June, 2023</li>
-                  <li><i class="fa-solid fa-clock fa-fw"></i> Check out Student Gate</li>
+                  <li><i class="fa-solid fa-clock fa-fw"></i> <a href="http://gate.alazhar.edu.ps/students/" target="_blank">Check out Student Gate</a></li>
                   <li><i class="fa-solid fa-location-dot fa-fw"></i> Alazhar University of Gaza</li>
                 </ul>
               </div>
