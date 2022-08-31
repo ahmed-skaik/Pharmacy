@@ -40,3 +40,7 @@ body {
   background-color: $black;
   color: $section_background;
 }
+
+img { 
+  user-select: none;
+}
