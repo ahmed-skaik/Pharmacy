@@ -22,8 +22,13 @@
       }
       &.revers {
         background-color: #fff;
+        transition: $main-transition;
         color: $id_color;
         border-color: $id_color;
+        &:hover { 
+          color: $hover_blue;
+          border-color: $hover_blue;
+        }
       }
     }
     .txt { 
