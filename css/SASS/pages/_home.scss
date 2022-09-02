@@ -216,6 +216,19 @@
           h3 { 
             margin: 0;
             color: $black;
+            &.graduation { 
+              position: relative;
+              &::after { 
+                font-family: "Font Awesome 5 Free"; 
+                content: "\f19d";
+                position: absolute;
+                font-weight: 900;
+                font-size: 22px;
+                margin-left: 5px;
+                top: -6px;
+                color: $icon_dark_blue;
+              }
+            }
           }
           p { 
             margin: 10px 0 0;

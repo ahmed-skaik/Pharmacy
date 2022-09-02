@@ -13,6 +13,8 @@
     svg { 
       font-size: 35px;
       color: $id_color;
+      background-color: #fff;
+      border-radius: 50%;
       cursor: pointer;
       transition: $main_transition;
       &:hover { 
