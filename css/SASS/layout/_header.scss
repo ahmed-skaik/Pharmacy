@@ -159,6 +159,9 @@
             color: hsla(0, 0%, 100%, 0.52);
             font-size: 32px;
           }
+          &:focus {
+            border: none;
+          }
           &.active , &:hover , &:focus { 
             color: $id_color;
             @media (max-width: 991px) {
