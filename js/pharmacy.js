@@ -9,12 +9,12 @@ function loading() {
   loader.className += " hidden"
 }
 
-// window.addEventListener("load", loading)
+window.addEventListener("load", loading)
 
 //to prevent scrolling during loading animation is applied 
-// $(window).load(function() {
-//   $('body').css({'overflow':'auto', 'height':'auto', 'position':'relative'});
-// });
+$(window).load(function() {
+  $('body').css({'overflow':'auto', 'height':'auto', 'position':'relative'});
+});
 // loading screen end 
 
 
