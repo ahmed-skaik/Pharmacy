@@ -91,6 +91,15 @@
               transform: rotate(90deg);
             }
           }
+          &:hover {
+            h3 { 
+              color: $id_color;
+            }
+            svg {
+              color: $id_color;
+              border-color: $id_color;
+            }
+          }
         }
         .card { 
           border: none;

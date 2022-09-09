@@ -1,0 +1,12 @@
+@forward 'SASS/helpers/variables'; //always first !
+@forward 'SASS/helpers/animation';
+@forward 'SASS/pages/global-page';
+
+@forward 'SASS/layout/header';
+@forward 'SASS/layout/loading';
+@forward 'SASS/layout/footer';
+
+@forward 'SASS/pages/about';
+
+@forward 'SASS/components/btns';
+@forward 'SASS/components/headings';
