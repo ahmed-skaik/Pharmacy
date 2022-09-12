@@ -14,13 +14,13 @@
         &:hover {
             transform: scale(1.2);
         }
-        @media (max-width: 768px) {
+        @media (max-width: 767px) {
           width: 65px;
         }
       }
     }
     .navbar-collapse {
-      @media (max-width: 991px) {
+      @media (max-width: 991.99px) {
         background-color: $black;
         min-height: calc(100vh - 101px);
         box-shadow: 0 4px 10px 0 rgb(74 58 255 / 18%);
@@ -34,15 +34,16 @@
         opacity: 0.01;
       }
       .dropdown-menu {
-        @media (max-width: 991px) {
+        @media (max-width: 991.99px) {
           background-color: $black;
+          margin-left: 0;
         }
         a {
-          @media (max-width: 991px) {
+          @media (max-width: 991.99px) {
             width: fit-content;
           }
           &:hover {
-            @media (max-width: 991px) {
+            @media (max-width: 991.99px) {
               width: fit-content;
             }
           }
@@ -155,7 +156,7 @@
           width: auto;
           transition: $main_transition;
           position: relative;
-          @media (max-width: 991px) {
+          @media (max-width: 991.99px) {
             color: hsla(0, 0%, 100%, 0.52);
             font-size: 32px;
           }
@@ -164,7 +165,7 @@
           }
           &.active , &:hover , &:focus { 
             color: $id_color;
-            @media (max-width: 991px) {
+            @media (max-width: 991.99px) {
               color: #fff;
               background-color: transparent;
             }
@@ -188,8 +189,10 @@
               bottom: 0;
               transition: $main_transition;
             }
-            &:hover::before { 
-              width: 100%;
+            &:hover { 
+              &::before{
+                width: 100%;
+              }
             }
             &.active {
               &::before {

@@ -65,3 +65,26 @@
     }
   }
 }
+
+.main-title-3 { 
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 2px;
+    background-color: $id_color;
+    left: 0;
+  }
+  h2 { 
+    font-size: 40px;
+    color: $black;
+    font-weight: 600;
+    span { 
+      color: $id_color;
+    }
+  }
+  p { 
+    color: $gray;
+    font-size: 16px;
+  }}
