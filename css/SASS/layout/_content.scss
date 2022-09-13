@@ -142,7 +142,7 @@
           }
         }
         &.optional { 
-          p {
+          > p {
             button { 
               position: relative;
               &::after { 

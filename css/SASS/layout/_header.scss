@@ -143,8 +143,12 @@
       }
     }
     a > img { 
-      width: 55px;
-      margin-right: 2px;
+      &[alt="moodle"] {
+        width: 55px;
+      }
+      &[alt="gate"] { 
+        width: 44px;
+      }
     }
     ul {
       margin-left: 40px;

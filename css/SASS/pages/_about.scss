@@ -1,16 +1,25 @@
 @use '../helpers/variables' as *;
 
+// about start 
 .about { 
-  padding: 140px 0;
   .container { 
     .txt { 
-    }
-    .content { 
-      margin: 0 60px 0 0;
-      p { 
-        color: $gray;
-        font-size: 18px;
-        margin-bottom: 10px;
+      @media (min-width: 992px) {
+        margin: 0 45px 0 0;
+      }
+      .content { 
+        p { 
+          color: $gray;
+          font-size: 18px;
+          margin-bottom: 10px;
+          line-height: 1.7;
+          @media (max-width: 767px) {
+            font-size: 16px;
+          }
+          &.reading-text {
+            color: $text_color;
+          }
+        }
       }
     }
     .img { 
@@ -20,3 +29,37 @@
     }
   }
 }
+// about end 
+
+// departments start
+.departments { 
+  background-color: $section-background;
+  .container {
+    .img-flex { 
+      @media (max-width: 991px) {
+        order: 1;
+      }
+      .img { 
+        img { 
+          border-radius: 24px;
+        }
+      }
+    }
+    .txt { 
+      @media (min-width: 992px) {
+        margin: 0 0 0 45px;
+      }
+      .content { 
+        color: $gray;
+        font-size: 18px;
+        margin-bottom: 10px;
+        line-height: 1.7;
+        color: $text_color;
+        @media (max-width: 767px) {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+} 
+// departments end 
