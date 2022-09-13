@@ -20,6 +20,9 @@
           color: $dark_blue;
           font-size: 40px;
           margin: 0 0 20px;
+          span { 
+            color: $id_color;
+          }
         }
         p { 
           font-size: 18px;
