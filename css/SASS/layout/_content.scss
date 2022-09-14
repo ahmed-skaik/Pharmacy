@@ -80,6 +80,13 @@
                   font-size: 14px;
                 }
               }
+              &.name { 
+                color: $gray;
+                font-weight: 400;
+                + span { 
+                  font-weight: 500;
+                }
+              }
             }
           }
         }
