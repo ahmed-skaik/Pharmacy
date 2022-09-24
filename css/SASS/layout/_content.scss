@@ -71,6 +71,9 @@
             @media (max-width: 350px) {
               font-size: 18px;
             }
+            div:last-child { 
+              margin-left: 5px;
+            }
             span {
               > span.note { 
                 color: $gray;
