@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="name" content="Faculty of Pharmacy">
+    <meta name="author" content="Ahmed-Skaik">
+    <title>Pharmacotherapeutics I \ Level 5 \ Faculty of Pharmacy</title>
+    <!-- tap icon -->
+		<link rel="icon" href="../../../images/icon.png">
+    <!-- bootstrap toolkit -->
+    <link rel="stylesheet" href="../../../css/bootstrap.min.css">
+    <!-- font awesome library -->
+    <link rel="stylesheet" href="../../../css/all.min.css">
+    <!-- main css file -->
+    <link rel="stylesheet" href="../../../css/courses-page.css">
+    <!-- don't forget the google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;700&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+      /* just in this course because it consists of one large word in the title  */
+      @media (max-width: 576px) {
+        .main-title-2 h1{ 
+          font-size: 34px;
+      }
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- loading screen start  -->
+    <div class="loading d-flex justify-content-center align-items-center flex-column position-fixed w-100 h-100">
+      <p>Loading...</p>
+      <i class="fa-solid fa-circle-notch fa-spin fa-xl" style="color: #3434ff;"></i>
+    </div>
+    <!-- loading screen end  -->
+
+    <!-- scroll up start  -->
+    <div class="up" id="up">
+      <button><i class="fa-solid fa-circle-chevron-up"></i></button>
+    </div>
+    <!-- scroll up end  -->
+
+    <!-- nav  start  -->
+    <nav class="navbar navbar-expand-lg pt-lg-2 pb-lg-2">
+      <div class="container">
+        <a class="navbar-brand" href="../../../index.html">
+          <img src="../../../images/logo.png" alt="Logo">
+        </a>
+        <div class="d-block d-lg-none ms-auto">
+          <a href="../../../index.html#courses" target="_blank" class="btn main-btn mid d-none d-md-inline-block" style="font-size:14px; padding: 10px 20px; margin-right: 2px;">Courses</a>
+          <i class="fa-solid fa-graduation-cap fa-fw"></i>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main" aria-controls="main" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars-staggered fa-fw"></i>
+          <i class="fa-solid fa-xmark fa-fw"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="main">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../../../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../../index.html#plans" target="_blank">Plans</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Levels
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../../../pages/level-1.html" target="_blank">Level 1</a></li>
+                <li><a class="dropdown-item" href="../../../pages/level-2.html" target="_blank">Level 2</a></li>
+                <li><a class="dropdown-item" href="../../../pages/level-3.html" target="_blank">Level 3</a></li>
+                <li><a class="dropdown-item" href="../../../pages/level-4.html" target="_blank">Level 4</a></li>
+                <li><a class="dropdown-item" href="../../../pages/level-5.html">Level 5</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="../../../pages/univ-needs.html" target="_blank">UNIV Needs</a></li>
+              </ul>
+            </li>
+            <li class="nav-item d-block d-md-none">
+              <a class="nav-link" href="../../../index.html#courses" target="_blank">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../contact.html" target="_blank">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../about.html" target="_blank">About</a>
+            </li>
+            <li class="nav-item d-block d-lg-none">
+              <a class="nav-link" href="https://moodle.alazhar.edu.ps/login/" target="_blank">Moodle</a>
+            </li>
+            <li class="nav-item d-block d-lg-none">
+              <a class="nav-link" href="http://gate.alazhar.edu.ps/students/" target="_blank">Student Gate</a>
+            </li>
+          </ul>
+          <div class="d-none d-lg-block">
+            <a href="https://moodle.alazhar.edu.ps/login/" target="_blank"><img src="../../../images/moodle-logo.png" alt="moodle"></a>
+            <a href="http://gate.alazhar.edu.ps/students/" target="_blank"><img src="../../../images/gate.png" alt="gate"></a>
+            <i class="fa-solid fa-graduation-cap fa-fw"></i>
+            <a href="../../../index.html#courses" class="btn main-btn" target="_blank">Courses</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- nav  end -->
+
+    <!-- content start  -->
+    <div class="content">
+      <div class="container">
+        <div class="main-title-2">
+          <h1 class="mb-3">Pharmacotherapeutics <span>One</span>.</h1>
+          <p class="mb-4">Introduction to Pharmacotherapeutics || Chemotherapeutic Agents of Different Families of Antibiotics, Antifungals, Antiprotozoals, Antiparasitics &#38; Applications of Diseases</p>
+        </div>
+        <div class="about">
+          <ul class="list-unstyled d-flex flex-column flex-md-row justify-content-md-around">
+            <li class="nav-item dropdown d-flex align-items-center">
+              <i class="fa-solid fa-chalkboard-user fa-fw pe-1"></i> Lecturer: 
+              <span class="ms-1">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Samar Abu-rkhaya
+                </a>
+                <ul class="dropdown-menu p-0">
+                  <li><a class="dropdown-item" href="pharmacotherapeuticss-1.html">Dr. Mahmoud Taleb</a></li>
+                </ul>
+              </span>
+            </li>
+            <li><i class="fa-solid fa-circle-play fa-fw"></i> Videos: <span>32</span></li>
+            <li><i class="fa-solid fa-building-columns fa-fw"></i> Credit Hours: <span>3</span></li>
+          </ul>
+        </div>
+        <div class="year mt-4 mb-5">
+          <div class="semester">
+            <p>
+              <button class="btn  pt-3 pb-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample-1" aria-expanded="false" aria-controls="collapseExample-1">
+                <i class="fa-solid fa-angle-right"></i> Chapter I : <span>Introduction to Pharmacotherapeutics</span>
+              </button>
+            </p>
+            <div class="collapse" id="collapseExample-1">
+              <div class="card card-body mb-3 slides">
+                <h2>Chapter Slides</h2>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <a href="../../../Files/level-3/semester-1/pathophysiology-1/chapter-01- alterations of cell functions.pdf" target="_blank"><i class="fa-solid fa-download"></i></a>
+              </div>
+              <div class="card card-body mb-3">
+                <h2>Lecture &lpar;1&#41;</h2>
+                <p>Introduction pt.A</p>
+                <a href="https://m.youtube.com/watch?v=yh_olW3gYUw&list=PLkYQrorWCLMp0qhXi1OMj1zEk9StHNqJF&index=1" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+              <div class="card card-body mb-3">
+                <h2>Lecture &lpar;2&#41;</h2>
+                <p>Introduction pt.B</p>
+                <a href="https://m.youtube.com/watch?v=l_qVxE6EN-k&list=PLkYQrorWCLMp0qhXi1OMj1zEk9StHNqJF&index=2" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="semester">
+            <p>
+              <button class="btn  pt-3 pb-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample-2" aria-expanded="false" aria-controls="collapseExample-2">
+                <i class="fa-solid fa-angle-right"></i> Chapter II : <span>Antibacterial Agents</span>
+              </button>
+            </p>
+            <div class="collapse" id="collapseExample-2">
+              <div class="card card-body mb-3 slides">
+                <h2>Chapter Slides</h2>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <a href="../../../Files/level-3/semester-1/pathophysiology-1/chapter-02-immune-system.pdf" target="_blank"><i class="fa-solid fa-download"></i></a>
+              </div>
+              <div class="card card-body mb-3">
+                <h2>Lecture &lpar;1&#41;</h2>
+                <p>Cephalosporins</p>
+                <a href="https://m.youtube.com/watch?v=CZewy71MSKY&list=PLkYQrorWCLMp0qhXi1OMj1zEk9StHNqJF&index=3" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+              <div class="card card-body mb-3">
+                <h2>Lecture &lpar;2&#41;</h2>
+                <p>Pencillins</p>
+                <a href="https://m.youtube.com/watch?v=w-k9G7RIR5c&list=PLkYQrorWCLMp0qhXi1OMj1zEk9StHNqJF&index=4" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+              <div class="card card-body mb-3">
+                <h2>Lecture &lpar;3&#41;</h2>
+                <p>Other &beta; Lactams</p>
+                <a href="https://m.youtube.com/watch?v=toLrjYqL7tk&list=PLkYQrorWCLMp0qhXi1OMj1zEk9StHNqJF&index=5" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+              <div class="card card-body mb-3">
+                <h2>Lecture &lpar;4&#41;</h2>
+                <p>Tetracyclines</p>
+                <a href="https://m.youtube.com/watch?v=ENkqXNL0DT4&list=PLkYQrorWCLMp0qhXi1OMj1zEk9StHNqJF&index=6" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+              <div class="card card-body mb-3">
+                <h2>Lecture &lpar;5&#41;</h2>
+                <p>Aminoglycosides + Others</p>
+                <a href="https://m.youtube.com/watch?v=rK4gm4859JM&list=PLkYQrorWCLMp0qhXi1OMj1zEk9StHNqJF&index=7" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+              <div class="card card-body mb-3">
+                <h2>Lecture &lpar;6&#41;</h2>
+                <p>Sulfonamides</p>
+                <a href="https://m.youtube.com/watch?v=vcdf8PHXRhc&list=PLkYQrorWCLMp0qhXi1OMj1zEk9StHNqJF&index=8" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+              <div class="card card-body mb-3">
+                <h2>Lecture &lpar;7&#41;</h2>
+                <p>Fluoroquinolones</p>
+                <a href="https://m.youtube.com/watch?v=ZuR623dlJZE&list=PLkYQrorWCLMp0qhXi1OMj1zEk9StHNqJF&index=9" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="semester">
+            <p>
+              <button class="btn  pt-3 pb-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample-3" aria-expanded="false" aria-controls="collapseExample-3">
+                <i class="fa-solid fa-angle-right"></i> Chapter III : <span>Antiprotozoal Agents</span>
+              </button>
+            </p>
+            <div class="collapse" id="collapseExample-3">
+              <div class="card card-body mb-3 slides">
+                <h2>Chapter Slides</h2>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <a href="../../../Files/level-3/semester-1/pathophysiology-1/chapter-03-inflamation.pdf" target="_blank"><i class="fa-solid fa-download"></i></a>
+              </div>
+              <div class="card card-body mb-3">
+                <h2>Lecture &lpar;1&#41;</h2>
+                <p>Amebiasis + Giardiasis</p>
+                <a href="https://m.youtube.com/watch?v=L0WicViBlE0&list=PLkYQrorWCLMp0qhXi1OMj1zEk9StHNqJF&index=10" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+              <div class="card card-body mb-3">
+                <h2>Lecture &lpar;2&#41;</h2>
+                <p>Trichomoniasis</p>
+                <a href="https://m.youtube.com/watch?v=Mkuux-1VrQ4&list=PLkYQrorWCLMp0qhXi1OMj1zEk9StHNqJF&index=11" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+              <div class="card card-body mb-3">
+                <h2>Lecture &lpar;3&#41;</h2>
+                <p>Protein Synthesis Inhibitors</p>
+                <a href="https://m.youtube.com/watch?v=YbdE6T6d4Pk&list=PLkYQrorWCLMp0qhXi1OMj1zEk9StHNqJF&index=12" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="semester">
+            <p>
+              <button class="btn  pt-3 pb-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample-4" aria-expanded="false" aria-controls="collapseExample-4">
+                <i class="fa-solid fa-angle-right"></i> Chapter IV : <span>CNS Infections</span>
+              </button>
+            </p>
+            <div class="collapse" id="collapseExample-4">
+              <div class="card card-body mb-3 slides">
+                <h2>Chapter Slides</h2>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <a href="../../../Files/level-3/semester-1/pathophysiology-1/chapter-04-cardiovascular-disorders.pdf" target="_blank"><i class="fa-solid fa-download"></i></a>
+              </div>
+              <div class="card card-body mb-3">
+                <h2>Lecture &lpar;1&#41;</h2>
+                <p>CNS Infection pt.A</p>
+                <a href="https://m.youtube.com/watch?v=_3lnyLDS6No&list=PLkYQrorWCLMp0qhXi1OMj1zEk9StHNqJF&index=13" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+              <div class="card card-body mb-3">
+                <h2>Lecture &lpar;2&#41;</h2>
+                <p>CNS Infection pt.B</p>
+                <a href="https://m.youtube.com/watch?v=3Oilbh1Zj3k&list=PLkYQrorWCLMp0qhXi1OMj1zEk9StHNqJF&index=14" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="semester">
+            <p>
+              <button class="btn  pt-3 pb-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample-5" aria-expanded="false" aria-controls="collapseExample-5">
+                <i class="fa-solid fa-angle-right"></i> Chapter V : <span>Respiratory Tract Infections</span>
+              </button>
+            </p>
+            <div class="collapse" id="collapseExample-5">
+              <div class="card card-body mb-3 slides">
+                <h2>Chapter Slides</h2>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <a href="../../../Files/level-3/semester-1/pathophysiology-1/chapter-05-git-disorders.pdf" target="_blank"><i class="fa-solid fa-download"></i></a>
+              </div>
+              <div class="card card-body mb-3">
+                <h2>Lecture &lpar;1&#41;</h2>
+                <p>URTI pt.A</p>
+                <a href="https://m.youtube.com/watch?v=RTV-EhZ15wE&list=PLkYQrorWCLMp0qhXi1OMj1zEk9StHNqJF&index=15" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+              <div class="card card-body mb-3">
+                <h2>Lecture &lpar;2&#41;</h2>
+                <p>URTI pt.B &lpar;Sinusitis&#41;</p>
+                <a href="https://m.youtube.com/watch?v=T-RHrxqNcWY&list=PLkYQrorWCLMp0qhXi1OMj1zEk9StHNqJF&index=16" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+              <div class="card card-body mb-3">
+                <h2>Lecture &lpar;3&#41;</h2>
+                <p>LRTI pt.A</p>
+                <a href="https://m.youtube.com/watch?v=flJGUMKxSK0&list=PLkYQrorWCLMp0qhXi1OMj1zEk9StHNqJF&index=17" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+              <div class="card card-body mb-3">
+                <h2>Lecture &lpar;4&#41;</h2>
+                <p>LRTI pt.B &lpar;Acute Brochitis&#41;</p>
+                <a href="https://m.youtube.com/watch?v=lslbCHDJLPQ&list=PLkYQrorWCLMp0qhXi1OMj1zEk9StHNqJF&index=18" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+              <div class="card card-body mb-3">
+                <h2>Lecture &lpar;5&#41;</h2>
+                <p>LRTI pt.C &lpar;Pulmonary Tuberculosis pt.I&#41;</p>
+                <a href="https://m.youtube.com/watch?v=DRhMcp4rHzY&list=PLkYQrorWCLMp0qhXi1OMj1zEk9StHNqJF&index=19" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+              <div class="card card-body mb-3">
+                <h2>Lecture &lpar;6&#41;</h2>
+                <p>LRTI pt.D &lpar;Pulmonary Tuberculosis pt.II&#41;</p>
+                <a href="https://m.youtube.com/watch?v=XJTBjkASgjc&list=PLkYQrorWCLMp0qhXi1OMj1zEk9StHNqJF&index=20" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="semester">
+            <p>
+              <button class="btn  pt-3 pb-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample-6" aria-expanded="false" aria-controls="collapseExample-6">
+                <i class="fa-solid fa-angle-right"></i> Chapter VI : <span>GIT Infections</span>
+              </button>
+            </p>
+            <div class="collapse" id="collapseExample-6">
+              <div class="card card-body mb-3 slides">
+                <h2>Chapter Slides</h2>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <a href="../../../Files/level-3/semester-1/pathophysiology-1/chapter-05-git-disorders.pdf" target="_blank"><i class="fa-solid fa-download"></i></a>
+              </div>
+              <div class="card card-body mb-3">
+                <h2>Lecture &lpar;1&#41;</h2>
+                <p>Acute Gastroenteritis pt.A</p>
+                <a href="https://m.youtube.com/watch?v=DKi5efUOHek&list=PLkYQrorWCLMp0qhXi1OMj1zEk9StHNqJF&index=21" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+              <div class="card card-body mb-3">
+                <h2>Lecture &lpar;2&#41;</h2>
+                <p>Acute Gastroenteritis pt.B</p>
+                <a href="https://m.youtube.com/watch?v=4F1epzKPH3I&list=PLkYQrorWCLMp0qhXi1OMj1zEk9StHNqJF&index=22" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="semester">
+            <p>
+              <button class="btn  pt-3 pb-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample-7" aria-expanded="false" aria-controls="collapseExample-7">
+                <i class="fa-solid fa-angle-right"></i> Chapter VII : <span>Urinary Tract Infections &lpar;UTI&#41;</span>
+              </button>
+            </p>
+            <div class="collapse" id="collapseExample-7">
+              <div class="card card-body mb-3 slides">
+                <h2>Chapter Slides</h2>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <a href="../../../Files/level-3/semester-1/pathophysiology-1/chapter-05-git-disorders.pdf" target="_blank"><i class="fa-solid fa-download"></i></a>
+              </div>
+              <div class="card card-body mb-3">
+                <h2>Lecture &lpar;1&#41;</h2>
+                <p>UTI pt.A</p>
+                <a href="https://m.youtube.com/watch?v=JDZvoK16PaE&list=PLkYQrorWCLMp0qhXi1OMj1zEk9StHNqJF&index=23" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+              <div class="card card-body mb-3">
+                <h2>Lecture &lpar;2&#41;</h2>
+                <p>UTI pt.B</p>
+                <a href="https://m.youtube.com/watch?v=wN0HYE9ymD4&list=PLkYQrorWCLMp0qhXi1OMj1zEk9StHNqJF&index=24" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="semester">
+            <p>
+              <button class="btn  pt-3 pb-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample-8" aria-expanded="false" aria-controls="collapseExample-8">
+                <i class="fa-solid fa-angle-right"></i> Chapter VIII : <span>Antifungal Agents</span>
+              </button>
+            </p>
+            <div class="collapse" id="collapseExample-8">
+              <div class="card card-body mb-3 slides">
+                <h2>Chapter Slides</h2>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <a href="../../../Files/level-3/semester-1/pathophysiology-1/chapter-05-git-disorders.pdf" target="_blank"><i class="fa-solid fa-download"></i></a>
+              </div>
+              <div class="card card-body mb-3">
+                <h2>Lecture &lpar;1&#41;</h2>
+                <p>Antifungal Agents pt.A</p>
+                <a href="https://m.youtube.com/watch?v=hyeQ-LYJdTs&list=PLkYQrorWCLMp0qhXi1OMj1zEk9StHNqJF&index=25" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+              <div class="card card-body mb-3">
+                <h2>Lecture &lpar;2&#41;</h2>
+                <p>Antifungal Agents pt.B</p>
+                <a href="https://m.youtube.com/watch?v=q3ZArtVin7Q&list=PLkYQrorWCLMp0qhXi1OMj1zEk9StHNqJF&index=26" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="semester">
+            <p>
+              <button class="btn  pt-3 pb-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample-99" aria-expanded="false" aria-controls="collapseExample-99">
+                <i class="fa-solid fa-angle-right"></i> Chapter IX : <span>Antiviral Agents</span>
+              </button>
+            </p>
+            <div class="collapse" id="collapseExample-99">
+              <div class="card card-body mb-3 slides">
+                <h2>Chapter Slides</h2>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <a href="../../../Files/level-3/semester-1/pathophysiology-1/chapter-05-git-disorders.pdf" target="_blank"><i class="fa-solid fa-download"></i></a>
+              </div>
+              <div class="card card-body mb-3">
+                <h2>Lecture &lpar;1&#41;</h2>
+                <p>Antiviral Agents pt.A</p>
+                <a href="https://m.youtube.com/watch?v=XQuzKyr_wfE&list=PLkYQrorWCLMp0qhXi1OMj1zEk9StHNqJF&index=27" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+              <div class="card card-body mb-3">
+                <h2>Lecture &lpar;2&#41;</h2>
+                <p>Antiviral Agents pt.B</p>
+                <a href="https://m.youtube.com/watch?v=J5NB4Rcyu4E&list=PLkYQrorWCLMp0qhXi1OMj1zEk9StHNqJF&index=28" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+              <div class="card card-body mb-3">
+                <h2>Lecture &lpar;3&#41;</h2>
+                <p>Antiviral Agents pt.C</p>
+                <a href="https://m.youtube.com/watch?v=x-8pjs5sqtk&list=PLkYQrorWCLMp0qhXi1OMj1zEk9StHNqJF&index=29" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="semester">
+            <p>
+              <button class="btn  pt-3 pb-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample-10" aria-expanded="false" aria-controls="collapseExample-10">
+                <i class="fa-solid fa-angle-right"></i> Chapter X : <span>Antihelminthic Agents</span>
+              </button>
+            </p>
+            <div class="collapse" id="collapseExample-10">
+              <div class="card card-body mb-3 slides">
+                <h2>Chapter Slides</h2>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <a href="../../../Files/level-3/semester-1/pathophysiology-1/chapter-05-git-disorders.pdf" target="_blank"><i class="fa-solid fa-download"></i></a>
+              </div>
+              <div class="card card-body mb-3">
+                <h2>Lecture &lpar;1&#41;</h2>
+                <p>Antihelminthic Agents</p>
+                <a href="https://m.youtube.com/watch?v=KvxsfN1gIkE&list=PLkYQrorWCLMp0qhXi1OMj1zEk9StHNqJF&index=30" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="semester">
+            <p>
+              <button class="btn  pt-3 pb-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample-11" aria-expanded="false" aria-controls="collapseExample-11">
+                <i class="fa-solid fa-angle-right"></i> Chapter XI : <span>Sexually Transmitted Disease &#38; Dermatology</span>
+              </button>
+            </p>
+            <div class="collapse" id="collapseExample-11">
+              <div class="card card-body mb-3 slides">
+                <h2>Chapter Slides</h2>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <a href="../../../Files/level-3/semester-1/pathophysiology-1/chapter-05-git-disorders.pdf" target="_blank"><i class="fa-solid fa-download"></i></a>
+              </div>
+              <div class="card card-body mb-3">
+                <h2>Lecture &lpar;1&#41;</h2>
+                <p>Sexually Transmitted Disease</p>
+                <a href="https://m.youtube.com/watch?v=0egi0RVDYQc&list=PLkYQrorWCLMp0qhXi1OMj1zEk9StHNqJF&index=31" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+              <div class="card card-body mb-3">
+                <h2>Lecture &lpar;2&#41;</h2>
+                <p>Acne Vulgaris</p>
+                <a href="https://m.youtube.com/watch?v=EUIh0gPs7GQ&list=PLkYQrorWCLMp0qhXi1OMj1zEk9StHNqJF&index=32" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+          <br>
+          <br>
+          <div class="separate"></div>
+          <br>
+          <br>
+          <div class="semester resourses">
+            <p>
+              <button class="btn  pt-3 pb-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample-9" aria-expanded="false" aria-controls="collapseExample-9">
+                <i class="fa-solid fa-angle-right"></i> Resources of the course 
+              </button>
+            </p>
+            <div class="collapse" id="collapseExample-9">
+              <div class="card card-body mb-3">
+                <h2>Reference Book</h2>
+                <p>The recommended reference book</p>
+                <a href="../../../documents/level-5/semester-1/clinical-pharmacy/Kelly_C_Lee,_Marie_A_Chisholm_Burns,_Patrick_M_Malone,_P_Brandon.pdf" target="_blank"><i class="fa-solid fa-download"></i></a>
+              </div>
+              <div class="card card-body mb-3">
+                <h2>Summaries</h2>
+                <p>Selected summary of the course by other students</p>
+                <a href="../../../404.html" target="_blank"><i class="fa-solid fa-download"></i></a>
+              </div>
+              <div class="card card-body mb-3">
+                <h2>Previous Exams</h2>
+                <p>You can check these out before approaching the actual exam</p>
+                <a href="https://drive.google.com/file/d/1heMoHjmvuMJlHk32EwTaHDbWeZnKjJls/view?usp=sharing" target="_blank"><i class="fa-solid fa-download"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- content end  -->
+
+    <!-- footer start  -->
+    <footer class="p-3" id="footer">
+      <div class="container d-flex justify-content-center align-items-center">
+          <p class="" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-delay="100" title="This Project was made by me Ahmed-Skaîk a 4th year Pharmacy studetn using HTML, CSS, SASS, BOOTSTRAP & JS. ///////// Big thanks to Mr. Ahmed-Younis for providing all the necessary files & links for the project." >Made with ❤️, by <span><a href="#footer">Ahmed-Skaîk</a></span> &copy; 2022</p>
+      </div>
+    </footer>
+    <!-- footer end  -->
+    <!-- JS files -->
+    <script src="../../../js/bootstrap.bundle.min.js"></script>
+    <script src="../../../js/all.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="../../../js/pharmacy.js"></script>
+  </body>
+</html>

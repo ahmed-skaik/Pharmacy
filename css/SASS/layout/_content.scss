@@ -40,6 +40,19 @@
             color: $dark_blue;
             font-weight: 500;
           }
+          a { 
+            transition: $main_transition;
+          }
+          a[aria-expanded="true"].dropdown-toggle::after { 
+            transition: $main_transition;
+            transform: rotate(90deg);
+          } 
+          .dropdown-toggle::after { 
+            color: $id_color;
+          }
+          ul li a:hover { 
+            color: $id_color;
+          }
         }
       }
     }
