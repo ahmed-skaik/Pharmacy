@@ -40,8 +40,35 @@
         font-size: 73px;
         font-weight: 600;
         margin: 0 0 24px;
-        span { 
+        span.faculty { 
           color: $id_color;
+        }
+        span.univ { 
+          position: relative;
+          &::after { 
+            content: "of Gaza";
+            position: absolute;
+            top: -13px;
+            right: -35px;
+            color: $dark_blue;
+            font-size: 30px;
+            @media (min-width: 1200px) {
+              top: -16px;
+              right: -60px; 
+            }
+            @media (min-width: 992px) and (max-width: 1199px) {
+              font-size: 26px;
+            }
+            @media (max-width: 767px) {
+              font-size: 20px;
+            }
+            @media (max-width: 576px) {
+              font-size: 16px;
+            }
+            @media (max-width: 374px) {
+              display: none;
+            }
+          }
         }
         @media (min-width: 992px) and (max-width: 1199px) {
           font-size: 65px;
@@ -49,7 +76,10 @@
         @media (max-width: 767px) {
           font-size: 46px;
         }
-        @media (max-width: 576px) {
+        @media (min-width: 400px) and (max-width: 766px) {
+          font-size: 40px;
+        }
+        @media (max-width: 399px) {
           font-size: 37px;
         }
         @media (max-width: 350px) {
@@ -63,10 +93,10 @@
         @media (min-width: 992px) and (max-width: 1199px) {
           font-size: 16px;
         }
-        @media (max-width: 767px) {
+        @media (min-width: 576px) and (max-width: 767px) {
           font-size: 16px;
         }
-        @media (max-width: 350px) {
+        @media (max-width: 576px) {
           font-size: 14px;
         }
       }
@@ -205,11 +235,6 @@
         &:hover { 
           transform: translateY(-10px);
           box-shadow: 0 2px 15px rgb(0 0 0 / 20%);
-        }
-        .img { 
-          img { 
-            max-width: 100%;
-          }
         }
         .text { 
           padding: 20px;

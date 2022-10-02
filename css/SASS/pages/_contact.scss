@@ -131,6 +131,7 @@
             a { 
               text-decoration: none;
               color: $text_color;
+              transition: $main_transition;
               &:hover { 
                 text-decoration: underline;
                 color: $hover_blue;

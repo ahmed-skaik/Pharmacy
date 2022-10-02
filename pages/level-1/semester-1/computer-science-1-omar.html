@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="name" content="Faculty of Pharmacy">
+    <meta name="author" content="Ahmed-Skaik">
+    <title>Computer Science I \ Level 1 \ Faculty of Pharmacy</title>
+    <!-- tap icon -->
+		<link rel="icon" href="../../../images/icon.png">
+    <!-- bootstrap toolkit -->
+    <link rel="stylesheet" href="../../../css/bootstrap.min.css">
+    <!-- font awesome library -->
+    <link rel="stylesheet" href="../../../css/all.min.css">
+    <!-- main css file -->
+    <link rel="stylesheet" href="../../../css/courses-page.css">
+    <!-- don't forget the google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;700&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <!-- loading screen start  -->
+    <div class="loading d-flex justify-content-center align-items-center flex-column position-fixed w-100 h-100">
+      <p>Loading...</p>
+      <i class="fa-solid fa-circle-notch fa-spin fa-xl" style="color: #3434ff;"></i>
+    </div>
+    <!-- loading screen end  -->
+
+    <!-- scroll up start  -->
+    <div class="up" id="up">
+      <button><i class="fa-solid fa-circle-chevron-up"></i></button>
+    </div>
+    <!-- scroll up end  -->
+
+    <!-- nav  start  -->
+    <nav class="navbar navbar-expand-lg pt-lg-2 pb-lg-2">
+      <div class="container">
+        <a class="navbar-brand" href="../../../index.html">
+          <img src="../../../images/logo.png" alt="Logo">
+        </a>
+        <div class="d-block d-lg-none ms-auto">
+          <a href="../../../index.html#courses" target="_blank" class="btn main-btn mid d-none d-md-inline-block" style="font-size:14px; padding: 10px 20px; margin-right: 2px;">Courses</a>
+          <i class="fa-solid fa-microchip fa-fw"></i>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main" aria-controls="main" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars-staggered fa-fw"></i>
+          <i class="fa-solid fa-xmark fa-fw"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="main">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../../../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../../index.html#plans" target="_blank">Plans</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Levels
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../../../pages/level-1.html">Level 1</a></li>
+                <li><a class="dropdown-item" href="../../../pages/level-2.html" target="_blank">Level 2</a></li>
+                <li><a class="dropdown-item" href="../../../pages/level-3.html" target="_blank">Level 3</a></li>
+                <li><a class="dropdown-item" href="../../../pages/level-4.html" target="_blank">Level 4</a></li>
+                <li><a class="dropdown-item" href="../../../pages/level-5.html" target="_blank">Level 5</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="../../../pages/univ-needs.html" target="_blank">UNIV Needs</a></li>
+              </ul>
+            </li>
+            <li class="nav-item d-block d-md-none">
+              <a class="nav-link" href="../../../index.html#courses" target="_blank">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../contact.html" target="_blank">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../about.html" target="_blank">About</a>
+            </li>
+            <li class="nav-item d-block d-lg-none">
+              <a class="nav-link" href="https://moodle.alazhar.edu.ps/login/" target="_blank">Moodle</a>
+            </li>
+            <li class="nav-item d-block d-lg-none">
+              <a class="nav-link" href="http://gate.alazhar.edu.ps/students/" target="_blank">Student Gate</a>
+            </li>
+          </ul>
+          <div class="d-none d-lg-block">
+            <a href="https://moodle.alazhar.edu.ps/login/" target="_blank"><img src="../../../images/moodle-logo.png" alt="moodle"></a>
+            <a href="http://gate.alazhar.edu.ps/students/" target="_blank"><img src="../../../images/gate.png" alt="gate"></a>
+            <i class="fa-solid fa-microchip fa-fw"></i>
+            <a href="../../../index.html#courses" class="btn main-btn" target="_blank">Courses</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- nav  end -->
+
+    <!-- content start  -->
+    <div class="content">
+      <div class="container">
+        <div class="main-title-2">
+          <h1 class="mb-3">Computer <span>Science</span>.</h1>
+          <p class="mb-4">Basics in the World of Computer Science </p>
+        </div>
+        <div class="about">
+          <ul class="list-unstyled d-flex flex-column flex-md-row justify-content-md-around">
+            <li class="dropdown d-flex align-items-center flex-wrap">
+              <i class="fa-solid fa-chalkboard-user fa-fw pe-1"></i> Lecturer: 
+              <span class="ms-1">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Eng. Omar Al-nahal
+                </a>
+                <ul class="dropdown-menu p-0">
+                  <li><a class="dropdown-item" href="computer-science-1.html">Eng. Mohammed Abu-shaban</a></li>
+                </ul>
+              </span>
+            </li>
+            <li><i class="fa-solid fa-circle-play fa-fw"></i> Videos: <span>21</span></li>
+            <li><i class="fa-solid fa-building-columns fa-fw"></i> Credit Hours: <span>3</span></li>
+          </ul>
+        </div>
+        <div class="year mt-4 mb-5">
+          <div class="semester">
+            <p>
+              <button class="btn  pt-3 pb-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample-1" aria-expanded="false" aria-controls="collapseExample-1">
+                <i class="fa-solid fa-angle-right"></i> Chapter I : <span>Introduction to Computers</span>
+              </button>
+            </p>
+            <div class="collapse" id="collapseExample-1">
+              <div class="card card-body mb-3 slides">
+                <h2>Chapter Slides</h2>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <div class="anchors d-flex justify-content-center align-items-center ms-auto">
+                  <a href="../../../documents/level-1/semester-1/computer-science/cs-slides/chapter01.pdf" target="_blank"><i class="fa-solid fa-download"></i></a>
+                  <a href="../../../documents/level-1/semester-1/computer-science/cs-solutions/chapter-1-sol.pdf" target="_blank"><i class="fa-solid fa-paperclip"></i></a>
+                </div>              </div>
+              <div class="card card-body mb-3">
+                <h2>Lecture &lpar;1&#41;</h2>
+                <p>Part A</p>
+                <a href="https://youtu.be/Gm2HddWCLa0" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+              <div class="card card-body mb-3">
+                <h2>Lecture &lpar;2&#41;</h2>
+                <p>Part B</p>
+                <a href="https://youtu.be/dSMCJWWAeeE" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+              <div class="card card-body mb-3">
+                <h2>Lecture &lpar;3&#41;</h2>
+                <p>Part C</p>
+                <a href="https://youtu.be/tyDRZt3UcNo" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="semester">
+            <p>
+              <button class="btn  pt-3 pb-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample-2" aria-expanded="false" aria-controls="collapseExample-2">
+                <i class="fa-solid fa-angle-right"></i> Chapter II : <span>The Internet &#38; World Wid Web</span>
+              </button>
+            </p>
+            <div class="collapse" id="collapseExample-2">
+              <div class="card card-body mb-3 slides">
+                <h2>Chapter Slides</h2>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <div class="anchors d-flex justify-content-center align-items-center ms-auto">
+                  <a href="../../../documents/level-1/semester-1/computer-science/cs-slides/chapter02.pdf" target="_blank"><i class="fa-solid fa-download"></i></a>
+                  <a href="../../../documents/level-1/semester-1/computer-science/cs-solutions/chapter-2-sol.pdf" target="_blank"><i class="fa-solid fa-paperclip"></i></a>
+                </div>              </div>
+              <div class="card card-body mb-3">
+                <h2>Lecture &lpar;1&#41;</h2>
+                <p>Part A</p>
+                <a href="https://youtu.be/3GM7CmxEnzo" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+              <div class="card card-body mb-3">
+                <h2>Lecture &lpar;2&#41;</h2>
+                <p>Part B</p>
+                <a href="https://youtu.be/HR9LdWBE0zI" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+              <div class="card card-body mb-3">
+                <h2>Lecture &lpar;3&#41;</h2>
+                <p>Part C</p>
+                <a href="https://youtu.be/px31vXpWVA0" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="semester">
+            <p>
+              <button class="btn  pt-3 pb-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample-3" aria-expanded="false" aria-controls="collapseExample-3">
+                <i class="fa-solid fa-angle-right"></i> Chapter III : <span>Application Software</span>
+              </button>
+            </p>
+            <div class="collapse" id="collapseExample-3">
+              <div class="card card-body mb-3 slides">
+                <h2>Chapter Slides</h2>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <div class="anchors d-flex justify-content-center align-items-center ms-auto">
+                  <a href="../../../documents/level-1/semester-1/computer-science/cs-slides/chapter03.pdf" target="_blank"><i class="fa-solid fa-download"></i></a>
+                  <a href="../../../documents/level-1/semester-1/computer-science/cs-solutions/chapter-3-sol.pdf" target="_blank"><i class="fa-solid fa-paperclip"></i></a>
+                </div>              </div>
+              <div class="card card-body mb-3">
+                <h2>Lecture &lpar;1&#41;</h2>
+                <p>Part A</p>
+                <a href="https://youtu.be/T2bFwFnl3jA" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+              <div class="card card-body mb-3">
+                <h2>Lecture &lpar;2&#41;</h2>
+                <p>Part B</p>
+                <a href="https://youtu.be/HL3CKQgu2iE" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+              <div class="card card-body mb-3">
+                <h2>Lecture &lpar;3&#41;</h2>
+                <p>Part C</p>
+                <a href="https://youtu.be/FW6EKyD8060" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+              <div class="card card-body mb-3">
+                <h2>Lecture &lpar;4&#41;</h2>
+                <p>Part D</p>
+                <a href="https://youtu.be/L4k1QqyFI6E" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+              <div class="card card-body mb-3">
+                <h2>Lecture &lpar;5&#41;</h2>
+                <p>Part E</p>
+                <a href="https://youtu.be/KgQV-8V2IHU" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="semester">
+            <p>
+              <button class="btn  pt-3 pb-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample-4" aria-expanded="false" aria-controls="collapseExample-4">
+                <i class="fa-solid fa-angle-right"></i> Chapter IV : <span>The Components of the System Unit</span>
+              </button>
+            </p>
+            <div class="collapse" id="collapseExample-4">
+              <div class="card card-body mb-3 slides">
+                <h2>Chapter Slides</h2>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <div class="anchors d-flex justify-content-center align-items-center ms-auto">
+                  <a href="../../../documents/level-1/semester-1/computer-science/cs-slides/chapter04.pdf" target="_blank"><i class="fa-solid fa-download"></i></a>
+                  <a href="../../../documents/level-1/semester-1/computer-science/cs-solutions/chapter-4-sol.pdf" target="_blank"><i class="fa-solid fa-paperclip"></i></a>
+                </div>              </div>
+              <div class="card card-body mb-3">
+                <h2>Lecture &lpar;1&#41;</h2>
+                <p>Part A</p>
+                <a href="https://youtu.be/PpaQS9Ymuxc" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+              <div class="card card-body mb-3">
+                <h2>Lecture &lpar;2&#41;</h2>
+                <p>Part B</p>
+                <a href="https://youtu.be/UJJdahd9VQY" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+              <div class="card card-body mb-3">
+                <h2>Lecture &lpar;3&#41;</h2>
+                <p>Part C</p>
+                <a href="https://youtu.be/sOiGhAe0L6c" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+              <div class="card card-body mb-3">
+                <h2>Lecture &lpar;4&#41;</h2>
+                <p>Part D</p>
+                <a href="https://youtu.be/1P4QUccQKb4" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+              <div class="card card-body mb-3">
+                <h2>Lecture &lpar;5&#41;</h2>
+                <p>Part E</p>
+                <a href="https://youtu.be/Lc93Ovxekbw" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="semester">
+            <p>
+              <button class="btn  pt-3 pb-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample-5" aria-expanded="false" aria-controls="collapseExample-5">
+                <i class="fa-solid fa-angle-right"></i> Chapter V : <span>Input Devices</span>
+              </button>
+            </p>
+            <div class="collapse" id="collapseExample-5">
+              <div class="card card-body mb-3 slides">
+                <h2>Chapter Slides</h2>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <div class="anchors d-flex justify-content-center align-items-center ms-auto">
+                  <a href="../../../documents/level-1/semester-1/computer-science/cs-slides/chapter05.pdf" target="_blank"><i class="fa-solid fa-download"></i></a>
+                  <a href="../../../documents/level-1/semester-1/computer-science/cs-solutions/chapter-5-sol.pdf" target="_blank"><i class="fa-solid fa-paperclip"></i></a>
+                </div>              </div>
+              <div class="card card-body mb-3">
+                <h2>Lecture &lpar;1&#41;</h2>
+                <p>Part A</p>
+                <a href="https://youtu.be/cf4CHAa5O18" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+              <div class="card card-body mb-3">
+                <h2>Lecture &lpar;2&#41;</h2>
+                <p>Part B</p>
+                <a href="https://youtu.be/4qsCeHSMKcc" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="semester">
+            <p>
+              <button class="btn  pt-3 pb-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample-6" aria-expanded="false" aria-controls="collapseExample-6">
+                <i class="fa-solid fa-angle-right"></i> Chapter VI : <span>Output Devices</span>
+              </button>
+            </p>
+            <div class="collapse" id="collapseExample-6">
+              <div class="card card-body mb-3 slides">
+                <h2>Chapter Slides</h2>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <div class="anchors d-flex justify-content-center align-items-center ms-auto">
+                  <a href="../../../documents/level-1/semester-1/computer-science/cs-slides/chapter06.pdf" target="_blank"><i class="fa-solid fa-download"></i></a>
+                  <a href="../../../documents/level-1/semester-1/computer-science/cs-solutions/chapter-6-sol.pdf" target="_blank"><i class="fa-solid fa-paperclip"></i></a>
+                </div>              </div>
+              <div class="card card-body mb-3">
+                <h2>Lecture &lpar;1&#41;</h2>
+                <p>Part A</p>
+                <a href="https://youtu.be/xx1qNZro2nY" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+              <div class="card card-body mb-3">
+                <h2>Lecture &lpar;2&#41;</h2>
+                <p>Part B</p>
+                <a href="https://youtu.be/WybTHrPatCc" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="semester">
+            <p>
+              <button class="btn  pt-3 pb-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample-7" aria-expanded="false" aria-controls="collapseExample-7">
+                <i class="fa-solid fa-angle-right"></i> Chapter VII : <span>Storage Devices</span>
+              </button>
+            </p>
+            <div class="collapse" id="collapseExample-7">
+              <div class="card card-body mb-3 slides">
+                <h2>Chapter Slides</h2>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <div class="anchors d-flex justify-content-center align-items-center ms-auto">
+                  <a href="../../../documents/level-1/semester-1/computer-science/cs-slides/chapter07.pdf" target="_blank"><i class="fa-solid fa-download"></i></a>
+                  <a href="../../../documents/level-1/semester-1/computer-science/cs-solutions/chapter-7-sol.pdf" target="_blank"><i class="fa-solid fa-paperclip"></i></a>
+                </div>
+              </div>
+              <div class="card card-body mb-3">
+                <h2>Lecture &lpar;1&#41;</h2>
+                <p>Part A</p>
+                <a href="https://youtu.be/iR8vdl4Wm08" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+              <div class="card card-body mb-3">
+                <h2>Lecture &lpar;2&#41;</h2>
+                <p>Part B</p>
+                <a href="https://youtu.be/7ZI9avOVESc" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="semester">
+            <p>
+              <button class="btn  pt-3 pb-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample-8" aria-expanded="false" aria-controls="collapseExample-8">
+                <i class="fa-solid fa-angle-right"></i> Chapter VIII : <span>Operating Systems &#38; Utility Programs</span>
+              </button>
+            </p>
+            <div class="collapse" id="collapseExample-8">
+              <div class="card card-body mb-3 slides">
+                <h2>Chapter Slides</h2>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <a href="../../../documents/level-1/semester-1/computer-science/cs-slides/chapter08.pdf" target="_blank"><i class="fa-solid fa-download"></i></a>
+              </div>
+              <p class="oops text-center mt-5 mb-5"><span>Oops !</span> <br> Seems like there is no data available :&lpar;</p>
+            </div>
+          </div>
+          <div class="semester">
+            <p>
+              <button class="btn  pt-3 pb-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample-9" aria-expanded="false" aria-controls="collapseExample-9">
+                <i class="fa-solid fa-angle-right"></i> Chapter IX : <span>Communications &#38; Networks</span>
+              </button>
+            </p>
+            <div class="collapse" id="collapseExample-9">
+              <div class="card card-body mb-3 slides">
+                <h2>Chapter Slides</h2>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <a href="../../../documents/level-1/semester-1/computer-science/cs-slides/chapter09.pdf" target="_blank"><i class="fa-solid fa-download"></i></a>
+              </div>
+              <p class="oops text-center mt-5 mb-5"><span>Oops !</span> <br> Seems like there is no data available :&lpar;</p>
+            </div>
+          </div>
+          <div class="semester">
+            <p>
+              <button class="btn  pt-3 pb-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample-10" aria-expanded="false" aria-controls="collapseExample-10">
+                <i class="fa-solid fa-angle-right"></i> Chapter X : <span>Programming Languages &#38; Program Development</span>
+              </button>
+            </p>
+            <div class="collapse" id="collapseExample-10">
+              <p class="oops text-center mt-5 mb-5"><span>Oops !</span> <br> Seems like there is no data available :&lpar;</p>
+            </div>
+          </div>
+          <br>
+          <br>
+          <div class="separate"></div>
+          <br>
+          <br>
+          <div class="semester resourses">
+            <p>
+              <button class="btn  pt-3 pb-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample-99" aria-expanded="false" aria-controls="collapseExample-99">
+                <i class="fa-solid fa-angle-right"></i> Resources of the course 
+              </button>
+            </p>
+            <div class="collapse" id="collapseExample-99">
+              <div class="card card-body mb-3">
+                <h2>Reference Book</h2>
+                <p>The recommended reference book</p>
+                <a href="../../../documents/level-1/semester-1/computer-science/computer-science-book.pdf" target="_blank"><i class="fa-solid fa-download"></i></a>
+              </div>
+              <div class="card card-body mb-3">
+                <h2>Summaries</h2>
+                <p>Selected summary of the course by other students</p>
+                <a href="../../../404.html" target="_blank"><i class="fa-solid fa-download"></i></a>
+              </div>
+              <div class="card card-body mb-3">
+                <h2>Previous Exams</h2>
+                <p>You can check these out before approaching the actual exam</p>
+                <div class="anchors d-flex justify-content-center align-items-center ms-auto">
+                  <a href="../../../documents/level-1/semester-1/computer-science/cs-exams/final-2014.pdf" target="_blank"><i class="fa-solid fa-download"></i></a>
+                  <a href="../../../documents/level-1/semester-1/computer-science/cs-exams/final-2015.pdf" target="_blank"><i class="fa-solid fa-download"></i></a>
+                  <a href="../../../documents/level-1/semester-1/computer-science/cs-exams/mids2013.pdf" target="_blank"><i class="fa-solid fa-download"></i></a>
+                  <a href="../../../documents/level-1/semester-1/computer-science/cs-exams/mid-2015.pdf" target="_blank"><i class="fa-solid fa-download"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- content end  -->
+
+    <!-- footer start  -->
+    <footer class="p-3" id="footer">
+      <div class="container d-flex justify-content-center align-items-center">
+          <p class="" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-delay="100" title="This Project was made by me Ahmed-Skaîk a 4th year Pharmacy studetn using HTML, CSS, SASS, BOOTSTRAP & JS. ///////// Big thanks to Mr. Ahmed-Younis for providing all the necessary files & links for the project." >Made with ❤️, by <span><a href="#footer">Ahmed-Skaîk</a></span> &copy; 2022</p>
+      </div>
+    </footer>
+    <!-- footer end  -->
+    <!-- JS files -->
+    <script src="../../../js/bootstrap.bundle.min.js"></script>
+    <script src="../../../js/all.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="../../../js/pharmacy.js"></script>
+  </body>
+</html>
