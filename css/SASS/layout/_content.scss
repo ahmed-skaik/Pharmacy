@@ -136,8 +136,15 @@
               text-align: center;
               border-radius: 8px;
               transition: $main_transition;
+              &.exam { 
+                padding: 8px 14px;
+                font-size: 17px;
+                @media (max-width: 767px) {
+                  font-size: 12px;
+                }
+              }
               &:hover { 
-                background-color: $hover_blue
+              background-color: $hover_blue;
               }
               @media (max-width: 768px) {
                 font-size: 16px;
