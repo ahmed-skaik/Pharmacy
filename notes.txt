@@ -1,5 +1,3 @@
-- remove target="_blank" from links leading to internal pages, 
-- make the whole cared a link
 - solve the delay in css applicatoin problem 
 - the menue in mobile , make it static 
 - spelling issue in footer tooltip 

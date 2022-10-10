@@ -226,6 +226,9 @@
   background-color: #fff;
   .container {
     .row { 
+      a { 
+        text-decoration: none;
+      }
       .article-box { 
         box-shadow: 0 2px 15px rgb(0 0 0 / 10%);
         background-color: #fff;
@@ -263,7 +266,7 @@
         }
         .more { 
           border-top: 1px solid $border_color;
-          a { 
+          > span { 
             padding: 20px;
             color: $id_color;
             font-weight: bold;
