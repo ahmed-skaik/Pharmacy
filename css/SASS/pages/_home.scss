@@ -140,79 +140,77 @@
   .container { 
     .col-md-6 {
       counter-increment: services;
-      .box { 
-        background-color: #fff;
-        box-shadow: 0 12px 20px 0 rgb(0 0 0 / 13%), 0 2px 4px 0 rgb(0 0 0 / 12%);
-        transition: $main_transition;
-        position: relative;
-        &::before {
-          content: "";
-          position: absolute;
-          left: 50%;
-          transform: translateX(-50%);
-          top: -3px;
-          background-color: $id_color;
-          width: 0;
-          height: 4px;
+      a { 
+        text-decoration: none;
+        .box { 
+          display: block;
+          background-color: #fff;
+          box-shadow: 0 12px 20px 0 rgb(0 0 0 / 13%), 0 2px 4px 0 rgb(0 0 0 / 12%);
           transition: $main_transition;
-        }
-        &:hover { 
-          transform: translateY(-10px);
-          &::before { 
-            width: 100%;
-          }
-        }
-        > svg { 
-          margin: 35px auto;
-          color: $border_color;
-          text-align: center;
-        }
-        > h3 { 
-          margin: 15px 0 20px;
-          text-align: center;
-          font-size: 25px;
-          color: $id_color;
-        }
-        > .info { 
-          background-color: $section_background;
-          text-align: right;
           position: relative;
-          a {
+          &::before {
+            content: "";
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: -3px;
+            background-color: $id_color;
+            width: 0;
+            height: 4px;
+            transition: $main_transition;
+          }
+          &:hover { 
+            transform: translateY(-10px);
+            &::before { 
+              width: 100%;
+            }
+          }
+          svg { 
+            margin: 35px auto;
+            color: $border_color;
+            text-align: center;
+          }
+          h3 { 
+            margin: 15px 0 20px;
+            text-align: center;
+            font-size: 25px;
+            color: $id_color;
+          }
+          .info { 
+            background-color: $section_background;
+            text-align: right;
+            position: relative;
             color: $id_color;
             display: block;
             padding: 15px;
             text-decoration: none;
             transition: $main-transition;
-            &:hover {
-              color: $hover_blue;
-              text-decoration: underline;
+            &::before { 
+              content: "0" counter(services);
+              position: absolute;
+              background-color: $id_color;
+              color: #fff;
+              top: 0;
+              left: 0;
+              height: 100%;
+              width: 80px;
+              font-size: 30px;
+              font-weight: bold;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              padding-right: 15px;
             }
-          }
-          &::before { 
-            content: "0" counter(services);
-            position: absolute;
-            background-color: $id_color;
-            color: #fff;
-            top: 0;
-            left: 0;
-            height: 100%;
-            width: 80px;
-            font-size: 30px;
-            font-weight: bold;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding-right: 15px;
-          }
-          &::after { 
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 65px;
-            width: 50px;
-            height: 100%;
-            background-color: $border_color;
-            transform: skewx(-30deg)
+            &::after { 
+              content: "";
+              position: absolute;
+              top: 0;
+              left: 65px;
+              width: 50px;
+              height: 100%;
+              background-color: $border_color;
+              transform: skewx(-30deg)
+            }
           }
         }
       }
