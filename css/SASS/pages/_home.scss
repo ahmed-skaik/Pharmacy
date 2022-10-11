@@ -4,12 +4,14 @@
 .landing { 
   @media (max-height: 1200px) {
     min-height: calc(100vh - 101px);
-    padding: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
   }
   position: relative;
   .container { 
     @media (max-height: 1000px) {
-      padding: 0 !important;
+      padding-top: 0 !important;
+      padding-bottom: 0 !important;
     }
     .main-btn { 
       background-color: $id_color;
@@ -86,7 +88,7 @@
           font-size: 40px;
         }
         @media (max-width: 400px) {
-          font-size: 37px;
+          font-size: 36px;
         }
         @media (max-width: 350px) {
           font-size: 31px;
