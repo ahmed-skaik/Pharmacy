@@ -2,9 +2,15 @@
 
 //landing start
 .landing { 
-  min-height: calc(100vh - 101px);
+  @media (max-height: 1200px) {
+    min-height: calc(100vh - 101px);
+    padding: 0 !important;
+  }
   position: relative;
   .container { 
+    @media (max-height: 1000px) {
+      padding: 0 !important;
+    }
     .main-btn { 
       background-color: $id_color;
       color: #fff;
@@ -76,10 +82,10 @@
         @media (max-width: 767px) {
           font-size: 46px;
         }
-        @media (min-width: 400px) and (max-width: 766px) {
+        @media (min-width: 401px) and (max-width: 766px) {
           font-size: 40px;
         }
-        @media (max-width: 399px) {
+        @media (max-width: 400px) {
           font-size: 37px;
         }
         @media (max-width: 350px) {
