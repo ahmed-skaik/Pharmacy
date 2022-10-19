@@ -2,4 +2,5 @@
 - the menue in mobile , make it static 
 - spelling issue in footer tooltip 
 - div as in pk course
-- cs course
+- cell biology
+- kinetics
