@@ -40,6 +40,7 @@
       }
     }
     .txt { 
+      line-height: 1.6;
       @media (max-width: 992px) {
         text-align: center;
       }
@@ -55,7 +56,7 @@
           position: relative;
           // letter-spacing: 1px;
           &::before { 
-            content: "- An Unofficla Website -";
+            content: "- An Unofficial Website -";
             position: absolute;
             top: -13px;
             left: 50%;
@@ -92,6 +93,7 @@
             }
             @media (max-width: 576px) {
               font-size: 16px;
+              top: -7px;
             }
             @media (max-width: 374px) {
               display: none;
