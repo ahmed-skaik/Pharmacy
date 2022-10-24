@@ -1,0 +1,16 @@
+@use '../helpers/variables' as *;
+
+img.qr { 
+  width: 450px;
+}
+
+p.signature { 
+  color: $black;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+p.signature span{ 
+  color: $id-color;
+  font-weight: 700;
+}
