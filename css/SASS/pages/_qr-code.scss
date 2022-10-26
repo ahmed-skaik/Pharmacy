@@ -8,6 +8,9 @@ p.signature {
   color: $black;
   font-weight: 400;
   line-height: 1.7;
+  @media (max-width: 576px) {
+    font-size: 11px;
+  }
 }
 
 p.signature span{ 
