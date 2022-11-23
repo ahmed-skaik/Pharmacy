@@ -44,3 +44,21 @@ body {
 img { 
   user-select: none;
 }
+
+a {
+  text-decoration: none;
+}
+
+span, a {
+  &.id-color {
+    color: $id_color;
+  }
+  &.id-bold {
+    font-weight: 600;
+  }
+}
+
+.hover:hover {
+  color: $hover_blue;
+  text-decoration: underline;
+}

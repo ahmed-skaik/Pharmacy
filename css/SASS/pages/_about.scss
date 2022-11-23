@@ -26,6 +26,16 @@
       img { 
         border-radius: 24px;
       }
+      &.website {
+        img { 
+          @media (min-width: 576px) {
+            border: 50px solid $section-background;
+          }
+          @media (max-width: 575px) {
+            border: 15px solid $section-background;
+          }
+        }
+      }
     }
   }
 }
