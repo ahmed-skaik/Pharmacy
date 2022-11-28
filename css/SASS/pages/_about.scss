@@ -20,6 +20,9 @@
             color: $text_color;
           }
         }
+        abbr:first-of-type { 
+          text-decoration: underline dotted;
+        }
       }
     }
     .img { 
