@@ -29,16 +29,6 @@
       img { 
         border-radius: 24px;
       }
-      &.website {
-        img { 
-          @media (min-width: 576px) {
-            border: 50px solid $section-background;
-          }
-          @media (max-width: 575px) {
-            border: 15px solid $section-background;
-          }
-        }
-      }
     }
   }
 }
@@ -79,3 +69,26 @@
   }
 } 
 // departments end 
+
+//this website start
+.about { 
+  &.qr-code { 
+    .container {
+      .img { 
+        &.website {
+          img { 
+            outline: 2px solid $border_color;
+            box-shadow: 0 14px 94px 0 rgb(15 15 182 / 9%);
+            @media (min-width: 576px) {
+              border: 65px solid $section-background;
+            }
+            @media (max-width: 575px) {
+              border: 15px solid $section-background;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+//this website end
