@@ -137,6 +137,10 @@
         @media (max-width: 576px) {
           font-size: 14px;
         }
+        a { 
+          animation: wiggle calc($main-transition * 5) linear infinite;
+          display: inline-block;
+        }
         span { 
           color: #f00; 
           font-size: 11px; 
@@ -173,7 +177,7 @@
       color: $hover_blue;
     }
     svg { 
-      animation: bouncing 1.5s linear infinite;
+      animation: bouncing calc($main-transition * 5) linear infinite;
       font-weight: 700;
     }
   }

@@ -74,6 +74,11 @@
 .about { 
   &.qr-code { 
     .container {
+      a { 
+        &.wiggle { 
+          animation: wiggle calc($main-transition * 5) linear infinite;
+          display: inline-block;        }
+      }
       .img {
         &.website {
           img { 
