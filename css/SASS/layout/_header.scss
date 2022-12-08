@@ -157,6 +157,13 @@
     ul {
       margin-left: 40px;
       li { 
+        &:nth-child(6) {
+          a { 
+            @media (min-width: 992px) {
+              animation: not-link calc($main-transition * 5) linear infinite;
+            }
+          }
+        }
         a {
           color: $black;
           font-size: 18px;
@@ -182,29 +189,31 @@
             font-size: 28px;
           }
         }
-        a:not(.dropdown-item) { 
-          @media (min-width: 992px) {
-            margin: 0 10px;
-            padding-top: 15px;
-            padding-bottom: 15px;
-            &::before { 
-              position: absolute;
-              content: "";
-              background-color: $id_color;
-              width: 0;
-              height: 2px;
-              left: 0;
-              bottom: 0;
-              transition: $main_transition;
-            }
-            &:hover { 
-              &::before{
-                width: 100%;
+        a { 
+          &:not(.dropdown-item) {
+            @media (min-width: 992px) {
+              margin: 0 10px;
+              padding-top: 15px;
+              padding-bottom: 15px;
+              &::before { 
+                position: absolute;
+                content: "";
+                background-color: $id_color;
+                width: 0;
+                height: 2px;
+                left: 0;
+                bottom: 0;
+                transition: $main_transition;
               }
-            }
-            &.active {
-              &::before {
-                width: 100%;
+              &:hover { 
+                &::before{
+                  width: 100%;
+                }
+              }
+              &.active {
+                &::before {
+                  width: 100%;
+                }
               }
             }
           }
