@@ -160,7 +160,8 @@
         &:nth-child(6) {
           a { 
             @media (min-width: 992px) {
-              animation: not-link calc($main-transition * 5) linear infinite;
+              animation: link calc($main-transition * 5) linear 5;
+              animation-delay: 3s;
             }
           }
         }
