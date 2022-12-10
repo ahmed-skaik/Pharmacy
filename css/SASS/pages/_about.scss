@@ -76,7 +76,7 @@
     .container {
       a { 
         &.wiggle { 
-          animation: wiggle calc($main-transition * 7) linear infinite;
+          animation: wiggle calc($main-transition * 6) linear infinite;
           display: inline-block;        }
       }
       .img {
