@@ -166,6 +166,39 @@
                 visibility: hidden;
               }
             }
+            &.dep {
+              position: relative;
+              &::after { 
+                font-family: 'Font Awesome 6 Free';
+                position: absolute;
+                font-weight: 900;
+                color: $icon_dark_blue;
+                bottom: 12px;
+                font-size: 20px;
+                width: 30px;
+                text-align: center;
+              }
+              &.pt-dep { 
+                &::after { 
+                  content: "\f484";
+                }
+              }
+              &.cg-dep { 
+                &::after { 
+                  content: "\f5a7";
+                }
+              }
+              &.ch-dep { 
+                &::after { 
+                  content: "\e4f3";
+                }
+              }
+              &.tc-dep { 
+                &::after { 
+                  content: "\f485";
+                }
+              }
+            }
             &.slides { 
               background-color: $slides;
             }
@@ -184,7 +217,7 @@
             button { 
               position: relative;
               &::after { 
-                font-family: "Font Awesome 5 Free"; 
+                font-family: "Font Awesome 6 Free"; 
                 content: "\f059";
                 position: absolute;
                 width: 20px;
