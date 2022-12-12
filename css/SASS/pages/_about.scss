@@ -98,3 +98,27 @@
   }
 }
 //this website end
+
+// youtube start
+.departments { 
+  .container {
+    .img-flex { 
+      .iframe-container { 
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%; 
+        height: 0;
+        iframe { 
+          position: absolute;
+          top:0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          border-radius: 24px;
+          box-shadow: 0 14px 94px 0 rgb(15 15 182 / 9%);
+        }
+      }
+    }
+  }
+} 
+// youtube end 
