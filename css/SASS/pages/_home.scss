@@ -184,9 +184,35 @@
 } 
 //landing end  
 
+// stats start
+.stats { 
+  background-color: $section_background;
+  color: $black;
+  .container { 
+    .box { 
+      h3 { 
+        font-size: 54px;
+        span { 
+          &.plus { 
+            color: $id_color;
+            font-weight: 400;
+          }
+        }
+      }
+      p { 
+        font-size: 20px;
+        font-weight: 500;
+        color: $id_color;
+        text-transform: uppercase;
+      }
+    }
+  }
+} 
+// stats end 
+
 //plans start
 .plans { 
-  background-color: $section_background;
+  background-color: #fff;
   .container { 
     .col-md-6 {
       counter-increment: services;
@@ -271,7 +297,7 @@
 
 //courses start
 .courses { 
-  background-color: #fff;
+  background-color: $section_background;
   .container {
     .row { 
       a { 
@@ -339,7 +365,7 @@
 
 // event start 
 .events { 
-  background-color: $section_background;
+  background-color: #fff;
   .container { 
     .card { 
       transition: $main_transition;
