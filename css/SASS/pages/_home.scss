@@ -153,7 +153,7 @@
     }
     .img { 
       img {
-        border-radius: 30px;
+        border-radius: $img-border-radius;
         box-shadow: 0 14px 94px 0 rgb(15 15 182 / 9%);
         max-width: 100%;
         overflow: hidden;
@@ -221,6 +221,7 @@
         .box { 
           display: block;
           background-color: #fff;
+          border-radius: $border-radius;
           box-shadow: 0 12px 20px 0 rgb(0 0 0 / 13%), 0 2px 4px 0 rgb(0 0 0 / 12%);
           transition: $main_transition;
           position: relative;
@@ -254,6 +255,7 @@
           }
           .info { 
             background-color: $section_background;
+            border-radius: $border-radius;
             text-align: right;
             position: relative;
             color: $id_color;
@@ -265,6 +267,7 @@
               content: "0" counter(services);
               position: absolute;
               background-color: $id_color;
+              border-radius: 0 0 0 $border-radius;
               color: #fff;
               top: 0;
               left: 0;
@@ -281,7 +284,7 @@
               content: "";
               position: absolute;
               top: 0;
-              left: 65px;
+              left: 63px;
               width: 50px;
               height: 100%;
               background-color: $border_color;
@@ -306,7 +309,7 @@
       .article-box { 
         box-shadow: 0 2px 15px rgb(0 0 0 / 10%);
         background-color: #fff;
-        border-radius: 6px;
+        border-radius: $border-radius;
         overflow: hidden;
         transition: transform $main_transition, box-shadow $main_transition;
         &:hover { 
@@ -372,7 +375,7 @@
       &:hover { 
         transform: scale(0.98);
       }
-      border-radius: 20px;
+      border-radius: $border-radius;
     overflow: hidden;
     background-color: #fff;
     box-shadow: 0 20px 34px 0 rgb(11 11 44 / 4%), 0 4px 8px 0 rgb(11 11 44 / 2%), 0 10px 34px 0 rgb(52 52 255 / 5%);
