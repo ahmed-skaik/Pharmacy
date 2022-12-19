@@ -122,3 +122,131 @@
   }
 } 
 // youtube end 
+
+//creators start
+.about { 
+  &.creators { 
+    background-color: $section-background;
+    .container { 
+      .box { 
+        border: 1px solid  $border_color;
+        padding: 0 25px 32px;
+        border-radius: $img-border-radius;
+        box-shadow: 0 20px 34px 0 rgb(11 11 44 / 4%), 0 4px 8px 0 rgb(11 11 44 / 2%), 0 10px 34px 0 rgb(52 52 255 / 5%);
+        .box-wrap { 
+          margin-top: -65px;
+          position: relative;
+          &::before, &::after { 
+            content: '"';
+            position: absolute;
+            font-size: 65px;
+            color: $id-color;
+            bottom: -25px;
+            // opacity: 0.4;
+            transform: rotate(20deg);
+            z-index: 999;
+          }
+          &::after { 
+            right: 0;
+          }
+          &::before { 
+            right: 20px;
+          }
+          img { 
+            width: 140px;
+            border-radius: 50%;
+            border: 12px solid  $border_color;
+            @media (max-width: 767px) {
+              width: 110px;
+            }
+          }
+          h3 { 
+            color: $black;
+          }
+          > span { 
+            color: $id-color;
+            font-size: 18px;
+            text-transform: uppercase;
+            font-weight: 500;
+          }
+          p { 
+            color: $gray;
+            font-size: 18px;
+            line-height: 1.7;
+            &.cutoff-text { 
+              $max-lines: 5;
+              $line-height: 1.7;
+              max-height: calc($max-lines * 1em * $line-height);
+              line-height: $line-height;
+              overflow: hidden;
+              position: relative;
+              transition: $main-transition;
+              &:has(+ .expand-btn:not(:checked))::after { 
+                content: "";
+                position: absolute;
+                //the number multiplied by line hight is equal to the number of lines hidden
+                height: calc(3em * $line-height);
+                width: 100%;
+                bottom: 0;
+                left: 0;
+                pointer-events: none;
+                background: linear-gradient(to bottom, transparent, $section-background);
+              }
+              &:has(+ .expand-btn:checked) {
+                max-height: none;
+              }
+            }
+            span { 
+              &.important { 
+                text-decoration: underline;
+                color: #f00;
+              }
+              &[data-bs-toggle="tooltip"] {
+                text-decoration: underline dotted;
+                width: fit-content;
+                margin-right: auto;
+              }
+            }
+          }
+          .expand-btn {
+            appearance: none;
+            border: 1px solid $id-color;
+            padding: 0.25em;
+            cursor: pointer;
+            transition: $main-transition;
+            left: 0;
+            bottom: -10%;
+            background-color: $id-color;
+            border-radius: 8px;
+            display: block;
+            &::before { 
+              content: "Read More";
+              color: #fff;
+              transition: $main-transition;
+            }
+            &:hover { 
+              background-color: #fff;
+              &::before { 
+                color: $id-color;
+              }
+            }
+            &:checked::before { 
+              content: "Read Less";
+            }
+          }
+        }
+      }
+    }
+  }
+}
+//creators end
+
+//just keep in mind 
+.cutoff-text-for-you { 
+  $max-lines: 5;
+  display: -webkit-box;
+  -webkit-line-clamp: $max-lines;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+}
+//just keep in mind 

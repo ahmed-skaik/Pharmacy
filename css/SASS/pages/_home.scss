@@ -235,6 +235,7 @@
             width: 0;
             height: 4px;
             transition: $main_transition;
+            border-radius: $border-radius;
           }
           &:hover { 
             transform: translateY(-10px);

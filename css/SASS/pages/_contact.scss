@@ -4,7 +4,7 @@
   .container { 
     .cardd { 
       padding: 56px 78px 64px;
-      border-radius: 20px;
+      border-radius: $img-border-radius;
       border: 1px solid $border_color;
       max-width: 810px;
       box-shadow: 0 20px 34px 0 rgb(11 11 44 / 4%), 0 4px 8px 0 rgb(11 11 44 / 2%), 0 10px 34px 0 rgb(52 52 255 / 5%);
@@ -108,7 +108,7 @@
         }
         .card { 
           border: none;
-          border-radius: 20px;
+          border-radius: $img-border-radius;
           max-width: 900px;
           background-color: $section_background;
           @media (max-width: 767px) {
