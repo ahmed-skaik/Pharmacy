@@ -1,4 +1,4 @@
-@use '_variables';
+@use '_variables' as *;
 
 // animation bouncing start 
 @-webkit-keyframes bouncing {
@@ -124,6 +124,13 @@
     background-color: rgb(255 255 160 / 50%);
   }
 } 
+
+@keyframes link-mobile { 
+  100% { 
+    background-color: $section-background;
+    color: $dark_blue;
+  }
+}
 // animation bouncing end 
 
 // animation wiggle start

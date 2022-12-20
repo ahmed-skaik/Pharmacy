@@ -159,6 +159,10 @@
       li { 
         &:nth-child(6) {
           a { 
+            @media (max-width: 991px) {
+              animation: link-mobile calc($main-transition * 5) cubic-bezier(0, 0, 0.2, 1) infinite;
+              animation-delay: 1.2s;
+            }
             @media (min-width: 992px) {
               animation: link calc($main-transition * 6) cubic-bezier(0, 0, 0.2, 1) 5;
               animation-delay: 3s;
