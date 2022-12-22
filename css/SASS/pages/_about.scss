@@ -27,6 +27,7 @@
     }
     .img { 
       img { 
+        box-shadow: 0 14px 94px 0 rgb(15 15 182 / 9%);
         border-radius: $img-border-radius;
       }
     }
@@ -37,6 +38,10 @@
 // departments start
 .departments { 
   background-color: $section-background;
+  border: {
+    top: 1px solid $border_color;
+    bottom: 1px solid $border_color;
+  }
   .container {
     .img-flex { 
       @media (max-width: 991px) {
@@ -44,6 +49,7 @@
       }
       .img { 
         img { 
+          box-shadow: 0 14px 94px 0 rgb(15 15 182 / 9%);
           border-radius: $img-border-radius;
         }
       }
@@ -128,6 +134,10 @@
 .about { 
   &.creators { 
     background-color: $section-background;
+    border: {
+      top: 1px solid $border_color;
+      // bottom: 1px solid $border_color;
+    }
     .container { 
       .box { 
         border: 1px solid  $border_color;
@@ -221,7 +231,7 @@
           .expand-btn {
             appearance: none;
             border: 1px solid $id-color;
-            padding: 0.25em;
+            padding: 0.25em 0.5em;
             cursor: pointer;
             transition: $main-transition;
             left: 0;

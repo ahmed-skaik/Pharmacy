@@ -109,6 +109,7 @@
         .collapse { 
           .card { 
             box-shadow: 0 20px 34px 0 rgb(11 11 44 / 4%), 0 4px 8px 0 rgb(11 11 44 / 2%), 0 10px 34px 0 rgb(52 52 255 / 5%);
+            border-radius: $border-radius;
             h2 { 
               color: $black;
             }

@@ -19,7 +19,7 @@
       padding: 22px 32px;
       font-size: 16px;
       text-transform: uppercase;
-      border-radius: 6px;
+      border-radius: 8px;
       font-weight: 500;
       transition: $main_transition;
       border: none;
@@ -188,6 +188,10 @@
 .stats { 
   background-color: $section_background;
   color: $black;
+  border: {
+    top: 1px solid $border_color;
+    bottom: 1px solid $border_color;
+  }
   .container { 
     .box { 
       h3 { 
@@ -222,6 +226,7 @@
           display: block;
           background-color: #fff;
           border-radius: $border-radius;
+          border: 1px solid $border_color;
           box-shadow: 0 12px 20px 0 rgb(0 0 0 / 13%), 0 2px 4px 0 rgb(0 0 0 / 12%);
           transition: $main_transition;
           position: relative;
@@ -256,7 +261,10 @@
           }
           .info { 
             background-color: $section_background;
-            border-radius: $border-radius;
+            border: {
+              radius: 0 0 $border-radius $border-radius;
+              top: 1px solid $border_color;
+            }
             text-align: right;
             position: relative;
             color: $id_color;
@@ -302,6 +310,10 @@
 //courses start
 .courses { 
   background-color: $section_background;
+  border: {
+    top: 1px solid $border_color;
+    bottom: 1px solid $border_color;
+  }
   .container {
     .row { 
       a { 

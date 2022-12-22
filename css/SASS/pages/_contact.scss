@@ -51,6 +51,10 @@
 
 .faq {
   background-color: $section_background;
+  border: {
+    top: 1px solid $border_color;
+    // bottom: 1px solid $border_color;
+  }
   .container { 
     .questions { 
       .question { 
