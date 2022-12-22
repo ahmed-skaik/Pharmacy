@@ -77,7 +77,8 @@
       a { 
         &.wiggle { 
           animation: wiggle calc($main-transition * 6) linear infinite;
-          display: inline-block;        }
+          display: inline-block;        
+        }
       }
       .img {
         &.website {
@@ -173,6 +174,15 @@
             color: $gray;
             font-size: 18px;
             line-height: 1.7;
+            a { 
+              color: $id-color;
+              transition: $main-transition;
+              animation: wiggle calc($main-transition * 6) linear infinite;
+              display: inline-block;
+              &:hover { 
+                color: $hover_blue;
+              }
+            }
             &.cutoff-text { 
               $max-lines: 5;
               $line-height: 1.7;
