@@ -310,6 +310,7 @@
 //courses start
 .courses { 
   background-color: $section_background;
+  position: relative;
   border: {
     top: 1px solid $border_color;
     bottom: 1px solid $border_color;
