@@ -70,7 +70,7 @@ span, a {
     position: absolute;
     width: 100%;
     height: 30px;
-    z-index: 999;
+    z-index: 10;
     background-image: linear-gradient(135deg, #fff 25%, transparent 25%), linear-gradient(220deg, #fff 25%, transparent 25%);
     background-size: 30px 30px;
   }
