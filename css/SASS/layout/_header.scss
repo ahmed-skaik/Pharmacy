@@ -7,6 +7,34 @@
   }
   .container { 
     min-height: 85px;
+    position: relative;
+    &::after { 
+      $dimentions: 65px;
+      $border-width: 3px;
+      font-family: "Font Awesome 6 Free";
+      content: "\f254 \f501";
+      position: fixed;
+      top: 101px;
+      background-color: $id_color;
+      color: #fff;
+      text-align: center;
+      z-index: 9999;
+      width: $dimentions;
+      height: $dimentions;
+      line-height: $dimentions - $border-width;
+      border-radius: 50%;
+      font-size: 26px;
+      font-weight: 900;
+      border: $border-width dashed $border_color;
+      margin: 10px 5px;
+      @media (max-width: 767px) {
+        margin: 10px 0;
+      }
+      box-shadow: 0 14px 94px 0 rgb(15 15 182 / 9%);
+      opacity: 0.6;
+      transition: $main-transition;
+      cursor: not-allowed;
+    }
     .navbar-brand { 
       img {
         width: 75px;
