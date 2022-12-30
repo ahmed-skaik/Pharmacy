@@ -100,3 +100,36 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
     e.preventDefault();
   })
 // prevent hot keys end 
+
+// full screen btn start
+let myDocument = document.documentElement;
+let fullScreenBtn = document.querySelector("#full-screen") ;
+
+fullScreenBtn.addEventListener("click", () => { 
+  if (fullScreenBtn.innerHTML = '<i class="fa-solid fa-expand fa-fw"></i>') {
+    if (myDocument.requestFullscreen) {
+      myDocument.requestFullscreen();
+    }else if (myDocument.msRequestFullscreen) {
+      myDocument.msRequestFullscreen();
+    }else if (myDocument.mozRequestFullscreen) {
+      myDocument.mozRequestFullscreen();
+    }else if (myDocument.webkitRequestFullscreen) {
+      myDocument.webkitRequestFullscreen();
+    }
+    fullScreenBtn.innerHTML = '<i class="fa-solid fa-compress fa-fw"></i>';
+  }else { 
+    if (document.exitFullscreen) {
+      document.exitFullscreen();
+    }else if (document.msExitFullscreen) {
+      document.msExitFullscreen();
+    }else if (document.mozExitFullscreen) {
+      document.mozExitFullscreen();
+    }else if (document.webkitExitFullscreen) {
+      document.webkitExitFullscreen();
+    }
+    fullScreenBtn.innerHTML = '<i class="fa-solid fa-expand fa-fw"></i>';
+  }
+})
+
+
+// full screen btn end 
