@@ -1,7 +1,8 @@
 // welcome message start
 let welcomeMsg = `Hello from JS my fellow Pharmacy Students !`
-console.log(welcomeMsg) 
+console.log(`%c${welcomeMsg} %cit's Ahmed-Skaîk typing..`, `color:#3434ff; font-size: 25px; background-color: #fff; text-decoration: underline wavy #08082c;`, `color: red; font-size: 25px; padding-top: 25px`) 
 // welcome message end 
+
 
 // loading screen start
 function loading() {
@@ -39,73 +40,12 @@ function scroll() {
 window.addEventListener("scroll", scroll)
 // scroll up end
 
-//stats start
-let nums = document.querySelectorAll(".stats .box .number")
-let statsSection = document.querySelector(".stats")
-let started = false;
-
-function startCount (ele) {
-  let goal = ele.dataset.goal;
-  let count = setInterval(() => {
-    ele.textContent++;
-    if (ele.textContent == goal) {
-      clearInterval(count)
-    }
-  }, (3000 / goal));
-}
-
-function stats() {
-  if (window.scrollY >= statsSection.offsetTop - 350) {
-    if (!started) {
-      nums.forEach((num) => {
-        startCount(num)
-      })    
-    }
-    started = true;
-    }
-}
-
-window.addEventListener("scroll", stats)
-
-//stats end 
-
-
-// tooltip start 
-var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-  return new bootstrap.Tooltip(tooltipTriggerEl)
-})
-// tooltip end 
-
-// prevent hot keys start
-  document.onkeydown = function(e) { 
-    if(event.keyCode == 123) {
-      return false;
-    }
-    if(e.ctrlKey && e.shiftKey && e.keyCode == "I".charCodeAt(0)) {
-      return false
-    }
-    if(e.ctrlKey && e.shiftKey && e.keyCode == "C".charCodeAt(0)) {
-      return false
-    }
-    if(e.ctrlKey && e.shiftKey && e.keyCode == "J".charCodeAt(0)) {
-      return false
-    }
-    if(e.ctrlKey && e.keyCode == "U".charCodeAt(0)) {
-      return false
-    }
-  }
-
-  document.addEventListener("contextmenu", function(e) { 
-    e.preventDefault();
-  })
-// prevent hot keys end 
 
 // full screen btn start
 let myDocument = document.documentElement;
 let fullScreenBtn = document.querySelector("#full-screen") ;
 
-fullScreenBtn.addEventListener("click", () => { 
+function click() { 
   if (fullScreenBtn.innerHTML = '<i class="fa-solid fa-expand fa-fw"></i>') {
     if (myDocument.requestFullscreen) {
       myDocument.requestFullscreen();
@@ -129,7 +69,40 @@ fullScreenBtn.addEventListener("click", () => {
     }
     fullScreenBtn.innerHTML = '<i class="fa-solid fa-expand fa-fw"></i>';
   }
-})
+}
 
-
+fullScreenBtn.addEventListener("click", click)
 // full screen btn end 
+
+
+// tooltip start 
+var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl)
+})
+// tooltip end 
+
+
+// prevent hot keys start
+  document.onkeydown = function(e) { 
+    if(event.keyCode == 123) {
+      return false;
+    }
+    if(e.ctrlKey && e.shiftKey && e.keyCode == "I".charCodeAt(0)) {
+      return false
+    }
+    if(e.ctrlKey && e.shiftKey && e.keyCode == "C".charCodeAt(0)) {
+      return false
+    }
+    if(e.ctrlKey && e.shiftKey && e.keyCode == "J".charCodeAt(0)) {
+      return false
+    }
+    if(e.ctrlKey && e.keyCode == "U".charCodeAt(0)) {
+      return false
+    }
+  }
+
+  document.addEventListener("contextmenu", function(e) { 
+    e.preventDefault();
+  })
+// prevent hot keys end
