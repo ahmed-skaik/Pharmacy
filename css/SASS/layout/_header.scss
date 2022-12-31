@@ -25,7 +25,6 @@ header {
   .navbar { 
     .container { 
       min-height: 85px;
-      position: relative;
       &::after { 
         $dimentions: 65px;
         $border-width: 3px;
