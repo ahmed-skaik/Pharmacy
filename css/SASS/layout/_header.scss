@@ -1,10 +1,12 @@
 @use '../helpers/variables' as *;
 
 header { 
+  $subheader-height: 32px;
+  $header-height: 101px;
   position: relative;
   box-shadow: 0 0 10px #ddd;
   @media (max-width: 991px) {
-    min-height: 101px;
+    min-height: $header-height;
   }
   &::before { 
     content: '" Once you stop learning, you start dying. "';
@@ -43,7 +45,7 @@ header {
         font-family: "Font Awesome 6 Free";
         content: "\f254 \f501";
         position: fixed;
-        top: 101px + 32px;
+        top: $header-height + $subheader-height;
         background-color: $id_color;
         color: #fff;
         text-align: center;
@@ -79,12 +81,12 @@ header {
       .navbar-collapse {
         @media (max-width: 991.99px) {
           background-color: $black;
-          min-height: calc(100vh - 101px);
+          min-height: calc(100vh - $header-height - $subheader-height);
           box-shadow: 0 4px 10px 0 rgb(74 58 255 / 18%);
           position: absolute;
           left: 0;
           width: 100%;
-          z-index: 99;
+          z-index: 99999;
           top: 101px;
           transition: calc($main_transition * 2);
           transform: translateY(-725px);
