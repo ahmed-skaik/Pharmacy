@@ -106,3 +106,9 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
     e.preventDefault();
   })
 // prevent hot keys end
+
+// fixed element start
+var headerContainer = document.querySelector("nav > .container") 
+var headerContainerAfter = window.getComputedStyle(headerContainer, "::after")
+// console.log(headerContainerAfter.top)
+// fixed element end 
