@@ -11,13 +11,17 @@ header {
   &::before { 
     content: '" Once you stop learning, you start dying. "';
     width: 100%;  
-    background-color: $id_color;
     display: block;
     text-align: center;
+    background-color: $id_color;
     color: #fff;
-    font-size: 14px;
+    font: {
+      size: 14px;
+      weight: bold;
+      style: italic;
+    }
+    letter-spacing: 0.3px;
     padding: 5px 0;
-    font-weight: bold;
     border-bottom: 1px dashed $border_color;
   }
   .full-screen { 
