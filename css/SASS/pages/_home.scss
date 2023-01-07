@@ -34,7 +34,7 @@
       }
       &.revers {
         background-color: #fff;
-        transition: $main-transition;
+        transition: $main_transition;
         color: $id_color;
         border-color: $id_color;
         &:hover { 
@@ -138,7 +138,7 @@
           font-size: 14px;
         }
         a { 
-          animation: wiggle calc($main-transition * 6) linear infinite;
+          animation: wiggle calc($main_transition * 6) linear infinite;
           display: inline-block;
           font-weight: 500;
         }
@@ -178,7 +178,7 @@
       color: $hover_blue;
     }
     svg { 
-      animation: bouncing calc($main-transition * 6) cubic-bezier(0.39, 0.58, 0.57, 1) infinite;
+      animation: bouncing calc($main_transition * 6) cubic-bezier(0.39, 0.58, 0.57, 1) infinite;
       font-weight: 700;
     }
   }
@@ -219,7 +219,7 @@
 .plans { 
   background-color: #fff;
   .container { 
-    .col-md-6 {
+    .plan {
       counter-increment: services;
       a { 
         text-decoration: none;
@@ -245,6 +245,9 @@
           }
           &:hover { 
             transform: translateY(-10px);
+            .info { 
+              color: $hover_blue;
+            }
             &::before { 
               width: 100%;
             }
@@ -272,7 +275,7 @@
             display: block;
             padding: 15px;
             text-decoration: none;
-            transition: $main-transition;
+            transition: $main_transition;
             &::before { 
               content: "0" counter(services);
               position: absolute;
@@ -330,6 +333,21 @@
         &:hover { 
           transform: translateY(-10px);
           box-shadow: 0 2px 15px rgb(0 0 0 / 20%);
+          .more { 
+            transition: $main_transition;
+            svg { 
+              animation: arrow-right calc($main_transition * 2) linear infinite;
+            }
+            span { 
+              color: $hover_blue;
+            }
+          }
+        }
+        .img { 
+          overflow: hidden;
+          img { 
+            scale: 1.1;
+          }
         }
         .text { 
           padding: 20px;
@@ -363,17 +381,11 @@
             color: $id_color;
             font-weight: bold;
             text-decoration: none;
-            transition: $main-transition;
+            transition: $main_transition;
           }
           svg { 
             color: $icon_dark_blue;
           }
-        }
-        &:hover .more svg { 
-          animation: arrow-right calc($main-transition * 2) linear infinite;
-        }
-        &:hover .more a { 
-            color: $hover_blue;
         }
       }
     }
@@ -387,59 +399,59 @@
   .container { 
     .card { 
       transition: $main_transition;
+      border-radius: $border-radius;
+      overflow: hidden;
+      background-color: #fff;
+      box-shadow: 0 20px 34px 0 rgb(11 11 44 / 4%), 0 4px 8px 0 rgb(11 11 44 / 2%), 0 10px 34px 0 rgb(52 52 255 / 5%);
       &:hover { 
         transform: scale(0.98);
       }
-      border-radius: $border-radius;
-    overflow: hidden;
-    background-color: #fff;
-    box-shadow: 0 20px 34px 0 rgb(11 11 44 / 4%), 0 4px 8px 0 rgb(11 11 44 / 2%), 0 10px 34px 0 rgb(52 52 255 / 5%);
-    .card-body { 
-      padding: 42px 47px 42px 48px;
-      @media (max-width: 768px) {
-        padding: 35px 30px;
-        text-align: center;
-      }
-      h5 { 
-        color: $black;
-        font-size: 25px;
-      }
-      > p { 
-        color: $gray;
-        font-size: 17px;
-        margin-bottom: 10px;
-      }
-      hr { 
-        margin: 30px 0 17px;
-      }
-      ul { 
-        li { 
-          margin: 0 0 22px 15px;
-          font-size: 18px;
+      .card-body { 
+        padding: 42px 47px 42px 48px;
+        @media (max-width: 768px) {
+          padding: 35px 30px;
+          text-align: center;
+        }
+        h5 { 
           color: $black;
-          @media (max-width: 350px) {
-            font-size: 14px;
-          }
-          a { 
+          font-size: 25px;
+        }
+        > p { 
+          color: $gray;
+          font-size: 17px;
+          margin-bottom: 10px;
+        }
+        hr { 
+          margin: 30px 0 17px;
+        }
+        ul { 
+          li { 
+            margin: 0 0 22px 15px;
+            font-size: 18px;
             color: $black;
-            text-decoration: none;
-            transition: $main_transition;
-            &:hover { 
-              text-decoration: underline;
-              color: $id_color;
-            }
-          }
-          svg { 
-            color: $id_color;
-            margin-right: 3px;
-            font-size: 21px;
             @media (max-width: 350px) {
-              font-size: 17px;
+              font-size: 14px;
+            }
+            a { 
+              color: $black;
+              text-decoration: none;
+              transition: $main_transition;
+              &:hover { 
+                text-decoration: underline;
+                color: $id_color;
+              }
+            }
+            svg { 
+              color: $id_color;
+              margin-right: 3px;
+              font-size: 21px;
+              @media (max-width: 350px) {
+                font-size: 17px;
+              }
             }
           }
         }
       }
-    }
     }
   }
 }
