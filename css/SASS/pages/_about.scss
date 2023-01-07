@@ -220,7 +220,7 @@
             span { 
               &.important { 
                 text-decoration: underline;
-                color: #f00;
+                color: $red;
               }
               &[data-bs-toggle="tooltip"] {
                 text-decoration: underline dotted;
