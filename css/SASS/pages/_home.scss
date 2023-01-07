@@ -140,11 +140,12 @@
         a { 
           animation: wiggle calc($main-transition * 6) linear infinite;
           display: inline-block;
+          font-weight: 500;
         }
         span { 
           color: #f00; 
           font-size: 11px; 
-          font-weight: 300;
+          font-weight: 400;
           @media (min-width: 767px) {
             letter-spacing: 1px;
           }
