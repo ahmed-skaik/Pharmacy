@@ -1,4 +1,3 @@
 - solve the delay in css applicatoin problem 
 - the menue in mobile , make it static 
 - spelling issue in footer tooltip 
-- cell biology

@@ -1,31 +1,10 @@
 @use '_variables' as *;
 
 // animation bouncing start 
-@-webkit-keyframes bouncing {
-  0%, 10%, 20%, 50%, 80%, 100% {
-    transform: translateY(0);
-  }
-
-  40%, 60%{
-    transform: translateY(-15px);
-  }
-}
-
-@-moz-keyframes bouncing {
-  0%, 10%, 20%, 50%, 80%, 100% {
-    transform: translateY(0);
-  }
-
-  40%, 60%{
-    transform: translateY(-15px);
-  }
-}
-
 @keyframes bouncing {
   0%, 10%, 20%, 50%, 80%, 100% {
     transform: translateY(0);
   }
-
   40%, 60%{
     transform: translateY(-15px);
   }
@@ -33,18 +12,6 @@
 // animation bouncing end  
 
 // animation arrow-right start 
-@-webkit-keyframes arrow-right {
-  100% {
-    transform: translateX(10px);
-  }
-}
-
-@-moz-keyframes arrow-right {
-  100% {
-    transform: translateX(10px);
-  }
-}
-
 @keyframes arrow-right {
   100% {
     transform: translateX(10px);
@@ -53,18 +20,6 @@
 // animation arrow-right end 
 
 // animation lader start
-@-webkit-keyframes loader {
-  100% {
-    opacity: 0;
-  }
-}
-
-@-moz-keyframes loader {
-  100% {
-    opacity: 0;
-  }
-}
-
 @keyframes loader {
   100% {
     opacity: 0;
@@ -73,20 +28,6 @@
 // animation lader end 
 
 //animation fadeout start
-@-webkit-keyframes fadeout {
-  100% {
-    opacity: 0;
-    visibility: hidden;
-  }
-}
-
-@-moz-keyframes fadeout {
-  100% {
-    opacity: 0;
-    visibility: hidden;
-  }
-}
-
 @keyframes fadeout {
   100% {
     opacity: 0;
@@ -96,18 +37,6 @@
 //animation fadeout end 
 
 //animation zoom start 
-@-webkit-keyframes zoom {  
-  100% {
-    transform: scale(1.1);
-  }
-}
-
-@-moz-keyframes zoom {  
-  100% {
-    transform: scale(1.1);
-  }
-}
-
 @keyframes zoom {  
   100% {
     transform: scale(1.1);
@@ -115,7 +44,7 @@
 }
 //animation zoom start 
 
-// animation bouncing start
+// animation link start
 @keyframes link {
   0% { 
     background-color: rgb(255 250 160 / 0%);
@@ -124,14 +53,16 @@
     background-color: rgb(255 255 160 / 50%);
   }
 } 
+// animation link start
 
+// animation link-mobile start 
 @keyframes link-mobile { 
   100% { 
     background-color: $section-background;
     color: $dark_blue;
   }
 }
-// animation bouncing end 
+// animation link-mobile end 
 
 // animation wiggle start
 @keyframes wiggle {
