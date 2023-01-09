@@ -141,6 +141,7 @@
     }
     .container { 
       .box { 
+        background-color: #fff;
         border: 1px solid  $border_color;
         padding: 0 25px 32px;
         border-radius: $img-border-radius;
@@ -211,7 +212,7 @@
                 bottom: 0;
                 left: 0;
                 pointer-events: none;
-                background: linear-gradient(to bottom, transparent, $section-background);
+                background: linear-gradient(to bottom, transparent, #fff);
               }
               &:has(+ .expand-btn:checked) {
                 max-height: none;
