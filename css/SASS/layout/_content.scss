@@ -238,5 +238,9 @@
       }
     }
   }
+  .collapsing {
+    transition-delay: 0.1s;
+    visibility: hidden;
+  }
 } 
 // content section end  
