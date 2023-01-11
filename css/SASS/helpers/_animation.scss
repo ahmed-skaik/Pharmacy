@@ -1,6 +1,6 @@
-@use '../helpers/variables' as *;
-@use '../helpers/placeholders' as *;
-@use '../helpers/mixins' as *;
+@use '_variables' as *;
+@use '_placeholders' as *;
+@use '_mixins' as *;
 
 // animation bouncing start 
 @keyframes bouncing {
