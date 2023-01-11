@@ -1,4 +1,6 @@
 @use '../helpers/variables' as *;
+@use '../helpers/placeholders' as *;
+@use '../helpers/mixins' as *;
 
 // about start 
 .about { 
@@ -166,8 +168,7 @@
             right: 20px;
           }
           img { 
-            width: 140px;
-            border-radius: 50%;
+            @include circle(140px);
             border: 12px solid  $border_color;
             @media (max-width: 767px) {
               width: 110px;

@@ -1,4 +1,6 @@
 @use '../helpers/variables' as *;
+@use '../helpers/placeholders' as *;
+@use '../helpers/mixins' as *;
 
 .contact { 
   .container { 
@@ -32,10 +34,8 @@
       }
       .img { 
         .img-background { 
-          width: 82px;
-          height: 83px;
+          @include circle(82px);
           background-color: #fff;
-          border-radius: 50%;
           box-shadow: 0 3px 12px 0 rgb(52 52 255 / 12%);
           img {
             transition: $main_transition;
@@ -78,9 +78,7 @@
           }
           svg { 
             color: $gray-2;
-            width: 26px;
-            height: 26px;
-            border-radius: 50%;
+            @include circle(26px);
             border: 1px solid rgb(236, 236, 244);
             padding: 10px;
             transition: $main_transition;

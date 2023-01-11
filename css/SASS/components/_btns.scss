@@ -1,6 +1,8 @@
-// scroll up btn start
 @use '../helpers/variables' as *;
+@use '../helpers/placeholders' as *;
+@use '../helpers/mixins' as *;
 
+// scroll up btn start
 .up { 
   position: fixed;
   right: -100px;

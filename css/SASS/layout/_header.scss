@@ -1,4 +1,6 @@
 @use '../helpers/variables' as *;
+@use '../helpers/placeholders' as *;
+@use '../helpers/mixins' as *;
 
 header { 
   $subheader-height: 32px;
@@ -44,7 +46,7 @@ header {
     .container { 
       min-height: 85px;
       &::after { 
-        $dimentions: 65px;
+        $dimensions: 65px;
         $border-width: 3px;
         font-family: "Font Awesome 6 Free";
         content: "\f254 \f501";
@@ -54,10 +56,8 @@ header {
         color: #fff;
         text-align: center;
         z-index: 9999;
-        width: $dimentions;
-        height: $dimentions;
-        line-height: $dimentions - $border-width;
-        border-radius: 50%;
+        @include circle($dimensions);
+        line-height: $dimensions - $border-width;
         font-size: 26px;
         font-weight: 900;
         border: $border-width dashed $border_color;

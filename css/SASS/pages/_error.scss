@@ -1,4 +1,6 @@
 @use '../helpers/variables' as *;
+@use '../helpers/placeholders' as *;
+@use '../helpers/mixins' as *;
 
 .error { 
   background-color: $id_color;
