@@ -1,6 +1,5 @@
-@use '../helpers/variables' as *;
-@use '../helpers/placeholders' as *;
-@use '../helpers/mixins' as *;
+@use '../helpers' as *;
+@use "sass:math";
 
 // content section start
 .content { 
@@ -10,9 +9,7 @@
       padding: 36px 20px;
       border: 1px solid $border_color;
       border-radius: 30px;
-      max-width: 963px;
-      margin-right: auto;
-      margin-left: auto;
+      @include max-width(963px);
       margin-top: 65px;
       box-shadow: 0 11px 15px 0 rgb(52 52 255 / 5%);
       @media (max-width: 768px) {
@@ -172,8 +169,8 @@
             &.dep {
               position: relative;
               &::after { 
-                font-family: 'Font Awesome 6 Free';
                 position: absolute;
+                font-family: 'Font Awesome 6 Free';
                 font-weight: 900;
                 color: $icon_dark_blue;
                 bottom: 12px;
@@ -220,8 +217,7 @@
             button { 
               position: relative;
               &::after { 
-                font-family: "Font Awesome 6 Free"; 
-                content: "\f059";
+                @include fontawesome("\f059");
                 position: absolute;
                 width: 20px;
                 margin-left: 10px;

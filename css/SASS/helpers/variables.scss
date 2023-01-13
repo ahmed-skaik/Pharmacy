@@ -15,9 +15,19 @@ $gray: #69697b;
 $gray-2: #4e4e65;
 $slides: #F7F7FB;
 $red: #ec0000;
-$emoji-red: #f8312f;
+$emoji-red: #fe3b2b;
+
+//for media queries
+$breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
 
 //others
 $main_transition: 0.3s;
 $img-border-radius: 30px;
-$border-radius: 14px
+$border-radius: 14px;

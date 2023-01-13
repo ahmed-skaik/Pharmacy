@@ -1,6 +1,5 @@
-@use '../helpers/variables' as *;
-@use '../helpers/placeholders' as *;
-@use '../helpers/mixins' as *;
+@use '../helpers' as *;
+@use "sass:math";
 
 header { 
   $subheader-height: 32px;
@@ -48,18 +47,15 @@ header {
       &::after { 
         $dimensions: 65px;
         $border-width: 3px;
-        font-family: "Font Awesome 6 Free";
-        content: "\f254 \f501";
         position: fixed;
-        top: $header-height + $subheader-height;
+        @include fontawesome("\f254 \f501");
+        font-size: 26px;
+        text-align: center;
         background-color: $id_color;
         color: #fff;
-        text-align: center;
-        z-index: 9999;
+        top: $header-height + $subheader-height;
         @include circle($dimensions);
         line-height: $dimensions - $border-width;
-        font-size: 26px;
-        font-weight: 900;
         border: $border-width dashed $border_color;
         margin: 10px 5px;
         @media (max-width: 767px) {
@@ -68,6 +64,7 @@ header {
         box-shadow: 0 14px 94px 0 rgb(15 15 182 / 9%);
         opacity: 0.6;
         transition: $main-transition;
+        z-index: 9999;
         cursor: not-allowed;
       }
       .navbar-brand { 
@@ -117,13 +114,11 @@ header {
         .dropdown-toggle {
           &::after { 
             @media (min-width: 992px) {
+              @include fontawesome("\f107");
+              font-size: 17px;
               color: $id_color;
-              font-family: "Font Awesome 5 Free"; 
-              content: "\f107";
-              font-weight: 900;
               border: none;
               vertical-align: baseline;
-              font-size: 17px;
             }
           }
         }
@@ -195,9 +190,9 @@ header {
         color: #fff;
         padding: 18px 24px;
         font-size: 16px;
+        font-weight: 500;
         text-transform: uppercase;
         border-radius: 8px;
-        font-weight: 500;
         transition: $main_transition;
         border: none;
         &:hover {

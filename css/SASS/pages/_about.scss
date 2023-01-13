@@ -1,6 +1,5 @@
-@use '../helpers/variables' as *;
-@use '../helpers/placeholders' as *;
-@use '../helpers/mixins' as *;
+@use '../helpers' as *;
+@use "sass:math";
 
 // about start 
 .about { 

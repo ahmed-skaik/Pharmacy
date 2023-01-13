@@ -1,0 +1,36 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+@use "sass:math";
+//when in want to call a placeholder i use @extend %placeholder-name;
+
+//@extend %scroll-bar; as an example of how to call it
+%scroll-bar { 
+  &::-webkit-scrollbar { 
+    width: 14px;
+    height: 14px;
+  }
+  &::-webkit-scrollbar-thumb { 
+    background-color: $id_color;
+    border: 1px solid $border_color;
+    border-radius: 100px;
+    &:hover { 
+      background-color: $hover_blue;
+    }
+  }
+  &::-webkit-scrollbar-track { 
+    border: { 
+      left: 1px solid $border_color;
+      top: 1px solid $border_color;
+    }
+  }
+  &::-webkit-scrollbar-corner { 
+    background-color: #ccc;
+  }
+}
+
+//@extend %center; as an example of how to call it
+%center { 
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}

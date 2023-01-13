@@ -1,7 +1,7 @@
-@use '../helpers/variables' as *;
-@use '../helpers/placeholders' as *;
-@use '../helpers/mixins' as *;
+@use '../helpers' as *;
+@use "sass:math";
 
+// main title in the home & contact page
 .main-title { 
   position: relative;
   text-align: center;
@@ -28,13 +28,12 @@
   }
 }
 
+// main title in the levels & courses page
 .main-title-2 { 
   position: relative;
-  text-align: center;
+  @extend %center;
   margin-top: 24px;
   max-width: 865px;
-  margin-right: auto;
-  margin-left: auto;
   &::after {
     content: "";
     position: absolute;
@@ -66,13 +65,12 @@
   }
 }
 
+// main title in the about page
 .main-title-3 { 
   position: relative;
-  text-align: center;
+  @extend %center;
   margin-top: 24px;
   max-width: 865px;
-  margin-right: auto;
-  margin-left: auto;
   &::after {
     content: "";
     position: absolute;
