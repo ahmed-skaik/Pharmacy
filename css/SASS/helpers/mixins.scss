@@ -1,15 +1,13 @@
 @use 'variables' as v;
 @use "sass:math";
 //for some reason i when calling mixins things go wrong !
-//when in want to call a mixin i use @include mixin-name(parameter);
-
 
 //@include circle(50px); as an example of how to call it
 @mixin circle($dimensions) {
   border-radius: 50%;
   width: $dimensions;
   height: $dimensions;
-}
+};
 
 //@include fontawesome("\f19d"); as an example of how to call it
 @mixin fontawesome($unicode) {
@@ -19,53 +17,47 @@
     weight: 900;
   }
   // background-color: v.$id_color;
-}
+};
 
 //@include max-width(850px); as an example of how to call it
 @mixin max-width($width) {
   max-width: $width;
   margin-right: auto;
   margin-left: auto;
-}
+};
 
-/*
-@include breakpoint(md) {
-  font-size: 12px;
-}
-but watch out that the system is different of how bootstrap works
-for example; 
-*/
-@mixin breakpoint($point) {
-  @if $point == xs { 
-    @media (max-width: 575.98px) {
-      @content;
+//min-width: ;
+@mixin breakpoint-up($user-value) {
+  $value: map-get(v.$breakpoints-up, $user-value);
+  @if $value { 
+    @media (#{$value}) {
+      @content
     }
-  }@else if $point == sm { 
-    @media (min-width: 576px) and (max-width: 767.98px) {
-      @content;
-    }
-  }@else if $point == md { 
-    @media (min-width: 768px) and (max-width: 991.98px) {
-      @content;
-    }
-  }@else if $point == lg { 
-    @media (min-width: 992px) and (max-width: 1199.98px) {
-      @content;
-    }
-  }@else if $point == xl { 
-    @media (min-width: 1200px) and (max-width: 1399.98px) {
-      @content;
-    }
-  }@else if $point == xxl {
-    @media (min-width: 1400px) {
+  }@else { 
+    @error "The Breackpoint '#{$user-value}' isn't supported yet, Ahmed!"
+  }
+};
+
+//(min-width: ;) and (max-width: ;)
+@mixin breakpoint($user-value) {
+  $value: map-get(v.$breakpoints, $user-value);
+  @if $value { 
+    @media (#{$value}) {
       @content;
     }
   }@else { 
-    @error "This Breackpoint '#{$point}' isn't supported yet";
+    @error "The Breackpoint '#{$user-value}' isn't supported yet, Ahmed!";
   }
-}
+};
 
-
-
-//@warn has the function of @error, but it doesn't stop the combilining process
-//@debug ex: @debug "transition value : #{$main_transition / 2}"; used to give the combled value 
+//max-width: ;
+@mixin breakpoint-down($user-value) {
+  $value: map-get(v.$breakpoints-down, $user-value);
+  @if $value { 
+    @media (#{$value}) {
+      @content
+    }
+  }@else { 
+    @error "The Breackpoint '#{$user-value}' isn't supported yet, Ahmed!"
+  }
+};

@@ -17,17 +17,51 @@ $slides: #F7F7FB;
 $red: #ec0000;
 $emoji-red: #fe3b2b;
 
-//for media queries
+//breakpoint 
+$sm-min: 576px;
+$md-min: 768px;
+$lg-min: 992px;
+$xl-min: 1200px;
+$xxl-min: 1400px;
+
+$fold-max: 354.98px;
+$xs-max: 575.98px;
+$sm-max: 767.98px;
+$md-max: 991.98px;
+$lg-max: 1199.98px;
+$xl-max: 1399.98px;
+
+//breakpoint for 350 //
+
+//maps for media queries
+$breakpoints-up: (
+  "sm": "min-width: #{$sm-min}",
+  "md": "min-width: #{$md-min}",
+  "lg": "min-width: #{$lg-min}",
+  "xl": "min-width: #{$xl-min}",
+  "xxl": "min-width: #{$xxl-min}",
+);
+
 $breakpoints: (
-  xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px,
-  xxl: 1400px
+  "xs": "max-width: #{$xs-max}",
+  "sm": "(min-width: #{$sm-min}) and (max-width: #{$sm-max})",
+  "md": "(min-width: #{$md-min}) and (max-width: #{$md-max})",
+  "lg": "(min-width: #{$lg-min}) and (max-width: #{$lg-max})",
+  "xl": "(min-width: #{$xl-min}) and (max-width: #{$xl-max})",
+  "xxl": "min-width: #{$xxl-min}",
+);
+
+$breakpoints-down: (
+  "fold": "max-width: #{$fold-max}",
+  "xs": "max-width: #{$xs-max}",
+  "sm": "max-width: #{$sm-max}",
+  "md": "max-width: #{$md-max}",
+  "lg": "max-width: #{$lg-max}",
+  "xl": "max-width: #{$xl-max}",
 );
 
 //others
 $main_transition: 0.3s;
 $img-border-radius: 30px;
 $border-radius: 14px;
+$border-bottom: 3px dotted $border_separator;
