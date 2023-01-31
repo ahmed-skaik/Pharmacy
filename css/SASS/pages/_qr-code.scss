@@ -3,18 +3,18 @@
 
 img.qr { 
   width: 450px;
+  border-radius: $img-border-radius;
 }
 
 p.signature { 
   color: $black;
   font-weight: 400;
   line-height: 1.7;
-  @media (max-width: 576px) {
+  @include breakpoint-down(xs) {
     font-size: 11px;
   }
-}
-
-p.signature span{ 
-  color: $id-color;
-  font-weight: 700;
+  span {
+    color: $id-color;
+    font-weight: 700;
+  }
 }

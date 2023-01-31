@@ -7,7 +7,7 @@
       .semester { 
         p { 
           button { 
-            @media (max-width: 576px) {
+            @include breakpoint-down(xs) {
               font-size: 18px;
             }
           }
@@ -21,7 +21,7 @@
           color: $id-color;
           font-weight: 700;
         }
-        @media (max-width: 576px) {
+        @include breakpoint-down(xs) {
           font-size: 17px;
         }
       }

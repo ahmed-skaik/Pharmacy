@@ -25,7 +25,7 @@
       transition: $main_transition;
       border: none;
       border: 1px solid;
-      @media (max-width: 575px) {
+      @include breakpoint-down(xs) {
         padding: 18px 32px;
         font-size: 15px;
       }
@@ -46,7 +46,7 @@
     }
     .txt { 
       line-height: 1.6;
-      @media (max-width: 992px) {
+      @include breakpoint-down(md) {
         text-align: center;
       }
       h1 { 
@@ -72,13 +72,13 @@
             font-weight: 400;
             color: $red;
             letter-spacing: 5px;
-            @media (min-width: 1200px) {
+            @include breakpoint-up(xl) {
               top: -17px;
             }
-            @media (max-width: 767px) {
+            @include breakpoint-down(sm) {
               font-size: 12px;
             }
-            @media (max-width: 300px) {
+            @include breakpoint-down(fold) {
               font-size: 6px;
               top: -8px;
             }
@@ -90,38 +90,45 @@
             right: -35px;
             color: $dark_blue;
             font-size: 30px;
-            @media (min-width: 1200px) {
+            @include breakpoint-up(xl) {
               top: -16px;
               right: -60px; 
             }
-            @media (min-width: 992px) and (max-width: 1199px) {
+            @include breakpoint(lg) {
               font-size: 26px;
             }
-            @media (max-width: 767px) {
+            @include breakpoint(md) {
+              right: -45px;
+            }
+            @include breakpoint-down(sm) {
               font-size: 20px;
             }
-            @media (max-width: 576px) {
+            @include breakpoint-down(xs) {
               font-size: 16px;
               top: -7px;
+              right: -28px;
             }
-            @media (max-width: 374px) {
+            @include breakpoint-down(fold) {
               display: none;
             }
           }
         }
-        @media (min-width: 992px) and (max-width: 1199px) {
+        @include breakpoint(lg) {
           font-size: 65px;
         }
-        @media (max-width: 767px) {
+        @include breakpoint(md) {
+          font-size: 68px;
+        }
+        @include breakpoint-down(sm) {
           font-size: 46px;
         }
-        @media (min-width: 401px) and (max-width: 766px) {
-          font-size: 40px;
+        @include breakpoint(sm) {
+          font-size: 53px;
         }
-        @media (max-width: 400px) {
+        @include breakpoint-down(xs) {
           font-size: 36px;
         }
-        @media (max-width: 350px) {
+        @include breakpoint-down(fold) {
           font-size: 31px;
         }
       }
@@ -129,13 +136,13 @@
         color: $gray;
         font-size: 18px;
         margin: 24px 0 48px;
-        @media (min-width: 992px) and (max-width: 1199px) {
+        @include breakpoint(lg) {
           font-size: 16px;
         }
-        @media (min-width: 576px) and (max-width: 767px) {
+        @include breakpoint(md) {
           font-size: 16px;
         }
-        @media (max-width: 576px) {
+        @include breakpoint-down(xs) {
           font-size: 14px;
         }
         a { 
@@ -147,7 +154,7 @@
           color: $red;
           font-size: 11px; 
           font-weight: 400;
-          @media (min-width: 767px) {
+          @include breakpoint-up(md) {
             letter-spacing: 1px;
           }
         }
@@ -192,7 +199,7 @@
   color: $black;
   border: {
     top: 1px solid $border_color;
-    bottom: 1px solid $border_color;
+    bottom: $border-bottom;
   }
   .container { 
     .box { 
@@ -318,7 +325,7 @@
   position: relative;
   border: {
     top: 1px solid $border_color;
-    bottom: 1px solid $border_color;
+    bottom: $border-bottom;
   }
   .container {
     .row { 
@@ -407,7 +414,7 @@
       }
       .card-body { 
         padding: 42px 47px 42px 48px;
-        @media (max-width: 768px) {
+        @include breakpoint-down(sm) {
           padding: 35px 30px;
           text-align: center;
         }
@@ -428,7 +435,7 @@
             margin: 0 0 22px 15px;
             font-size: 18px;
             color: $black;
-            @media (max-width: 350px) {
+            @include breakpoint-down(fold) {
               font-size: 14px;
             }
             a { 
@@ -444,7 +451,7 @@
               color: $id_color;
               margin-right: 3px;
               font-size: 21px;
-              @media (max-width: 350px) {
+              @include breakpoint-down(fold) {
                 font-size: 17px;
               }
             }

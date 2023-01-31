@@ -14,6 +14,12 @@
     left: 50%;
     transform: translateX(-50%);
   }
+  &.left::after { 
+    @include breakpoint-up(lg) {
+      left: 0;
+      transform: translateX(0);
+    }
+  }
   h2 { 
     font-size: 40px;
     color: $black;
@@ -50,13 +56,13 @@
     span { 
       color: $id_color;
     }
-    @media (max-width: 768px) {
+    @include breakpoint-down(sm) {
       font-size: 46px;
     }
-    @media (max-width: 576px) {
+    @include breakpoint-down(xs) {
       font-size: 40px;
     }
-    @media (max-width: 350px) {
+    @include breakpoint-down(fold) {
       font-size: 34px;
     }
   }
@@ -77,11 +83,11 @@
     width: 120px;
     height: 3px;
     background-color: $id_color;
-    @media (max-width: 991px) {
+    @include breakpoint-down(md) {
       left: 50%;
       transform: translateX(-50%);
     }
-    @media (min-width: 992px) {
+    @include breakpoint-up(lg) {
       left: 0;
     }
   }
@@ -92,13 +98,13 @@
     span { 
       color: $id_color;
     }
-    @media (max-width: 768px) {
+    @include breakpoint-down(sm) {
       font-size: 46px;
     }
-    @media (max-width: 576px) {
+    @include breakpoint-down(xs) {
       font-size: 40px;
     }
-    @media (max-width: 350px) {
+    @include breakpoint-down(fold) {
       font-size: 34px;
     }
   }

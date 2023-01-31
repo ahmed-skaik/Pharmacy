@@ -10,10 +10,10 @@ footer {
       font-size: 18px;
       padding: 15px 0 0;
       margin: 0 0 10px;
-      @media (max-width: 767px) {
+      @include breakpoint-down(sm) {
         font-size: 16px;
       }
-      @media (max-width: 350px) {
+      @include breakpoint-down(fold) {
         font-size: 12px;
       }
       span { 

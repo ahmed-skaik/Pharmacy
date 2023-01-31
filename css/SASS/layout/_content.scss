@@ -12,7 +12,7 @@
       @include max-width(963px);
       margin-top: 65px;
       box-shadow: 0 11px 15px 0 rgb(52 52 255 / 5%);
-      @media (max-width: 768px) {
+      @include breakpoint-down(sm) {
         padding: 30px 20px;
       }
       ul { 
@@ -21,14 +21,17 @@
           font-weight: 400;
           color: $gray;
           &:nth-child(2) {
-            @media (min-width: 767px) {
+            @include breakpoint-up(md) {
               margin: 0 3px;
             }
           }
-          @media (max-width: 576px) {
+          @include breakpoint-down(md) {
+            font-size: 19px;
+          }
+          @include breakpoint-down(xs) {
             font-size: 17px;
           }
-          @media (max-width: 768px) {
+          @include breakpoint-down(sm) {
             padding: 3px 0;
           }
           svg { 
@@ -80,7 +83,7 @@
               margin-right: 12px;
               transition: $main_transition;
             }
-            @media (max-width: 350px) {
+            @include breakpoint-down(fold) {
               font-size: 18px;
             }
             div:last-child { 
@@ -91,7 +94,7 @@
                 color: $gray;
                 font-weight: 500;
                 font-size: 18px;
-                @media (max-width: 767px) {
+                @include breakpoint-down(sm) {
                   font-size: 14px;
                 }
               }
@@ -114,7 +117,7 @@
             }
             p { 
               color: $gray;
-              @media (max-width: 576px) {
+              @include breakpoint-down(xs) {
                 font-size: 13px;
               }
               span { 
@@ -139,17 +142,17 @@
               &.exam { 
                 padding: 8px 14px;
                 font-size: 17px;
-                @media (max-width: 767px) {
+                @include breakpoint-down(sm) {
                   font-size: 12px;
                 }
               }
               &:hover { 
               background-color: $hover_blue;
               }
-              @media (max-width: 768px) {
+              @include breakpoint-down(sm) {
                 font-size: 16px;
                 padding: 4px;
-                min-width: 36.28px;
+                min-width: 36.28px;              
               }
             }
             .anchors { 
@@ -206,7 +209,7 @@
               color: $gray;
               font-weight: 500;
               font-size: 18px;
-              @media (max-width: 767px) {
+              @include breakpoint-down(sm) {
                 font-size: 14px;
               }
             }
@@ -230,15 +233,20 @@
         background-color: $gray;
         width: 25%;
         height: 2px;
-        @media (max-width: 576px) {
+        @include breakpoint-down(xs) {
           width: 33%;
         }
       }
     }
   }
   .collapsing {
-    transition-delay: 0.1s;
     visibility: hidden;
+  }
+  .collapse {
+    &.show {
+      transition-delay: math.div($main_transition, 2);
+      visibility: visible;
+    }
   }
 } 
 // content section end  

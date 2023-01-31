@@ -1,6 +1,7 @@
 @use '../helpers' as *;
 @use "sass:math";
 
+// loading start
 .loading { 
   background-color: #fff;
   z-index: 999999999;
@@ -26,4 +27,5 @@
       fill-mode: forwards;
     }
   }
-}
+} 
+// loading end 

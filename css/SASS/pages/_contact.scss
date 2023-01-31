@@ -1,6 +1,7 @@
 @use '../helpers' as *;
 @use "sass:math";
 
+// contact start
 .contact { 
   .container { 
     .cardd { 
@@ -10,7 +11,7 @@
       max-width: 810px;
       box-shadow: 0 20px 34px 0 rgb(11 11 44 / 4%), 0 4px 8px 0 rgb(11 11 44 / 2%), 0 10px 34px 0 rgb(52 52 255 / 5%);
       transition: $main_transition;
-      @media (max-width: 767px) {
+      @include breakpoint-down(sm) {
         padding: 40px 20px;
       }
       &:hover { 
@@ -46,8 +47,10 @@
       }
     }
   }
-}
+} 
+// contact end 
 
+// faqs start
 .faq {
   background-color: $section_background;
   border: {
@@ -59,7 +62,7 @@
       .question { 
         padding: 55px 42px 40px;
         border-bottom: 1px solid $border_separator;
-        @media (max-width: 767px) {
+        @include breakpoint-down(sm) {
           padding: 40px 20px;
         }
         button { 
@@ -71,7 +74,7 @@
             text-align: start;
             transition: $main_transition;
             line-height: 1.5;
-            @media (max-width: 767px) {
+            @include breakpoint-down(sm) {
               font-size: 18px;
             }
           }
@@ -81,10 +84,10 @@
             border: 1px solid rgb(236, 236, 244);
             padding: 10px;
             transition: $main_transition;
-            @media (max-width: 767px) {
+            @include breakpoint-down(sm) {
               width: 19px;
               height: 19px;
-              padding: 6px;
+              padding: 6px; 
             }
           }
           &[aria-expanded="true"] {
@@ -112,7 +115,7 @@
           border-radius: $img-border-radius;
           max-width: 900px;
           background-color: $section_background;
-          @media (max-width: 767px) {
+          @include breakpoint-down(sm) {
             padding: 0 16px;
           }
           p, ul { 
@@ -120,7 +123,7 @@
             color: $text_color;
             margin: 0 0 10px;
             line-height: 1.7;
-            @media (max-width: 767px) {
+            @include breakpoint-down(sm) {
               font-size: 16px;
             }
             span { 
@@ -146,4 +149,5 @@
       }
     }
   }
-}
+} 
+// faqs end 

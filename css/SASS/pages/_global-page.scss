@@ -60,7 +60,7 @@ span, a {
 }
 
 .dots { 
-  @media (min-width: 767px) {
+  @include breakpoint-up(sm) {
     background-image: url("../../../images/dots.png");
     width: 200px;
     height: 200px;
@@ -68,7 +68,7 @@ span, a {
     position: absolute;
     z-index: 0;
   }
-  }
+}
 
 .dots-up { 
   top: 200px;
@@ -81,5 +81,5 @@ span, a {
 }
 
 .z-index { 
-  z-index: 999;
+  z-index: 99;
 }
