@@ -3,6 +3,9 @@
 
 // content section start
 .content { 
+  // &:not(.level-5) { 
+  //   min-height: calc(100vh - 100px);
+  // }
   min-height: calc(100vh - 100px);
   .container { 
     .about { 
