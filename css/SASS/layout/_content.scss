@@ -3,10 +3,14 @@
 
 // content section start
 .content { 
-  // &:not(.level-5) { 
-  //   min-height: calc(100vh - 100px);
-  // }
-  min-height: calc(100vh - 100px);
+  $max-content-width: 821px;
+  min-height: calc(100vh - 101px - 32px - 84px - 24px);
+  @include breakpoint-down(sm) {
+    min-height: calc(100vh - 101px - 32px - 81px - 24px);
+  }
+  @include breakpoint-down(fold) {
+    min-height: calc(100vh - 101px - 32px - 75px - 24px);
+  }
   .container { 
     .about { 
       padding: 36px 20px;
@@ -62,6 +66,7 @@
       }
     }
     .year { 
+      @include max-width($max-content-width);
       .semester { 
         p { 
           button { 
