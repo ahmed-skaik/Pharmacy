@@ -3,8 +3,6 @@
 
 // header start
 header { 
-  $subheader-height: 32px;
-  $header-height: 101px;
   position: relative;
   box-shadow: 0 0 10px #ddd;
   @include breakpoint-down(md) {

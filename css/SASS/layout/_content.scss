@@ -4,12 +4,12 @@
 // content section start
 .content { 
   $max-content-width: 821px;
-  min-height: calc(100vh - 101px - 32px - 84px - 24px);
+  min-height: calc(100vh - $subheader-height - $header-height - $levels-heading-mt - 84px);
   @include breakpoint-down(sm) {
-    min-height: calc(100vh - 101px - 32px - 81px - 24px);
+    min-height: calc(100vh - $subheader-height - $header-height - $levels-heading-mt - 81px);
   }
   @include breakpoint-down(fold) {
-    min-height: calc(100vh - 101px - 32px - 75px - 24px);
+    min-height: calc(100vh - $subheader-height - $header-height - $levels-heading-mt - 75px);
   }
   .container { 
     .about { 
