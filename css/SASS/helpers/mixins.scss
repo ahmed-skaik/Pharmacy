@@ -1,6 +1,6 @@
 @use 'variables' as v;
 @use "sass:math";
-//for some reason i when calling mixins things go wrong !
+//for some reason i when calling placeholders things go wrong !
 
 //@include circle(50px); as an example of how to call it
 @mixin circle($dimensions) {

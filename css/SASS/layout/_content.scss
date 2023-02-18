@@ -3,8 +3,9 @@
 
 // content section start
 .content { 
+  $max-about-width: 963px;
   $max-content-width: 821px;
-  min-height: calc(100vh - $subheader-height - $header-height - $levels-heading-mt - 84px);
+  min-height: calc(100vh - $subheader-height - $header-height - $levels-heading-mt - $footer-height);
   @include breakpoint-down(sm) {
     min-height: calc(100vh - $subheader-height - $header-height - $levels-heading-mt - 81px);
   }
@@ -16,7 +17,7 @@
       padding: 36px 20px;
       border: 1px solid $border_color;
       border-radius: 30px;
-      @include max-width(963px);
+      @include max-width($max-about-width);
       margin-top: 65px;
       box-shadow: 0 11px 15px 0 rgb(52 52 255 / 5%);
       @include breakpoint-down(sm) {
