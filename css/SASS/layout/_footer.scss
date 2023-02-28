@@ -32,7 +32,10 @@ footer {
             left: 0;
             height: 3px;
             border-radius: 2px;
-            background: linear-gradient(130deg,#ff7a18,#af002d 41.07%,#319197 76.05%);
+            background-image: linear-gradient(130deg,#ff7a18,#af002d 41.07%,#319197 76.05%);
+            background-size: 133%;
+            //using alternate is to make it slowly go back to original color
+            animation: bg calc($main_transition * 5) infinite cubic-bezier(0.46, 0.03, 0.52, 0.96) alternate;
           }
           &:hover{
             text-decoration: underline;

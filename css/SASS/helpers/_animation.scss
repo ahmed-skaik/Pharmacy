@@ -90,3 +90,14 @@
   }
 }
 // animation wiggle end
+
+// animation bg start
+@keyframes bg {
+  0% { 
+    background-position: right;
+  }
+  100% { 
+    background-position: left;
+  }
+} 
+// animation bg end 
