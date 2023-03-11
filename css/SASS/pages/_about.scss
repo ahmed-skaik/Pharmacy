@@ -150,21 +150,38 @@
         .box-wrap { 
           margin-top: -65px;
           position: relative;
-          &::before, &::after { 
-            content: '"';
+          &::before { 
+            @include fontawesome("\f10e");
             position: absolute;
-            font-size: 65px;
             color: $id-color;
-            bottom: -25px;
-            // opacity: 0.4;
-            transform: rotate(20deg);
-            z-index: 999;
+            right: 50%;
+            transform: translateX(calc(-50% + 216px));
+            top: 95px;
+            opacity: 0.1;
+            font-size: 250px;
+            z-index: 0;
+            @include breakpoint-down(sm) {
+              top: 60px;
+            }
+            @include breakpoint-down(fold) {
+              font-size: 200px;
+              transform: translateX(calc(-50% + 170px));
+              top: 82px;
+            }
+          }
+          &.code::after { 
+            @include fontawesome("\f121");
+          }
+          &.data::after { 
+            @include fontawesome("\f07b");
           }
           &::after { 
-            right: 0;
-          }
-          &::before { 
-            right: 20px;
+            right: 10px;
+            position: absolute;
+            font-size: 27px;
+            color: #3434ff;
+            bottom: 0;
+            z-index: 999;
           }
           img { 
             @include circle(140px);
@@ -238,11 +255,11 @@
             width: fit-content;
             height: fit-content;
             transition: $main-transition;
-            left: 0;
-            bottom: -10%;
             background-color: $id-color;
             border-radius: 8px;
             display: block;
+            z-index: 10;
+            position: sticky;
             &::before { 
               content: "Read More";
               color: #fff;
@@ -254,8 +271,19 @@
                 color: $id-color;
               }
             }
-            &:checked::before { 
-              content: "Read Less";
+            &:checked { 
+              background-color: #fff;
+              border-color: $id-color;
+              &::before { 
+                content: "Read Less";
+                color: $id-color;
+              }
+              &:hover { 
+                background-color: $id-color;
+                &::before { 
+                  color: #fff;
+                }
+              }
             }
           }
         }
