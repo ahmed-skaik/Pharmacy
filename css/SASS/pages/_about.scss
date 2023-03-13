@@ -199,26 +199,22 @@
           }
           > span { 
             color: $id-color;
-            font-size: 20px;
+            font-size: 21px;
             text-transform: uppercase;
             font-weight: 500;
             @include breakpoint-down(xs) {
-              font-size: 18px;
+              font-size: 19px;
             }
           }
           h3, > span { 
             z-index: 1;
             position: inherit;
           }
-          p { 
-            color: $text_color;
+          blockquote { 
+            color: rgb(11 11 44 / 75%);
             font-size: 18px;
             line-height: 1.7;
             font-weight: 700;
-            opacity: 0.8;
-            @include breakpoint-down(xs) {
-              font-size: 16px;
-            }
             &.english { 
               font-family: 'Bad Script', cursive;
             }

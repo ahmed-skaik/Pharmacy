@@ -1,6 +1,8 @@
 @use '../helpers' as *;
 @use "sass:math";
 
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Bad+Script&family=Poiret+One&family=Vibes&display=swap');
+
 // header start
 header { 
   position: relative;
@@ -10,6 +12,7 @@ header {
   }
   &::before { 
     content: '" Once you stop learning, you start dying. "';
+    font-family: 'Poiret One', cursive;
     width: 100%;  
     display: block;
     text-align: center;
@@ -59,14 +62,15 @@ header {
         margin: 10px 5px;
         @include breakpoint-down(sm) {
           $dimensions: 50px;
-          $border-width: 1px;
+          $border-width: 2px;
           font-size: 19px;
+          border: $border-width dashed $border_color;
           @include circle($dimensions);
           line-height: $dimensions - $border-width * 3;
           margin: 10px 8px;
         }
         box-shadow: 0 14px 94px 0 rgb(15 15 182 / 9%);
-        opacity: 0.6;
+        opacity: 0.3;
         transition: $main-transition;
         z-index: 999;
         cursor: not-allowed;
