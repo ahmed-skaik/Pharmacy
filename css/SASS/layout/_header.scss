@@ -58,7 +58,12 @@ header {
         border: $border-width dashed $border_color;
         margin: 10px 5px;
         @include breakpoint-down(sm) {
-          margin: 10px 0;
+          $dimensions: 50px;
+          $border-width: 1px;
+          font-size: 19px;
+          @include circle($dimensions);
+          line-height: $dimensions - $border-width * 3;
+          margin: 10px 8px;
         }
         box-shadow: 0 14px 94px 0 rgb(15 15 182 / 9%);
         opacity: 0.6;
@@ -81,7 +86,7 @@ header {
       .navbar-collapse {
         @include breakpoint-down(md) {
           background-color: $black;
-          min-height: calc(100vh - $header-height - $subheader-height);
+          min-height: calc(100dvh - $header-height - $subheader-height);
           box-shadow: 0 4px 10px 0 rgb(74 58 255 / 18%);
           position: absolute;
           left: 0;

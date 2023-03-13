@@ -199,9 +199,12 @@
           }
           > span { 
             color: $id-color;
-            font-size: 18px;
+            font-size: 20px;
             text-transform: uppercase;
             font-weight: 500;
+            @include breakpoint-down(xs) {
+              font-size: 18px;
+            }
           }
           h3, > span { 
             z-index: 1;
@@ -212,7 +215,10 @@
             font-size: 18px;
             line-height: 1.7;
             font-weight: 700;
-            opacity: 0.85;
+            opacity: 0.8;
+            @include breakpoint-down(xs) {
+              font-size: 16px;
+            }
             &.english { 
               font-family: 'Bad Script', cursive;
             }
