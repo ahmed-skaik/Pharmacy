@@ -4,7 +4,7 @@
 //landing start
 .landing { 
   @media (max-height: 1200px) {
-    min-height: calc(100vh - 101px - 32px);
+    min-height: calc(100dvh - $subheader-height - $header-height);
     padding-top: 0 !important;
     padding-bottom: 0 !important;
   }

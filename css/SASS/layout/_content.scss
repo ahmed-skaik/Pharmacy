@@ -5,12 +5,12 @@
 .content { 
   $max-about-width: 963px;
   $max-content-width: 821px;
-  min-height: calc(100vh - $subheader-height - $header-height - $levels-heading-mt - $footer-height);
+  min-height: calc(100dvh - $subheader-height - $header-height - $levels-heading-mt - $footer-height);
   @include breakpoint-down(sm) {
-    min-height: calc(100vh - $subheader-height - $header-height - $levels-heading-mt - 81px);
+    min-height: calc(100dvh - $subheader-height - $header-height - $levels-heading-mt - 81px);
   }
   @include breakpoint-down(fold) {
-    min-height: calc(100vh - $subheader-height - $header-height - $levels-heading-mt - 75px);
+    min-height: calc(100dvh - $subheader-height - $header-height - $levels-heading-mt - 75px);
   }
   .container { 
     .about { 
@@ -182,8 +182,6 @@
               position: relative;
               &::after { 
                 position: absolute;
-                font-family: 'Font Awesome 6 Free';
-                font-weight: 900;
                 color: $icon_dark_blue;
                 bottom: 12px;
                 font-size: 20px;
@@ -192,22 +190,22 @@
               }
               &.pt-dep { 
                 &::after { 
-                  content: "\f484";
+                  @include fontawesome("\f484");
                 }
               }
               &.cg-dep { 
                 &::after { 
-                  content: "\f5a7";
+                  @include fontawesome("\f5a7");
                 }
               }
               &.ch-dep { 
                 &::after { 
-                  content: "\e4f3";
+                  @include fontawesome("\e4f3");
                 }
               }
               &.tc-dep { 
                 &::after { 
-                  content: "\f485";
+                  @include fontawesome("\f485");
                 }
               }
             }

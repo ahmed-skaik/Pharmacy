@@ -1,6 +1,9 @@
 @use '../helpers' as *;
 @use "sass:math";
 
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Bad+Script&family=Vibes&display=swap');
+
 // about start 
 .about { 
   .container { 
@@ -205,9 +208,24 @@
             position: inherit;
           }
           p { 
-            color: $gray;
+            color: $text_color;
             font-size: 18px;
             line-height: 1.7;
+            font-weight: 700;
+            opacity: 0.85;
+            &.english { 
+              font-family: 'Bad Script', cursive;
+            }
+            &.arabic { 
+              font-family: 'Aref Ruqaa', serif;
+              @include breakpoint(xl) { 
+                letter-spacing: 0.4px;
+              }
+              span { 
+                font-family: 'Plus Jakarta Sans', sans-serif;
+                font-family: 'Roboto', sans-serif;
+              }
+            }
             a { 
               color: $id-color;
               transition: $main-transition;
