@@ -15,7 +15,8 @@
   .container { 
     .about { 
       padding: 36px 20px;
-      border: 1px solid $border_color;
+      border: 1px solid $border_separator;
+      background-color: #fff;
       border-radius: 30px;
       @include max-width($max-about-width);
       margin-top: 65px;

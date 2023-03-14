@@ -24,6 +24,9 @@ header {
       style: italic;
     }
     letter-spacing: 0.3px;
+    @include breakpoint-down(xs) { 
+      letter-spacing: 0;
+    }
     padding: 5px 0;
     border-bottom: 1px dashed $border_color;
   }
