@@ -179,37 +179,6 @@
                 visibility: hidden;
               }
             }
-            &.dep {
-              position: relative;
-              &::after { 
-                position: absolute;
-                color: $icon_dark_blue;
-                bottom: 12px;
-                font-size: 20px;
-                width: 30px;
-                text-align: center;
-              }
-              &.pt-dep { 
-                &::after { 
-                  @include fontawesome("\f484");
-                }
-              }
-              &.cg-dep { 
-                &::after { 
-                  @include fontawesome("\f5a7");
-                }
-              }
-              &.ch-dep { 
-                &::after { 
-                  @include fontawesome("\e4f3");
-                }
-              }
-              &.tc-dep { 
-                &::after { 
-                  @include fontawesome("\f485");
-                }
-              }
-            }
             &.slides { 
               background-color: $slides;
             }

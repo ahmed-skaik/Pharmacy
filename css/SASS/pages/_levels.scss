@@ -1,6 +1,139 @@
 @use '../helpers' as *;
 @use "sass:math";
 
+// courses cards start
+.collapse {
+  .a-parent {
+    position: relative;
+    &:not(:last-of-type, .last)::after {
+      content: "";
+      position: absolute;
+      width: 4px;
+      background-color: $id_color;
+      height: 50px;
+      bottom: -30px;
+      z-index: -1;
+      left: 68px;
+    }
+    .card {
+      box-shadow: 0 20px 34px 0 rgb(11 11 44 / 4%),
+        0 4px 8px 0 rgb(11 11 44 / 2%),
+        0 10px 34px 0 rgb(52 52 255 / 5%);
+      border-radius: $border-radius;
+      transition: $main_transition;
+      border: 1px solid $border_separator;
+      // min-height: 150px;
+      padding: 32px;
+      .img {
+        img {
+          width: 60px;
+          height: 60px;
+        }
+        svg {
+          color: $id_color;
+          font-size: 60px;
+          @include breakpoint-down(xs) {
+            font-size: 55px;
+          }
+        }
+      }
+      h2 {
+        color: $black;
+      }
+      p {
+        color: $gray;
+        @include breakpoint-down(xs) {
+          font-size: 13px;
+        }
+        span {
+          color: $id_color;
+          font-weight: bold;
+        }
+      }
+      span:not(.id), a {
+        font-size: 16px;
+        font-weight: 500;
+        color: $id_color;
+        padding: 14px 12px;
+        border: 1px solid $border_separator;
+        border-radius: $border-radius;
+        transition: $main_transition;
+        width: fit-content;
+        margin-left: auto;
+        display: inline-block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover { 
+          color: #fff;
+          background-color: $id_color;
+        }
+        svg {
+          margin-left: 6px;
+        }
+        &.exam {
+          padding: 8px 14px;
+          font-size: 17px;
+          @include breakpoint-down(sm) {
+            font-size: 12px;
+          }
+        }
+        @include breakpoint-down(sm) {
+          font-size: 16px;
+        }
+      }
+      &:hover {
+        transform: scale(1.03);
+      }
+      &.optional-no-anchor {
+        a {
+          cursor: none;
+          pointer-events: none;
+          visibility: hidden;
+        }
+      }
+      &.dep {
+        position: relative;
+        &::after {
+          font-family: "Font Awesome 6 Free";
+          position: absolute;
+          font-weight: 900;
+          color: $icon_dark_blue;
+          opacity: 0.9;
+          bottom: 12px;
+          font-size: 16px;
+          width: 30px;
+          text-align: center;
+          @include breakpoint-down(sm) {
+            left: 24px;
+          }
+        }
+        &.pt-dep {
+          &::after {
+            content: "\f484";
+          }
+        }
+        &.cg-dep {
+          &::after {
+            content: "\f5a7";
+          }
+        }
+        &.ch-dep {
+          &::after {
+            content: "\e4f3";
+          }
+        }
+        &.tc-dep {
+          &::after {
+            content: "\f485";
+          }
+        }
+      }
+    }
+  }
+} 
+// courses cards end 
+
 // progress start
 .my-progress {
   background-color: $section_background;
