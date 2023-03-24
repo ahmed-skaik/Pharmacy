@@ -16,14 +16,7 @@
       left: 68px;
     }
     .card {
-      box-shadow: 0 20px 34px 0 rgb(11 11 44 / 4%),
-        0 4px 8px 0 rgb(11 11 44 / 2%),
-        0 10px 34px 0 rgb(52 52 255 / 5%);
-      border-radius: $border-radius;
-      transition: $main_transition;
-      border: 1px solid $border_separator;
-      // min-height: 150px;
-      padding: 32px;
+        padding: 32px;
       .img {
         img {
           width: 60px;
@@ -37,19 +30,6 @@
           }
         }
       }
-      h2 {
-        color: $black;
-      }
-      p {
-        color: $gray;
-        @include breakpoint-down(xs) {
-          font-size: 13px;
-        }
-        span {
-          color: $id_color;
-          font-weight: bold;
-        }
-      }
       span:not(.id), a {
         font-size: 16px;
         font-weight: 500;
@@ -60,9 +40,8 @@
         transition: $main_transition;
         width: fit-content;
         margin-left: auto;
-        display: inline-block;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         &:hover { 
           color: #fff;
@@ -70,26 +49,6 @@
         }
         svg {
           margin-left: 6px;
-        }
-        &.exam {
-          padding: 8px 14px;
-          font-size: 17px;
-          @include breakpoint-down(sm) {
-            font-size: 12px;
-          }
-        }
-        @include breakpoint-down(sm) {
-          font-size: 16px;
-        }
-      }
-      &:hover {
-        transform: scale(1.03);
-      }
-      &.optional-no-anchor {
-        a {
-          cursor: none;
-          pointer-events: none;
-          visibility: hidden;
         }
       }
       &.dep {

@@ -122,6 +122,8 @@
           .card { 
             box-shadow: 0 20px 34px 0 rgb(11 11 44 / 4%), 0 4px 8px 0 rgb(11 11 44 / 2%), 0 10px 34px 0 rgb(52 52 255 / 5%);
             border-radius: $border-radius;
+            transition: $main_transition;
+            border: 1px solid $border_separator;
             h2 { 
               color: $black;
             }
@@ -190,6 +192,9 @@
                 font-size: 14px;
               }
             }
+            &:hover {
+              transform: scale(1.03);
+            }
           }
         }
         &.optional { 
@@ -221,7 +226,7 @@
   }
   .collapse {
     &.show {
-      transition-delay: math.div($main_transition, 2);
+      transition-delay: math.div($main_transition, 1.5);
       visibility: visible;
     }
   }
