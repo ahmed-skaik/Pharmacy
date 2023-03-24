@@ -143,7 +143,12 @@
             }
           }
           ul { 
-            list-style: circle;
+            list-style: disc;
+            li { 
+              &::marker { 
+                color: $id-color;
+              }
+            }
           }
         }
       }
