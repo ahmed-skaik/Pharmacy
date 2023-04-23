@@ -53,9 +53,11 @@ header {
         $dimensions: 65px;
         $border-width: 3px;
         position: fixed;
-        // @include fontawesome("\f254 \f501");
-        @include fontawesome("\f699");
-        color: #E0E722;
+        @include fontawesome("\f254 \f501");
+        color: $border_color;
+        // for RAMADAN
+        // @include fontawesome("\f699");
+        // color: #E0E722;
         font-size: 26px;
         text-align: center;
         background-color: $id_color;
