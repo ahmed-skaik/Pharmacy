@@ -83,3 +83,7 @@ span, a {
 .z-index { 
   z-index: 99;
 }
+
+abbr { 
+  text-decoration: underline dotted $id_color;
+}

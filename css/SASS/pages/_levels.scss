@@ -4,32 +4,7 @@
 // courses cards start
 .collapse {
   .a-parent {
-    position: relative;
-    &:not(:last-of-type, .last)::after {
-      content: "";
-      position: absolute;
-      width: 4px;
-      background-color: $id_color;
-      height: 50px;
-      bottom: -30px;
-      z-index: -1;
-      left: 68px;
-    }
     .card {
-        padding: 32px;
-      .img {
-        img {
-          width: 60px;
-          height: 60px;
-        }
-        svg {
-          color: $id_color;
-          font-size: 60px;
-          @include breakpoint-down(xs) {
-            font-size: 55px;
-          }
-        }
-      }
       span:not(.id), a {
         font-size: 16px;
         font-weight: 500;
@@ -102,6 +77,10 @@
         @include breakpoint-up(md) {
           max-width: 450px;
         }
+      }
+      transition: $main_transition;
+      &:hover { 
+        transform: scale(0.97);
       }
     }
     .progress-stat { 
