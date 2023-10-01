@@ -460,6 +460,9 @@
               p {
                 color: $black;
                 font-weight: 500;
+                span { 
+                  color: $id_color;
+                }
               }
             }
           }
