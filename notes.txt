@@ -1,6 +1,4 @@
 - the menue in mobile , make it static 
-- spelling issue in footer tooltip 
-//don't forget
 //aria labble for full screen and scroll up buttons, meta describtion.
 //dean of the faculty tag <i class="fa-solid fa-certificate"></i>
 
