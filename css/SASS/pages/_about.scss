@@ -24,9 +24,6 @@
             color: $text_color;
           }
         }
-        abbr:first-of-type { 
-          text-decoration: underline dotted;
-        }
       }
     }
     .img { 
@@ -77,6 +74,9 @@
             &::marker { 
               color: $id-color;
             }
+            span { 
+              color: $id-color;
+            }
           }
         }
       }
@@ -87,6 +87,18 @@
 
 //this website start
 .about { 
+  ul { 
+    li { 
+      ul { 
+        padding-left: 25px;
+        li { 
+          &::marker { 
+            color: $id-color;
+          }
+        }
+      }
+    }
+  }
   &.qr-code { 
     .container {
       a { 
@@ -193,7 +205,8 @@
           }
           img { 
             @include circle(140px);
-            border: 12px solid  $border_color;
+            border: 12px solid  $img-background;
+            outline: 1px dotted $id-color;
             position: inherit;
             @include breakpoint-down(sm) {
               @include circle(110px);

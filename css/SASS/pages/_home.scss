@@ -203,8 +203,10 @@
   }
   .container { 
     .box { 
-      h4 { 
+      .h4 { 
         font-size: 54px;
+        display: block;
+        margin-bottom: 8px;
         span { 
           &.plus { 
             color: $id_color;
@@ -272,7 +274,7 @@
             color: $id_color;
           }
           .info { 
-            background-color: $section_background;
+            background-color: $img-background;
             border: {
               radius: 0 0 $border-radius $border-radius;
               top: 1px solid $border_color;
@@ -418,9 +420,11 @@
           padding: 35px 30px;
           text-align: center;
         }
-        h5 { 
+        .h5 { 
           color: $black;
           font-size: 25px;
+          margin-bottom: 8px;
+          display: block;
         }
         > p { 
           color: $gray;

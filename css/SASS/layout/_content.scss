@@ -336,6 +336,8 @@
           font-size: 20px;
           color: $gray;
           border-bottom: 4px solid transparent;
+          margin-top: 0 !important;
+          padding-top: 0 !important;
           @include breakpoint-down(sm) {
             font-size: 17px;
             padding: 0 30px 30px;

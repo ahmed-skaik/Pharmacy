@@ -129,9 +129,6 @@
             span { 
               font-weight: 600;
             }
-            abbr { 
-              text-decoration: underline dotted;
-            }
             a { 
               text-decoration: none;
               color: $text_color;
@@ -147,6 +144,9 @@
             li { 
               &::marker { 
                 color: $id-color;
+              }
+              ul {
+                list-style: revert;
               }
             }
           }

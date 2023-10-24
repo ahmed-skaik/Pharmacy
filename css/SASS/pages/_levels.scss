@@ -65,6 +65,18 @@
       }
     }
   }
+  .department { 
+    color: $black;
+    font-weight: bold;
+    @include breakpoint-down(sm) { 
+      text-align: center;
+    }
+    p { 
+      span { 
+        color: $id-color;
+      }
+    }
+  }
 } 
 // courses cards end 
 
