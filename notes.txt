@@ -1,5 +1,4 @@
 - the menue in mobile , make it static 
-- dean of the faculty tag <i class="fa-solid fa-certificate"></i>
 
 // save for later style
 .element { 

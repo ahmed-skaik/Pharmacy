@@ -1,11 +1,11 @@
-@use '../helpers' as *;
+@use "../helpers" as *;
 @use "sass:math";
 
-.error { 
+.error {
   background-color: $id_color;
   min-height: 100dvh;
-  .container { 
-    .title { 
+  .container {
+    .title {
       font-size: 180px;
       line-height: 160px;
       font-weight: 700;
@@ -13,21 +13,21 @@
         font-size: 150px;
       }
     }
-    h2 { 
+    h2 {
       font-size: 59px;
       font-weight: 500;
       @include breakpoint-down(sm) {
         font-size: 40px;
       }
     }
-    p { 
+    p {
       font-size: 18px;
       @include breakpoint-down(sm) {
         font-size: 16px;
       }
     }
     .home {
-      a { 
+      a {
         color: $id_color;
         padding: 16px 24px;
         font-weight: 500;

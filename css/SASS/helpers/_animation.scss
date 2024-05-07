@@ -1,24 +1,30 @@
-@use 'index' as *;
+@use "index" as *;
 @use "sass:math";
 
-// animation bouncing start 
+// animation bouncing start
 @keyframes bouncing {
-  0%, 10%, 20%, 50%, 80%, 100% {
+  0%,
+  10%,
+  20%,
+  50%,
+  80%,
+  100% {
     transform: translateY(0);
   }
-  40%, 60%{
+  40%,
+  60% {
     transform: translateY(-15px);
   }
 }
-// animation bouncing end  
+// animation bouncing end
 
-// animation arrow-right start 
+// animation arrow-right start
 @keyframes arrow-right {
   100% {
     transform: translateX(10px);
   }
 }
-// animation arrow-right end 
+// animation arrow-right end
 
 // animation lader start
 @keyframes loader {
@@ -26,7 +32,7 @@
     opacity: 0;
   }
 }
-// animation lader end 
+// animation lader end
 
 //animation fadeout start
 @keyframes fadeout {
@@ -35,39 +41,40 @@
     visibility: hidden;
   }
 }
-//animation fadeout end 
+//animation fadeout end
 
-//animation zoom start 
-@keyframes zoom {  
+//animation zoom start
+@keyframes zoom {
   100% {
     transform: scale(1.1);
   }
 }
-//animation zoom start 
+//animation zoom start
 
 // animation link start
 @keyframes link {
-  0% { 
+  0% {
     background-color: rgb(255 250 160 / 0%);
   }
-  100% { 
+  100% {
     background-color: rgb(255 255 160 / 50%);
   }
-} 
+}
 // animation link start
 
-// animation link-mobile start 
-@keyframes link-mobile { 
-  100% { 
+// animation link-mobile start
+@keyframes link-mobile {
+  100% {
     background-color: $section-background;
     color: $dark_blue;
   }
 }
-// animation link-mobile end 
+// animation link-mobile end
 
 // animation wiggle start
 @keyframes wiggle {
-  0%, 7% {
+  0%,
+  7% {
     transform: rotateZ(0);
   }
   15% {
@@ -85,7 +92,8 @@
   35% {
     transform: rotateZ(-4deg);
   }
-  40%, 100% {
+  40%,
+  100% {
     transform: rotateZ(0);
   }
 }
@@ -93,11 +101,11 @@
 
 // animation bg start
 @keyframes bg {
-  0% { 
+  0% {
     background-position: right;
   }
-  100% { 
+  100% {
     background-position: left;
   }
-} 
-// animation bg end 
+}
+// animation bg end

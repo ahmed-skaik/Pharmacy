@@ -1,54 +1,55 @@
-@use '../helpers' as *;
+@use "../helpers" as *;
 @use "sass:math";
 
 // contact start
-.contact { 
-  .container { 
-    .cardd { 
+.contact {
+  .container {
+    .cardd {
       padding: 56px 78px 64px;
       border-radius: $img-border-radius;
       border: 1px solid $border_color;
       max-width: 810px;
-      box-shadow: 0 20px 34px 0 rgb(11 11 44 / 4%), 0 4px 8px 0 rgb(11 11 44 / 2%), 0 10px 34px 0 rgb(52 52 255 / 5%);
+      box-shadow: 0 20px 34px 0 rgb(11 11 44 / 4%),
+        0 4px 8px 0 rgb(11 11 44 / 2%), 0 10px 34px 0 rgb(52 52 255 / 5%);
       transition: $main_transition;
       @include breakpoint-down(sm) {
         padding: 40px 20px;
       }
-      &:hover { 
+      &:hover {
         transform: translateY(-6px);
       }
-      .txt { 
+      .txt {
         h3 {
           color: $dark_blue;
           font-size: 40px;
           margin: 0 0 20px;
-          span { 
+          span {
             color: $id_color;
           }
         }
-        p { 
+        p {
           font-size: 18px;
           color: $gray;
           line-height: 1.7;
         }
       }
-      .img { 
-        .img-background { 
+      .img {
+        .img-background {
           @include circle(82px);
           background-color: #fff;
           box-shadow: 0 3px 12px 0 rgb(52 52 255 / 12%);
           img {
             transition: $main_transition;
           }
-          img { 
+          img {
             animation: zoom 0.9s linear infinite;
           }
         }
       }
     }
   }
-} 
-// contact end 
+}
+// contact end
 
 // faqs start
 .faq {
@@ -57,17 +58,17 @@
     top: 1px solid $border_color;
     // bottom: 1px solid $border_color;
   }
-  .container { 
-    .questions { 
-      .question { 
+  .container {
+    .questions {
+      .question {
         padding: 55px 42px 40px;
         border-bottom: 1px solid $border_separator;
         @include breakpoint-down(sm) {
           padding: 40px 20px;
         }
-        button { 
+        button {
           border: none;
-          h3 { 
+          h3 {
             font-size: 23px;
             color: $black;
             flex-basis: 80%;
@@ -78,7 +79,7 @@
               font-size: 18px;
             }
           }
-          svg { 
+          svg {
             color: $gray-2;
             @include circle(26px);
             border: 1px solid rgb(236, 236, 244);
@@ -87,21 +88,21 @@
             @include breakpoint-down(sm) {
               width: 19px;
               height: 19px;
-              padding: 6px; 
+              padding: 6px;
             }
           }
           &[aria-expanded="true"] {
             h3 {
               color: $id_color;
             }
-            svg { 
+            svg {
               border-color: $id_color;
               color: $id_color;
               transform: rotate(90deg);
             }
           }
           &:hover {
-            h3 { 
+            h3 {
               color: $id_color;
             }
             svg {
@@ -110,7 +111,7 @@
             }
           }
         }
-        .card { 
+        .card {
           border: none;
           border-radius: $img-border-radius;
           max-width: 900px;
@@ -118,7 +119,8 @@
           @include breakpoint-down(sm) {
             padding: 0 16px;
           }
-          p, ul { 
+          p,
+          ul {
             font-size: 18px;
             color: $text_color;
             margin: 0 0 10px;
@@ -126,23 +128,23 @@
             @include breakpoint-down(sm) {
               font-size: 16px;
             }
-            span { 
+            span {
               font-weight: 600;
             }
-            a { 
+            a {
               text-decoration: none;
               color: $text_color;
               transition: $main_transition;
-              &:hover { 
+              &:hover {
                 text-decoration: underline;
                 color: $hover_blue;
               }
             }
           }
-          ul { 
+          ul {
             list-style: disc;
-            li { 
-              &::marker { 
+            li {
+              &::marker {
                 color: $id-color;
               }
               ul {
@@ -154,5 +156,5 @@
       }
     }
   }
-} 
-// faqs end 
+}
+// faqs end

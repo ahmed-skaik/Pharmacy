@@ -1,4 +1,4 @@
-@use '../helpers' as *;
+@use "../helpers" as *;
 @use "sass:math";
 
 // content section start
@@ -6,12 +6,18 @@
   $max-about-width: 963px;
   $max-content-width: 821px;
   &:not(.content.level-5) {
-    min-height: calc(100dvh - $subheader-height - $header-height - $levels-heading-mt - 84px);
+    min-height: calc(
+      100dvh - $subheader-height - $header-height - $levels-heading-mt - 84px
+    );
     @include breakpoint-down(sm) {
-      min-height: calc(100dvh - $subheader-height - $header-height - $levels-heading-mt - 81px);
+      min-height: calc(
+        100dvh - $subheader-height - $header-height - $levels-heading-mt - 81px
+      );
     }
     @include breakpoint-down(fold) {
-      min-height: calc(100dvh - $subheader-height - $header-height - $levels-heading-mt - 75px);
+      min-height: calc(
+        100dvh - $subheader-height - $header-height - $levels-heading-mt - 75px
+      );
     }
   }
   .collapsing {
@@ -31,14 +37,13 @@
           button {
             color: $black;
             font-size: 22px;
-            background-color: none;
             border: none;
             font-weight: 700;
             border-bottom: 2px solid $id_color;
             width: 100%;
             text-align: start;
             @include breakpoint-down(xs) {
-              font-size: 20px;
+              font-size: 18px;
             }
             &:hover {
               color: $id_color;
@@ -132,13 +137,14 @@
                   &.red {
                     color: #f00;
                   }
-                  &.id { 
+                  &.id {
                     color: $id_color;
                   }
                 }
               }
               .link {
-                > span:not(.id), a {
+                > span:not(.id),
+                a {
                   font-size: 16px;
                   font-weight: 500;
                   color: $id_color;
@@ -156,7 +162,7 @@
                   display: flex;
                   align-items: center;
                   justify-content: space-between;
-                  &:hover { 
+                  &:hover {
                     color: #fff;
                     background-color: $id_color;
                   }
@@ -190,39 +196,6 @@
                   cursor: none;
                   pointer-events: none;
                   visibility: hidden;
-                }
-              }
-              &.dep {
-                position: relative;
-                &::after {
-                  font-family: "Font Awesome 6 Free";
-                  position: absolute;
-                  font-weight: 900;
-                  color: $icon_dark_blue;
-                  bottom: 12px;
-                  font-size: 20px;
-                  width: 30px;
-                  text-align: center;
-                }
-                &.pt-dep {
-                  &::after {
-                    content: "\f484";
-                  }
-                }
-                &.cg-dep {
-                  &::after {
-                    content: "\f5a7";
-                  }
-                }
-                &.ch-dep {
-                  &::after {
-                    content: "\e4f3";
-                  }
-                }
-                &.tc-dep {
-                  &::after {
-                    content: "\f485";
-                  }
                 }
               }
               .note {
@@ -281,7 +254,7 @@
         padding: 30px 20px;
         margin-top: 92px;
       }
-      &:hover { 
+      &:hover {
         transform: scale(0.98) translateY($translateY);
       }
       ul {
@@ -310,6 +283,13 @@
           span {
             color: $dark_blue;
             font-weight: 500;
+            transition: $main_transition;
+            &:hover {
+              svg {
+                transition: $main_transition;
+                transform: scale(1.25);
+              }
+            }
           }
           a {
             transition: $main_transition;
@@ -462,7 +442,7 @@
               p {
                 color: $black;
                 font-weight: 500;
-                span { 
+                span {
                   color: $id_color;
                 }
               }
@@ -489,9 +469,9 @@
             }
           }
           div {
-            &.table { 
-              a { 
-                @include breakpoint-down(sm) { 
+            &.table {
+              a {
+                @include breakpoint-down(sm) {
                   font-size: 14px;
                 }
               }
@@ -526,19 +506,19 @@
                   &:hover {
                     background-color: $hover_blue-fade;
                   }
-                  td { 
-                    &.must { 
+                  td {
+                    &.must {
                       position: relative;
-                      &::after { 
+                      &::after {
                         content: "*";
                         position: absolute;
                         top: 3px;
                         color: red;
                       }
                     }
-                    &.note { 
+                    &.note {
                       position: relative;
-                      &::before { 
+                      &::before {
                         content: "*";
                         position: absolute;
                         top: 7px;
@@ -555,25 +535,27 @@
       }
     }
   }
-  &.univ-needs { 
-    .container { 
-      .year { 
-        .semester { 
-          .collapse { 
-            .card { 
-              box-shadow: 0 20px 34px 0 rgb(11 11 44 / 4%), 0 4px 8px 0 rgb(11 11 44 / 2%), 0 10px 34px 0 rgb(52 52 255 / 5%);
+  &.univ-needs {
+    .container {
+      .year {
+        .semester {
+          .collapse {
+            .card {
+              box-shadow: 0 20px 34px 0 rgb(11 11 44 / 4%),
+                0 4px 8px 0 rgb(11 11 44 / 2%),
+                0 10px 34px 0 rgb(52 52 255 / 5%);
               border-radius: $border-radius;
               transition: $main_transition;
               border: 1px solid $border_separator;
-              h2 { 
+              h2 {
                 color: $black;
               }
-              p { 
+              p {
                 color: $gray;
                 @include breakpoint-down(xs) {
                   font-size: 13px;
                 }
-                span { 
+                span {
                   color: $id_color;
                   font-weight: bold;
                 }
@@ -592,40 +574,40 @@
                 text-align: center;
                 border-radius: 8px;
                 transition: $main_transition;
-                &.exam { 
+                &.exam {
                   padding: 8px 14px;
                   font-size: 17px;
                   @include breakpoint-down(sm) {
                     font-size: 12px;
                   }
                 }
-                &:hover { 
-                background-color: $hover_blue;
+                &:hover {
+                  background-color: $hover_blue;
                 }
                 @include breakpoint-down(sm) {
                   font-size: 16px;
                   padding: 4px;
-                  min-width: 36.28px;              
+                  min-width: 36.28px;
                 }
               }
-              .anchors { 
-                a { 
+              .anchors {
+                a {
                   &:not(:last-child) {
                     margin-right: 6px;
                   }
                 }
               }
               &.optional-no-anchor {
-                a { 
+                a {
                   cursor: none;
                   pointer-events: none;
                   visibility: hidden;
                 }
               }
-              &.slides { 
+              &.slides {
                 background-color: $slides;
               }
-              .note { 
+              .note {
                 color: $gray;
                 font-weight: 500;
                 font-size: 18px;

@@ -1,18 +1,19 @@
-@use '../helpers' as *;
+@use "../helpers" as *;
 @use "sass:math";
 
-@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Bad+Script&family=Vibes&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bad+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Bad+Script&family=Vibes&display=swap");
 
-// about start 
-.about { 
-  .container { 
-    .txt { 
+// about start
+.about {
+  .container {
+    .txt {
       @include breakpoint-up(lg) {
         margin: 0 45px 0 0;
       }
-      .content { 
-        div, p { 
+      .content {
+        div,
+        p {
           color: $gray;
           font-size: 18px;
           margin-bottom: 10px;
@@ -26,40 +27,40 @@
         }
       }
     }
-    .img { 
-      img { 
+    .img {
+      img {
         box-shadow: 0 14px 94px 0 rgb(15 15 182 / 9%);
         border-radius: $img-border-radius;
       }
     }
   }
 }
-// about end 
+// about end
 
 // departments start
-.departments { 
+.departments {
   background-color: $section-background;
   border: {
     top: 1px solid $border_color;
     bottom: $border-bottom;
   }
   .container {
-    .img-flex { 
+    .img-flex {
       @include breakpoint-down(md) {
         order: 1;
       }
-      .img { 
-        img { 
+      .img {
+        img {
           box-shadow: 0 14px 94px 0 rgb(15 15 182 / 9%);
           border-radius: $img-border-radius;
         }
       }
     }
-    .txt { 
+    .txt {
       @include breakpoint-up(lg) {
         margin: 0 0 0 45px;
       }
-      .content { 
+      .content {
         color: $gray;
         font-size: 18px;
         margin-bottom: 10px;
@@ -68,13 +69,13 @@
         @include breakpoint-down(sm) {
           font-size: 16px;
         }
-        ul { 
+        ul {
           list-style: disc;
           li {
-            &::marker { 
+            &::marker {
               color: $id-color;
             }
-            span { 
+            span {
               color: $id-color;
             }
           }
@@ -82,34 +83,34 @@
       }
     }
   }
-} 
-// departments end 
+}
+// departments end
 
 //this website start
-.about { 
-  ul { 
-    li { 
-      ul { 
+.about {
+  ul {
+    li {
+      ul {
         padding-left: 25px;
-        li { 
-          &::marker { 
+        li {
+          &::marker {
             color: $id-color;
           }
         }
       }
     }
   }
-  &.qr-code { 
+  &.qr-code {
     .container {
-      a { 
-        &.wiggle { 
+      a {
+        &.wiggle {
           animation: wiggle calc($main-transition * 6) linear infinite;
-          display: inline-block;        
+          display: inline-block;
         }
       }
       .img {
         &.website {
-          img { 
+          img {
             outline: 2px solid $border_color;
             box-shadow: 0 14px 94px 0 rgb(15 15 182 / 9%);
             border-radius: $img-border-radius;
@@ -128,17 +129,17 @@
 //this website end
 
 // youtube start
-.departments { 
+.departments {
   .container {
-    .img-flex { 
-      .iframe-container { 
+    .img-flex {
+      .iframe-container {
         position: relative;
         width: 100%;
-        padding-bottom: 56.25%; 
+        padding-bottom: 56.25%;
         height: 0;
-        iframe { 
+        iframe {
           position: absolute;
-          top:0;
+          top: 0;
           left: 0;
           width: 100%;
           height: 100%;
@@ -148,29 +149,30 @@
       }
     }
   }
-} 
-// youtube end 
+}
+// youtube end
 
 //creators start
-.about { 
-  &.creators { 
+.about {
+  &.creators {
     background-color: $section-background;
     position: relative;
     border: {
       top: 1px solid $border_color;
       // bottom: 1px solid $border_color;
     }
-    .container { 
-      .box { 
+    .container {
+      .box {
         background-color: #fff;
-        border: 1px solid  $border_color;
+        border: 1px solid $border_color;
         padding: 0 25px 32px;
         border-radius: $img-border-radius;
-        box-shadow: 0 20px 34px 0 rgb(11 11 44 / 4%), 0 4px 8px 0 rgb(11 11 44 / 2%), 0 10px 34px 0 rgb(52 52 255 / 5%);
-        .box-wrap { 
+        box-shadow: 0 20px 34px 0 rgb(11 11 44 / 4%),
+          0 4px 8px 0 rgb(11 11 44 / 2%), 0 10px 34px 0 rgb(52 52 255 / 5%);
+        .box-wrap {
           margin-top: -65px;
           position: relative;
-          &::before { 
+          &::before {
             @include fontawesome("\f10e");
             position: absolute;
             color: $id-color;
@@ -189,13 +191,13 @@
               top: 68px;
             }
           }
-          &.code::after { 
+          &.code::after {
             @include fontawesome("\f121");
           }
-          &.data::after { 
+          &.data::after {
             @include fontawesome("\e4f7");
           }
-          &::after { 
+          &::after {
             right: 10px;
             position: absolute;
             font-size: 27px;
@@ -203,19 +205,19 @@
             bottom: 0;
             z-index: 999;
           }
-          img { 
+          img {
             @include circle(140px);
-            border: 12px solid  $img-background;
+            border: 12px solid $img-background;
             outline: 1px dotted $id-color;
             position: inherit;
             @include breakpoint-down(sm) {
               @include circle(110px);
             }
           }
-          h3 { 
+          h3 {
             color: $black;
           }
-          > span { 
+          > span {
             color: $id-color;
             font-size: 21px;
             text-transform: uppercase;
@@ -224,38 +226,39 @@
               font-size: 19px;
             }
           }
-          h3, > span { 
+          h3,
+          > span {
             z-index: 1;
             position: inherit;
           }
-          blockquote { 
+          blockquote {
             color: rgb(11 11 44 / 75%);
             font-size: 18px;
             line-height: 1.7;
             font-weight: 700;
-            &.english { 
-              font-family: 'Bad Script', cursive;
+            &.english {
+              font-family: "Bad Script", cursive;
             }
-            &.arabic { 
-              font-family: 'Aref Ruqaa', serif;
-              @include breakpoint(xl) { 
+            &.arabic {
+              font-family: "Aref Ruqaa", serif;
+              @include breakpoint(xl) {
                 letter-spacing: 0.4px;
               }
-              span { 
-                font-family: 'Plus Jakarta Sans', sans-serif;
-                font-family: 'Roboto', sans-serif;
+              span {
+                font-family: "Plus Jakarta Sans", sans-serif;
+                font-family: "Roboto", sans-serif;
               }
             }
-            a { 
+            a {
               color: $id-color;
               transition: $main-transition;
               animation: wiggle calc($main-transition * 6) linear infinite;
               display: inline-block;
-              &:hover { 
+              &:hover {
                 color: $hover_blue;
               }
             }
-            &.cutoff-text { 
+            &.cutoff-text {
               $max-lines: 5;
               $line-height: 1.7;
               max-height: calc($max-lines * 1em * $line-height);
@@ -263,7 +266,7 @@
               overflow: hidden;
               position: relative;
               transition: $main-transition;
-              &:has(+ .expand-btn:not(:checked))::after { 
+              &:has(+ .expand-btn:not(:checked))::after {
                 content: "";
                 position: absolute;
                 //the number multiplied by line hight is equal to the number of lines hidden
@@ -278,8 +281,8 @@
                 max-height: none;
               }
             }
-            span { 
-              &.important { 
+            span {
+              &.important {
                 text-decoration: underline;
                 color: $red;
               }
@@ -303,27 +306,27 @@
             display: block;
             z-index: 10;
             position: sticky;
-            &::before { 
+            &::before {
               content: "Read More";
               color: #fff;
               transition: $main-transition;
             }
-            &:hover { 
+            &:hover {
               background-color: #fff;
-              &::before { 
+              &::before {
                 color: $id-color;
               }
             }
-            &:checked { 
+            &:checked {
               background-color: #fff;
               border-color: $id-color;
-              &::before { 
+              &::before {
                 content: "Read Less";
                 color: $id-color;
               }
-              &:hover { 
+              &:hover {
                 background-color: $id-color;
-                &::before { 
+                &::before {
                   color: #fff;
                 }
               }
@@ -336,12 +339,12 @@
 }
 //creators end
 
-//just keep in mind 
-.cutoff-text-for-you { 
+//just keep in mind
+.cutoff-text-for-you {
   $max-lines: 5;
   display: -webkit-box;
   -webkit-line-clamp: $max-lines;
   overflow: hidden;
   -webkit-box-orient: vertical;
 }
-//just keep in mind 
+//just keep in mind

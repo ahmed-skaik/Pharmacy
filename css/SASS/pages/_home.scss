@@ -1,20 +1,20 @@
-@use '../helpers' as *;
+@use "../helpers" as *;
 @use "sass:math";
 
 //landing start
-.landing { 
+.landing {
   @media (max-height: 1200px) {
     min-height: calc(100dvh - $subheader-height - $header-height);
     padding-top: 0 !important;
     padding-bottom: 0 !important;
   }
   position: relative;
-  .container { 
+  .container {
     @media (max-height: 1000px) {
       padding-top: 0 !important;
       padding-bottom: 0 !important;
     }
-    .main-btn { 
+    .main-btn {
       background-color: $id_color;
       color: #fff;
       padding: 22px 32px;
@@ -38,29 +38,29 @@
         transition: $main_transition;
         color: $id_color;
         border-color: $id_color;
-        &:hover { 
+        &:hover {
           color: $hover_blue;
           border-color: $hover_blue;
         }
       }
     }
-    .txt { 
+    .txt {
       line-height: 1.6;
       @include breakpoint-down(md) {
         text-align: center;
       }
-      h1 { 
+      h1 {
         color: $dark_blue;
         font-size: 70px;
         font-weight: 600;
         margin: 0 0 24px;
-        span.faculty { 
+        span.faculty {
           color: $id_color;
         }
-        span.univ { 
+        span.univ {
           position: relative;
           // letter-spacing: 1px;
-          &::before { 
+          &::before {
             content: "- An Unofficial Website -";
             position: absolute;
             top: -13px;
@@ -83,7 +83,7 @@
               top: -8px;
             }
           }
-          &::after { 
+          &::after {
             content: "of Gaza";
             position: absolute;
             top: -13px;
@@ -92,7 +92,7 @@
             font-size: 30px;
             @include breakpoint-up(xl) {
               top: -16px;
-              right: -60px; 
+              right: -60px;
             }
             @include breakpoint(lg) {
               font-size: 26px;
@@ -132,7 +132,7 @@
           font-size: 31px;
         }
       }
-      p { 
+      p {
         color: $gray;
         font-size: 18px;
         margin: 24px 0 48px;
@@ -145,14 +145,14 @@
         @include breakpoint-down(xs) {
           font-size: 14px;
         }
-        a { 
+        a {
           animation: wiggle calc($main_transition * 6) linear infinite;
           display: inline-block;
           font-weight: 500;
         }
-        span { 
+        span {
           color: $red;
-          font-size: 11px; 
+          font-size: 11px;
           font-weight: 400;
           @include breakpoint-up(md) {
             letter-spacing: 1px;
@@ -160,7 +160,7 @@
         }
       }
     }
-    .img { 
+    .img {
       img {
         border-radius: $img-border-radius;
         box-shadow: 0 14px 94px 0 rgb(15 15 182 / 9%);
@@ -168,53 +168,54 @@
         overflow: hidden;
         transition: $main_transition;
       }
-      &:hover { 
-        img { 
+      &:hover {
+        img {
           transform: scale(0.98);
         }
       }
     }
   }
-  > a { 
+  > a {
     color: $id_color;
     position: absolute;
     bottom: 30px;
     left: 50%;
     transform: translateX(-50%);
     transition: $main_transition;
-    &:hover { 
+    &:hover {
       color: $hover_blue;
     }
-    svg { 
-      animation: bouncing calc($main_transition * 6) cubic-bezier(0.39, 0.58, 0.57, 1) infinite;
+    svg {
+      animation: bouncing calc($main_transition * 6)
+        cubic-bezier(0.39, 0.58, 0.57, 1) infinite;
       font-weight: 700;
     }
   }
-} 
-//landing end  
+}
+//landing end
 
 // stats start
-.stats { 
+.stats {
   background-color: $section_background;
   color: $black;
   border: {
     top: 1px solid $border_color;
     bottom: $border-bottom;
   }
-  .container { 
-    .box { 
-      .h4 { 
+  .container {
+    .box {
+      .h4 {
         font-size: 54px;
         display: block;
         margin-bottom: 8px;
-        span { 
-          &.plus { 
+        span {
+          &.plus {
             color: $id_color;
             font-weight: 400;
           }
         }
       }
-      p { 
+      p {
         font-size: 20px;
         font-weight: 500;
         color: $id_color;
@@ -222,23 +223,24 @@
       }
     }
   }
-} 
-// stats end 
+}
+// stats end
 
 //plans start
-.plans { 
+.plans {
   background-color: #fff;
-  .container { 
+  .container {
     .plan {
       counter-increment: services;
-      a { 
+      a {
         text-decoration: none;
-        .box { 
+        .box {
           display: block;
           background-color: #fff;
           border-radius: $border-radius;
           border: 1px solid $border_color;
-          box-shadow: 0 12px 20px 0 rgb(0 0 0 / 13%), 0 2px 4px 0 rgb(0 0 0 / 12%);
+          box-shadow: 0 12px 20px 0 rgb(0 0 0 / 13%),
+            0 2px 4px 0 rgb(0 0 0 / 12%);
           transition: $main_transition;
           position: relative;
           &::before {
@@ -253,27 +255,27 @@
             transition: $main_transition;
             border-radius: $border-radius;
           }
-          &:hover { 
+          &:hover {
             transform: translateY(-10px);
-            .info { 
+            .info {
               color: $hover_blue;
             }
-            &::before { 
+            &::before {
               width: 100%;
             }
           }
-          svg { 
+          svg {
             margin: 35px auto;
             color: $border_color;
             text-align: center;
           }
-          h3 { 
+          h3 {
             margin: 15px 0 20px;
             text-align: center;
             font-size: 25px;
             color: $id_color;
           }
-          .info { 
+          .info {
             background-color: $img-background;
             border: {
               radius: 0 0 $border-radius $border-radius;
@@ -286,7 +288,7 @@
             padding: 15px;
             text-decoration: none;
             transition: $main_transition;
-            &::before { 
+            &::before {
               content: "0" counter(services);
               position: absolute;
               background-color: $id_color;
@@ -303,7 +305,7 @@
               align-items: center;
               padding-right: 15px;
             }
-            &::after { 
+            &::after {
               content: "";
               position: absolute;
               top: 0;
@@ -311,7 +313,7 @@
               width: 50px;
               height: 100%;
               background-color: $border_color;
-              transform: skewx(-30deg)
+              transform: skewx(-30deg);
             }
           }
         }
@@ -322,7 +324,7 @@
 //plans end
 
 //courses start
-.courses { 
+.courses {
   background-color: $section_background;
   position: relative;
   border: {
@@ -330,41 +332,41 @@
     bottom: $border-bottom;
   }
   .container {
-    .row { 
-      a { 
+    .row {
+      a {
         text-decoration: none;
       }
-      .article-box { 
+      .article-box {
         box-shadow: 0 2px 15px rgb(0 0 0 / 10%);
         background-color: #fff;
         border-radius: $border-radius;
         overflow: hidden;
         transition: transform $main_transition, box-shadow $main_transition;
-        &:hover { 
+        &:hover {
           transform: translateY(-10px);
           box-shadow: 0 2px 15px rgb(0 0 0 / 20%);
-          .more { 
+          .more {
             transition: $main_transition;
-            svg { 
+            svg {
               animation: arrow-right calc($main_transition * 2) linear infinite;
             }
-            span { 
+            span {
               color: $hover_blue;
             }
           }
         }
-        .img { 
+        .img {
           overflow: hidden;
-          img { 
+          img {
             scale: 1.1;
           }
         }
-        .text { 
+        .text {
           padding: 20px;
-          h3 { 
+          h3 {
             margin: 0;
             color: $black;
-            &.graduation { 
+            &.graduation {
               position: relative;
               &::after {
                 @include fontawesome("\f19d");
@@ -376,22 +378,22 @@
               }
             }
           }
-          p { 
+          p {
             margin: 10px 0 0;
             color: $gray;
             line-height: 1.6;
           }
         }
-        .more { 
+        .more {
           border-top: 1px solid $border_color;
-          > span { 
+          > span {
             padding: 20px;
             color: $id_color;
             font-weight: bold;
             text-decoration: none;
             transition: $main_transition;
           }
-          svg { 
+          svg {
             color: $icon_dark_blue;
           }
         }
@@ -401,57 +403,70 @@
 }
 //courses end
 
-// event start 
-.events { 
+// event start
+.events {
   background-color: #fff;
-  .container { 
-    .card { 
+  .container {
+    .sub-heading {
+      color: $black;
+      font-weight: bold;
+      @include breakpoint-down(sm) {
+        text-align: center;
+      }
+      p {
+        span {
+          color: $id-color;
+        }
+      }
+    }
+    .card {
       transition: $main_transition;
       border-radius: $border-radius;
       overflow: hidden;
       background-color: #fff;
-      box-shadow: 0 20px 34px 0 rgb(11 11 44 / 4%), 0 4px 8px 0 rgb(11 11 44 / 2%), 0 10px 34px 0 rgb(52 52 255 / 5%);
-      &:hover { 
+      box-shadow: 0 20px 34px 0 rgb(11 11 44 / 4%),
+        0 4px 8px 0 rgb(11 11 44 / 2%), 0 10px 34px 0 rgb(52 52 255 / 5%);
+      &:hover {
         transform: scale(0.98);
       }
-      .card-body { 
+      .card-body {
         padding: 42px 47px 42px 48px;
         @include breakpoint-down(sm) {
           padding: 35px 30px;
           text-align: center;
         }
-        .h5 { 
+        .h5 {
           color: $black;
           font-size: 25px;
           margin-bottom: 8px;
           display: block;
         }
-        > p { 
+        > p {
           color: $gray;
           font-size: 17px;
           margin-bottom: 10px;
         }
-        hr { 
+        hr {
           margin: 30px 0 17px;
         }
-        ul { 
-          li { 
+        ul {
+          li {
             margin: 0 0 22px 15px;
             font-size: 18px;
             color: $black;
             @include breakpoint-down(fold) {
               font-size: 14px;
             }
-            a { 
+            a {
               color: $black;
               text-decoration: none;
               transition: $main_transition;
-              &:hover { 
+              &:hover {
                 text-decoration: underline;
                 color: $id_color;
               }
             }
-            svg { 
+            svg {
               color: $id_color;
               margin-right: 3px;
               font-size: 21px;

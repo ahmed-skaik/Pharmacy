@@ -1,35 +1,35 @@
-@use 'variables' as *;
-@use 'mixins' as *;
+@use "variables" as *;
+@use "mixins" as *;
 @use "sass:math";
 
 //@extend %scroll-bar; as an example of how to call it
-%scroll-bar { 
-  &::-webkit-scrollbar { 
+%scroll-bar {
+  &::-webkit-scrollbar {
     width: 14px;
     height: 14px;
   }
-  &::-webkit-scrollbar-thumb { 
+  &::-webkit-scrollbar-thumb {
     background-color: $id_color;
     border: 1px solid $border_color;
     border-radius: 100px;
-    &:hover { 
+    &:hover {
       background-color: $hover_blue;
     }
   }
-  &::-webkit-scrollbar-track { 
-    border: { 
+  &::-webkit-scrollbar-track {
+    border: {
       left: 1px solid $border_color;
       top: 1px solid $border_color;
     }
   }
-  &::-webkit-scrollbar-corner { 
+  &::-webkit-scrollbar-corner {
     background-color: #ccc;
   }
-};
+}
 
 //@extend %center; as an example of how to call it
-%center { 
+%center {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-};
+}

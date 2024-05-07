@@ -1,31 +1,10 @@
-@use '../helpers' as *;
+@use "../helpers" as *;
 @use "sass:math";
 
 // courses cards start
 .collapse {
   .a-parent {
     .card {
-      span:not(.id), a {
-        font-size: 16px;
-        font-weight: 500;
-        color: $id_color;
-        padding: 14px 12px;
-        border: 1px solid $border_separator;
-        border-radius: $border-radius;
-        transition: $main_transition;
-        width: fit-content;
-        margin-left: auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        &:hover { 
-          color: #fff;
-          background-color: $id_color;
-        }
-        svg {
-          margin-left: 6px;
-        }
-      }
       &.dep {
         position: relative;
         &::after {
@@ -65,39 +44,39 @@
       }
     }
   }
-  .department { 
+  .department {
     color: $black;
     font-weight: bold;
-    @include breakpoint-down(sm) { 
+    @include breakpoint-down(sm) {
       text-align: center;
     }
-    p { 
-      span { 
+    p {
+      span {
         color: $id-color;
       }
     }
   }
-} 
-// courses cards end 
+}
+// courses cards end
 
 // progress start
 .my-progress {
   background-color: $section_background;
-  .container { 
-    .img { 
-      img { 
+  .container {
+    .img {
+      img {
         @include breakpoint-up(md) {
           max-width: 450px;
         }
       }
       transition: $main_transition;
-      &:hover { 
+      &:hover {
         transform: scale(0.97);
       }
     }
-    .progress-stat { 
+    .progress-stat {
       .prog-holder {
-        &:not(:last-child) .prog { 
+        &:not(:last-child) .prog {
           margin-bottom: 40px;
         }
         h4 {
@@ -105,11 +84,11 @@
           color: $black;
           padding-left: 10px;
           margin: 10px 0 10px;
-          svg { 
+          svg {
             color: $id-color;
           }
         }
-        .prog { 
+        .prog {
           background-color: #ccc;
           width: 100%;
           height: 8px;
@@ -117,12 +96,12 @@
           transition: $main_transition * 3;
           span {
             transition: $main_transition * 3;
-            &:not(.mark, .message) { 
+            &:not(.mark, .message) {
               background-color: $id_color;
               height: 100%;
               display: block;
               position: relative;
-              &::before { 
+              &::before {
                 content: attr(data-prog);
                 position: absolute;
                 top: -33px;
@@ -134,7 +113,7 @@
                 border-radius: 4px;
                 text-align: center;
               }
-              &::after { 
+              &::after {
                 content: "";
                 position: absolute;
                 border: 9px solid;
@@ -143,14 +122,14 @@
                 top: -12px;
               }
             }
-            &.on-prog { 
+            &.on-prog {
               background-color: #ccc;
-              &::before { 
+              &::before {
                 @include breakpoint-down(sm) {
                   right: -82px;
                 }
               }
-              &::after { 
+              &::after {
                 @include breakpoint-down(sm) {
                   right: -25px;
                 }

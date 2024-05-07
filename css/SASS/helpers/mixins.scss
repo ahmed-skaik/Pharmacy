@@ -1,4 +1,4 @@
-@use 'variables' as v;
+@use "variables" as v;
 @use "sass:math";
 //for some reason i when calling placeholders things go wrong !
 
@@ -7,57 +7,57 @@
   border-radius: 50%;
   width: $dimensions;
   height: $dimensions;
-};
+}
 
 //@include fontawesome("\f19d"); as an example of how to call it
 @mixin fontawesome($unicode) {
   content: $unicode;
-  font: { 
+  font: {
     family: "Font Awesome 6 Free";
     weight: 900;
   }
   // background-color: v.$id_color;
-};
+}
 
 //@include max-width(850px); as an example of how to call it
 @mixin max-width($width) {
   max-width: $width;
   margin-right: auto;
   margin-left: auto;
-};
+}
 
 //min-width: ;
 @mixin breakpoint-up($user-value) {
   $value: map-get(v.$breakpoints-up, $user-value);
-  @if $value { 
+  @if $value {
     @media (#{$value}) {
-      @content
+      @content;
     }
-  }@else { 
-    @error "The Breackpoint '#{$user-value}' isn't supported yet, Ahmed!"
+  } @else {
+    @error "The Breackpoint '#{$user-value}' isn't supported yet, Ahmed!";
   }
-};
+}
 
 //(min-width: ;) and (max-width: ;)
 @mixin breakpoint($user-value) {
   $value: map-get(v.$breakpoints, $user-value);
-  @if $value { 
+  @if $value {
     @media (#{$value}) {
       @content;
     }
-  }@else { 
+  } @else {
     @error "The Breackpoint '#{$user-value}' isn't supported yet, Ahmed!";
   }
-};
+}
 
 //max-width: ;
 @mixin breakpoint-down($user-value) {
   $value: map-get(v.$breakpoints-down, $user-value);
-  @if $value { 
+  @if $value {
     @media (#{$value}) {
-      @content
+      @content;
     }
-  }@else { 
-    @error "The Breackpoint '#{$user-value}' isn't supported yet, Ahmed!"
+  } @else {
+    @error "The Breackpoint '#{$user-value}' isn't supported yet, Ahmed!";
   }
-};
+}

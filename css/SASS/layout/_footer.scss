@@ -1,12 +1,12 @@
-@use '../helpers' as *;
+@use "../helpers" as *;
 @use "sass:math";
 
 // footer start
-footer { 
+footer {
   background-color: $black;
   color: #fff;
-  .container { 
-    p { 
+  .container {
+    p {
       font-size: 18px;
       padding: 15px 0 0;
       margin: 0 0 10px;
@@ -16,15 +16,15 @@ footer {
       @include breakpoint-down(fold) {
         font-size: 12px;
       }
-      span { 
+      span {
         font-weight: 600;
-        a { 
+        a {
           color: $emoji-red;
           text-decoration: none;
           position: relative;
           padding-bottom: 5px;
           transition: $main_transition;
-          &::after { 
+          &::after {
             content: "";
             position: absolute;
             top: 100%;
@@ -32,12 +32,18 @@ footer {
             left: 0;
             height: 3px;
             border-radius: 2px;
-            background-image: linear-gradient(130deg,#ff7a18,#af002d 41.07%,#319197 76.05%);
+            background-image: linear-gradient(
+              130deg,
+              #ff7a18,
+              #af002d 41.07%,
+              #319197 76.05%
+            );
             background-size: 133%;
             //using alternate is to make it slowly go back to original color
-            animation: bg calc($main_transition * 5) infinite cubic-bezier(0.46, 0.03, 0.52, 0.96) alternate;
+            animation: bg calc($main_transition * 5) infinite
+              cubic-bezier(0.46, 0.03, 0.52, 0.96) alternate;
           }
-          &:hover{
+          &:hover {
             text-decoration: underline;
           }
         }
@@ -49,4 +55,4 @@ footer {
     color: $black;
   }
 }
-// footer ned  
+// footer ned

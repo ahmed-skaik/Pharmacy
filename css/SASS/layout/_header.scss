@@ -1,19 +1,19 @@
-@use '../helpers' as *;
+@use "../helpers" as *;
 @use "sass:math";
 
-@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Bad+Script&family=Poiret+One&family=Vibes&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Bad+Script&family=Poiret+One&family=Vibes&display=swap");
 
 // header start
-header { 
+header {
   position: relative;
   box-shadow: 0 0 10px #ddd;
   @include breakpoint-down(md) {
     min-height: $header-height;
   }
-  &::before { 
+  &::before {
     content: '" Once you stop learning, you start dying. "';
-    font-family: 'Poiret One', cursive;
-    width: 100%;  
+    font-family: "Poiret One", cursive;
+    width: 100%;
     display: block;
     text-align: center;
     background-color: $id_color;
@@ -24,13 +24,13 @@ header {
       style: italic;
     }
     letter-spacing: 0.3px;
-    @include breakpoint-down(xs) { 
+    @include breakpoint-down(xs) {
       letter-spacing: 0;
     }
     padding: 5px 0;
     border-bottom: 1px dashed $border_color;
   }
-  .full-screen { 
+  .full-screen {
     position: absolute;
     // top: 0;
     left: 0;
@@ -39,17 +39,17 @@ header {
     background-color: $id_color;
     color: #fff;
     transition: $main-transition;
-    &:focus { 
+    &:focus {
       outline: none;
     }
-    &:hover { 
+    &:hover {
       background-color: $hover_blue;
     }
   }
-  .navbar { 
-    .container { 
+  .navbar {
+    .container {
       min-height: 85px;
-      &::after { 
+      &::after {
         $dimensions: 65px;
         $border-width: 3px;
         position: fixed;
@@ -81,12 +81,12 @@ header {
         z-index: 999;
         cursor: not-allowed;
       }
-      .navbar-brand { 
+      .navbar-brand {
         img {
           width: 75px;
           transition: $main_transition;
           &:hover {
-              transform: scale(1.2);
+            transform: scale(1.2);
           }
           @include breakpoint-down(sm) {
             width: 65px;
@@ -124,9 +124,9 @@ header {
           }
         }
       }
-      .dropdown { 
+      .dropdown {
         .dropdown-toggle {
-          &::after { 
+          &::after {
             @include breakpoint-up(lg) {
               @include fontawesome("\f107");
               font-size: 17px;
@@ -137,7 +137,7 @@ header {
           }
         }
         .dropdown-toggle[aria-expanded="true"] {
-          &::after { 
+          &::after {
             transition: $main_transition;
             transform: rotate(-180deg);
           }
@@ -160,7 +160,7 @@ header {
         &:focus {
           box-shadow: none;
         }
-        svg { 
+        svg {
           font-size: 30px;
           color: $icon_dark_blue;
           position: absolute;
@@ -168,22 +168,22 @@ header {
           @include breakpoint-down(sm) {
             font-size: 28px;
           }
-          &:last-child { 
+          &:last-child {
             transform: translateY(35px);
             font-size: 36px;
           }
         }
         &[aria-expanded="true"] {
           border-color: $hover_blue;
-          svg { 
-            &:first-child { 
-              transform: translateY(-35px)
+          svg {
+            &:first-child {
+              transform: translateY(-35px);
             }
-            &:last-child { 
+            &:last-child {
               transform: translateY(0);
             }
           }
-          + .navbar-collapse { 
+          + .navbar-collapse {
             opacity: 1;
             transform: translateY(0);
           }
@@ -199,7 +199,7 @@ header {
           transform: translateY(2px);
         }
       }
-      .main-btn { 
+      .main-btn {
         background-color: $id_color;
         color: #fff;
         padding: 18px 24px;
@@ -214,29 +214,31 @@ header {
           transform: translateY(-2px);
         }
       }
-      a > img { 
+      a > img {
         transition: $main_transition;
         &[alt="moodle"] {
           width: 55px;
         }
-        &[alt="gate"] { 
+        &[alt="gate"] {
           width: 44px;
         }
-        &:hover { 
+        &:hover {
           transform: translateY(-2px);
         }
       }
       ul {
         margin-left: 40px;
-        li { 
+        li {
           &:nth-child(6) {
-            a { 
+            a {
               @include breakpoint-down(md) {
-                animation: link-mobile calc($main-transition * 5) cubic-bezier(0, 0, 0.2, 1) infinite;
+                animation: link-mobile calc($main-transition * 5)
+                  cubic-bezier(0, 0, 0.2, 1) infinite;
                 animation-delay: 0.6s;
               }
               @include breakpoint-up(lg) {
-                animation: link calc($main-transition * 6) cubic-bezier(0, 0, 0.2, 1) 5;
+                animation: link calc($main-transition * 6)
+                  cubic-bezier(0, 0, 0.2, 1) 5;
                 animation-delay: 3s;
               }
             }
@@ -255,7 +257,9 @@ header {
             &:focus {
               border: none;
             }
-            &.active , &:hover , &:focus { 
+            &.active,
+            &:hover,
+            &:focus {
               color: $id_color;
               @include breakpoint-down(md) {
                 color: #fff;
@@ -266,13 +270,13 @@ header {
               font-size: 28px;
             }
           }
-          a { 
+          a {
             &:not(.dropdown-item) {
               @include breakpoint-up(lg) {
                 margin: 0 10px;
                 padding-top: 15px;
                 padding-bottom: 15px;
-                &::before { 
+                &::before {
                   position: absolute;
                   content: "";
                   background-color: $id_color;
@@ -282,8 +286,8 @@ header {
                   bottom: 0;
                   transition: $main_transition;
                 }
-                &:hover { 
-                  &::before{
+                &:hover {
+                  &::before {
                     width: 100%;
                   }
                 }
@@ -303,15 +307,14 @@ header {
           }
         }
       }
-      .dropdown { 
+      .dropdown {
         .dropdown-toggle[aria-expanded="true"] {
-          &::before { 
+          &::before {
             width: 100%;
           }
         }
       }
     }
   }
-} 
-// header end 
-
+}
+// header end

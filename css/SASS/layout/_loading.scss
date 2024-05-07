@@ -1,18 +1,18 @@
-@use '../helpers' as *;
+@use "../helpers" as *;
 @use "sass:math";
 
 // loading start
-.loading { 
+.loading {
   background-color: #fff;
   z-index: 999999999;
   user-select: none;
-  p { 
+  p {
     color: $id_color;
-    font: { 
+    font: {
       size: 35px;
       weight: bold;
     }
-    animation: { 
+    animation: {
       name: loader;
       duration: 1.5s;
       play-state: running;
@@ -20,12 +20,12 @@
       iteration-count: infinite;
     }
   }
-  &.hidden { 
-    animation: { 
+  &.hidden {
+    animation: {
       name: fadeout;
       duration: 1s;
       fill-mode: forwards;
     }
   }
-} 
-// loading end 
+}
+// loading end

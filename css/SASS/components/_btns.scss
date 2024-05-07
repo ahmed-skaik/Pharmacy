@@ -1,24 +1,24 @@
-@use '../helpers' as *;
+@use "../helpers" as *;
 @use "sass:math";
 
 // scroll up btn start
-.up { 
+.up {
   position: fixed;
   right: -100px;
   bottom: 25px;
   z-index: 999;
   transition: $main_transition;
-  button { 
+  button {
     border: none;
     background-color: transparent;
-    svg { 
+    svg {
       font-size: 35px;
       color: $id_color;
       background-color: #fff;
       border-radius: 50%;
       cursor: pointer;
       transition: $main_transition;
-      &:hover { 
+      &:hover {
         color: $hover_blue;
       }
     }

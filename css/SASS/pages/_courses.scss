@@ -1,23 +1,14 @@
-@use '../helpers' as *;
+@use "../helpers" as *;
 @use "sass:math";
 
-.content { 
-  .container { 
-    .year { 
-      .semester { 
-        p { 
-          button { 
-            @include breakpoint-down(xs) {
-              font-size: 18px;
-            }
-          }
-        }
-      }
-      .oops { 
+.content {
+  .container {
+    .year {
+      .oops {
         font-size: 22px;
         font-weight: 500;
         color: $dark_blue;
-        span { 
+        span {
           color: $id-color;
           font-weight: 700;
         }
@@ -27,4 +18,4 @@
       }
     }
   }
-} 
+}

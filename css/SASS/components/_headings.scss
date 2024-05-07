@@ -1,8 +1,8 @@
-@use '../helpers' as *;
+@use "../helpers" as *;
 @use "sass:math";
 
 // main title in the home & contact page
-.main-title { 
+.main-title {
   position: relative;
   text-align: center;
   &::after {
@@ -14,28 +14,28 @@
     left: 50%;
     transform: translateX(-50%);
   }
-  &.left::after { 
+  &.left::after {
     @include breakpoint-up(lg) {
       left: 0;
       transform: translateX(0);
     }
   }
-  h2 { 
+  h2 {
     font-size: 40px;
     color: $black;
     font-weight: 600;
-    span { 
+    span {
       color: $id_color;
     }
   }
-  p { 
+  p {
     color: $gray;
     font-size: 16px;
   }
 }
 
 // main title in the levels & courses page
-.main-title-2 { 
+.main-title-2 {
   position: relative;
   @extend %center;
   margin-top: 24px;
@@ -49,11 +49,11 @@
     left: 50%;
     transform: translateX(-50%);
   }
-  h1 { 
+  h1 {
     color: $dark_blue;
     font-size: 70px;
-    font-weight: 600;    
-    span { 
+    font-weight: 600;
+    span {
       color: $id_color;
     }
     @include breakpoint-down(sm) {
@@ -66,13 +66,13 @@
       font-size: 34px;
     }
   }
-  p { 
+  p {
     color: $gray;
   }
 }
 
 // main title in the about page
-.main-title-3 { 
+.main-title-3 {
   position: relative;
   @extend %center;
   margin-top: 24px;
@@ -91,11 +91,11 @@
       left: 0;
     }
   }
-  h2 { 
+  h2 {
     color: $dark_blue;
     font-size: 67px;
-    font-weight: 600;    
-    span { 
+    font-weight: 600;
+    span {
       color: $id_color;
     }
     @include breakpoint-down(sm) {
@@ -108,7 +108,7 @@
       font-size: 34px;
     }
   }
-  p { 
+  p {
     color: $gray;
   }
 }

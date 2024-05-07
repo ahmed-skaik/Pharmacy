@@ -1,4 +1,4 @@
-@use '../helpers' as *;
+@use "../helpers" as *;
 @use "sass:math";
 
 html {
@@ -9,18 +9,18 @@ html {
   -ms-scroll-behavior: smooth;
 }
 
-//for debuging 
-// * { 
+//for debuging
+// * {
 //   border: 1px solid #f00;
 // }
 
 body {
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  font-family: 'Roboto', sans-serif;
-  width:100%;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+  width: 100%;
   height: 100%;
-  overflow: hidden;
-  position: fixed;
+  // overflow: hidden;
+  // position: fixed;
   @extend %scroll-bar;
 }
 
@@ -29,7 +29,7 @@ body {
   color: $section_background;
 }
 
-img { 
+img {
   user-select: none;
 }
 
@@ -37,12 +37,17 @@ a {
   text-decoration: none;
 }
 
-span, a {
+span,
+a {
   &.id-color {
     color: $id_color;
   }
   &.id-bold {
     font-weight: 600;
+  }
+  &.id-color,
+  &.id-bold {
+    transition: $main_transition;
   }
 }
 
@@ -51,20 +56,24 @@ span, a {
   text-decoration: underline;
 }
 
-.spikes-seperator { 
+.spikes-seperator {
   position: relative;
-  &::after { 
+  &::after {
     content: "";
     position: absolute;
     width: 100%;
     height: 30px;
     z-index: 10;
-    background-image: linear-gradient(135deg, #fff 25%, transparent 25%), linear-gradient(220deg, #fff 25%, transparent 25%);
+    background-image: linear-gradient(135deg, #fff 25%, transparent 25%),
+      linear-gradient(220deg, #fff 25%, transparent 25%);
     background-size: 30px 30px;
   }
 }
 
-.dots { 
+.dots {
+  @include breakpoint-down(xs) {
+    display: none;
+  }
   @include breakpoint-up(sm) {
     background-image: url("../../../images/dots.png");
     width: 200px;
@@ -75,20 +84,22 @@ span, a {
   }
 }
 
-.dots-up { 
-  top: 200px;
+$dots_dimentions: 180px;
+
+.dots-up {
+  top: $dots_dimentions;
   right: 0;
 }
 
-.dots-down { 
-  bottom: 200px;
+.dots-down {
+  bottom: $dots_dimentions;
   left: 0;
 }
 
-.z-index { 
+.z-index {
   z-index: 99;
 }
 
-abbr { 
+abbr {
   text-decoration: underline dotted $id_color;
 }
