@@ -7,6 +7,19 @@ A production-ready, non-profit educational web platform built to centralize acad
 
 ---
 
+## 🚀 Version 2 (In Progress ⚙️)
+
+Version 2 of the Al-Azhar Pharmacy Portal is currently under active development.
+
+The new architecture is being rebuilt using a modern frontend stack (React + TypeScript) with a scalable and maintainable component-based structure.
+
+🔗 View Version 2 Repository:  
+https://github.com/ahmed-skaik/pharmacy-v2
+
+Version 1 remains available as the original static production release.
+
+---
+
 ## 📖 Project Overview
 
 The Al-Azhar Pharmacy Portal was developed to address a real operational problem: academic materials were scattered across multiple platforms, making access inefficient for students.
