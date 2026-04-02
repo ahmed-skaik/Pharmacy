@@ -1,7 +1,5 @@
 # Al-Azhar Pharmacy Portal (Version 2)
 
-# Al-Azhar Pharmacy Portal (Version 2)
-
 A production-ready, modern frontend application built to centralize academic resources for Pharmacy students at Al-Azhar University of Gaza.
 
 🌐 Live Website: https://alazharpharmacy.com  
