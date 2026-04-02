@@ -1,105 +1,102 @@
-# Al-Azhar Pharmacy Portal (Version 2)
+# Al-Azhar Pharmacy Portal (Version 1 – Legacy)
 
-A production-ready, modern frontend application built to centralize academic resources for Pharmacy students at Al-Azhar University of Gaza.
+A production-ready, non-profit educational web platform originally built to centralize academic resources for Pharmacy students at Al-Azhar University of Gaza.
 
-🌐 Live Website: https://alazharpharmacy.com  
-💻 Source Code: https://github.com/ahmed-skaik/pharmacy-v2
-
-Currently deployed and serving as the active production version of the platform.
+This version was publicly launched in 2022 and served as the initial production release of the platform.
 
 ---
 
-## 🔄 About This Version
+## 🚀 Current Version (Version 2 – Active)
 
-Version 2 is a complete frontend re-architecture of the original platform (V1), transitioning from a static multi-page structure to a scalable, component-driven React application.
+A modernized Version 2 of the platform has replaced this version and is now the active production release.
 
-It is designed with a focus on maintainability, modularity, and future backend integration.
+🌐 Live Website (Current):  
+https://alazharpharmacy.com  
 
----
-
-## 📈 Project Evolution
-
-- **V1 (2022)** – Static multi-page architecture built with HTML, CSS, and JavaScript  
-- **V2 (2026)** – Re-architected as a component-based React application with TypeScript (current production version)
+💻 Version 2 Repository:  
+https://github.com/ahmed-skaik/pharmacy-v2
 
 ---
 
-## 🏗 Tech Stack
+## 📖 Project Overview
 
-- React  
-- TypeScript  
-- Vite  
-- SASS  
-- Bootstrap  
+The platform was developed to address a real operational problem: academic materials were scattered across multiple sources, making access inefficient for students.
+
+Version 1 centralized:
+
+- E-learning lectures  
+- Course summaries  
+- Previous exams  
+- Faculty-related academic information  
+- Structured navigation by academic year  
+
+It was actively used by students within the faculty.
 
 ---
 
-## 🚀 Key Improvements Over V1
+## 🏗 Architecture & Technical Approach
 
-- Component-based architecture (React)
-- Improved code organization and scalability
-- Type safety with TypeScript
-- Modern development tooling (Vite)
-- Structured data handling using TypeScript modules
-- Active production deployment replacing the original static version
+Version 1 is a fully static frontend application built with a focus on clarity, performance, and maintainability.
+
+### Core Stack
+
+- HTML5 – Semantic structure and accessibility  
+- CSS3 – Custom styling  
+- SASS – Modular and maintainable styling architecture  
+- Bootstrap – Responsive layout system  
+- JavaScript (ES6+) – Interactive UI behavior  
+- Font Awesome – Icon system integration  
+
+The project emphasizes structured layout organization and reusable styling using SASS.
+
+---
+
+## 🚀 Deployment
+
+- Source code hosted on GitHub  
+- Deployed using GitHub Pages  
+- Connected to a custom domain (alazharpharmacy.com)  
+- Domain originally registered via Google Domains (now Squarespace Domains)  
+
+This version is no longer the active deployment but remains available as the original release.
+
+---
+
+## 📊 Analytics & Monitoring
+
+Google Analytics was integrated to monitor real-world usage patterns, including:
+
+- Traffic volume  
+- Most visited pages  
+- User behavior insights  
+- Geographic distribution  
+
+This helped evaluate platform usage and content engagement.
 
 ---
 
 ## 📱 Design Considerations
 
-- Mobile-first responsive design
-- Clear academic navigation structure
-- Focus on usability and low cognitive load
+- Mobile-first responsive design  
+- Clear academic navigation structure  
+- Focus on usability and accessibility  
+- Lightweight and fast-loading pages  
 
 ---
 
-## 🔗 Previous Version (V1 – Legacy)
+## 🎯 Project Significance
 
-The original static version of the platform (launched in 2022) is still available:
+This version represents:
 
-💻 Repository: https://github.com/ahmed-skaik/Pharmacy
-🌐 Live Website: https://alazharpharmacy.com  
-💻 Source Code: https://github.com/ahmed-skaik/pharmacy-v2
-
----
-
-## 🔄 About This Version
-
-Version 2 is a complete frontend re-architecture of the original platform (V1), transitioning from a static multi-page structure to a scalable, component-driven React application.
-
-The system is designed with a focus on maintainability, modularity, and future backend integration.
+- A real-world production deployment  
+- Independent project planning and execution  
+- Practical problem-solving in an academic environment  
+- The foundation for the platform’s evolution to Version 2  
 
 ---
 
-## 📈 Project Evolution
+## 🎥 Video Walkthrough
 
-- **V1 (2022)** – Static multi-page architecture built with HTML, CSS, and JavaScript  
-- **V2 (2026)** – Re-architected as a component-based React application with TypeScript (current production version)
+A short video presentation explaining the platform and its purpose:
 
----
-
-## 🏗 Tech Stack
-
-- React  
-- TypeScript  
-- Vite  
-- SASS  
-- Bootstrap  
-
----
-
-## 🚀 Key Improvements Over V1
-
-- Component-based architecture (React)
-- Improved code organization and scalability
-- Type safety with TypeScript
-- Modern development tooling (Vite)
-- Structured data handling using TypeScript modules
-
----
-
-## 🔗 Previous Version (V1 – Legacy)
-
-The original static version of the platform (launched in 2022) is still available:
-
-💻 Repository: https://github.com/ahmed-skaik/Pharmacy
+📺 https://youtu.be/L46THylwkHk
